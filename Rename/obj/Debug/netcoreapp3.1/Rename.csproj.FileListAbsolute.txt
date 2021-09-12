@@ -1,0 +1,15 @@
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\bin\Debug\netcoreapp3.1\Rename.exe
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\bin\Debug\netcoreapp3.1\Rename.deps.json
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\bin\Debug\netcoreapp3.1\Rename.runtimeconfig.json
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\bin\Debug\netcoreapp3.1\Rename.runtimeconfig.dev.json
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\bin\Debug\netcoreapp3.1\Rename.dll
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\bin\Debug\netcoreapp3.1\Rename.pdb
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\obj\Debug\netcoreapp3.1\Rename.csprojAssemblyReference.cache
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\obj\Debug\netcoreapp3.1\Rename.AssemblyInfoInputs.cache
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\obj\Debug\netcoreapp3.1\Rename.AssemblyInfo.cs
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\obj\Debug\netcoreapp3.1\Rename.csproj.CoreCompileInputs.cache
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\obj\Debug\netcoreapp3.1\Rename.dll
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\obj\Debug\netcoreapp3.1\Rename.pdb
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\obj\Debug\netcoreapp3.1\Rename.genruntimeconfig.cache
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Mekni-Wassime\Documents\Misc\RadioLosSantos\audio\Rename\obj\Debug\netcoreapp3.1\Rename.csproj.CopyComplete

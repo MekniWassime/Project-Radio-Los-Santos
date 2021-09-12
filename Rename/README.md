@@ -1,0 +1,1 @@
+C# project that renames the extracted ingame sounds using a metadata file that maps tracks with their respective names
