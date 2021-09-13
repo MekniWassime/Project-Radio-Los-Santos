@@ -1,7 +1,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.project_radio_los_santos">
+    <uses-permission android:name="android.permission.INTERNET" /> 
    <application
         android:label="project_radio_los_santos"
+        android:usesCleartextTraffic="true"
         android:icon="@mipmap/ic_launcher">
         <activity
             android:name=".MainActivity"
@@ -37,5 +39,6 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+            
     </application>
 </manifest>
