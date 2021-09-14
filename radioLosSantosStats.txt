@@ -1,0 +1,9 @@
+			number			total duration		number of unique		min duration		max duration
+Adverts			69			00:57:49		--				--			--
+K-DST atmosphere	14			--			2				00:10			00:15
+K-DST ID		11			00:01:38		--				--			--
+K-DST DJ		9			00:01:33		--				--			--
+K-DST Caller		3			00:01:18		--				--			--
+K-DST songs		17			
+
+	
