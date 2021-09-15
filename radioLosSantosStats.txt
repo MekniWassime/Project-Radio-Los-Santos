@@ -7,7 +7,7 @@ K-DST atmosphere	14			--			2				00:10			00:15
 K-DST ID		11			00:01:38		--				--			--
 K-DST DJ		9			00:01:33		--				--			--
 K-DST Caller		3			00:01:18		--				--			--
-K-DST songs		17			01:01:32		--				--
+K-DST songs		17			01:01:43		--				--
 
 	A Horse with no name			00:03:26		3 intro 1 mid 3 outro
 	Barracuda				00:03:13		3 intro 1 mid 3 outro
@@ -27,5 +27,16 @@ K-DST songs		17			01:01:32		--				--
 	Woman to Woman				00:03:51		3 intro 1 mid 3 outro
 	Young turks				00:04:03		3 intro 1 mid 3 outro
 
-K-DST seq		[S][ID]{[DJ*9]|[ATMO*2]|[Caller*3]|</>}([AD<40],[AD>40])  # *n play n unique max, {|} play either one, (,) play in random order 
-K-DST total				
+* K-DST SEQUENCE
+[S][ID]{[DJ*9]|[ATMO*2]|[Caller*3]|</>}([AD<=40],[AD>40])  # *n play n unique max, {|} play either one, (,) play in random order 
+
+			min duration		max duration		delta
+DJ*9			00:01:33		00:01:33		00:00:00
+ATMO*2			00:00:10		00:00:15		00:00:05
+Caller*3		00:01:18		00:01:18		00:00:00
+ID (17)			00:02:32		00:02:48		00:00:16
+S  (17)			01:01:43		01:01:43		00:00:00
+AD <= 40 (17)		00:07:19		00:08:22		00:01:03
+AD >  40 (17)		00:13:19		00:20:50		00:07:31
+Total			01:27:54		01:36:49		00:08:55
+				

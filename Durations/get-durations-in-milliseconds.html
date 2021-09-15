@@ -1,0 +1,33 @@
+<input type="file" id="fileinput" webkitdirectory directory multiple />
+<script>
+    document.getElementById("fileinput").addEventListener('change', function () {
+        
+        totalNumberOfFiles = this.files.length;
+        treatedNumberOfFiles = 0;
+        var resultDict = {}
+        var resultJson;
+        for (let index = 0; index < totalNumberOfFiles; index++) {
+            const file = this.files[index];
+            var reader = new FileReader();
+            // When the file has been succesfully read
+            reader.onload = function (event) {
+                var audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                audioContext.decodeAudioData(event.target.result, function (buffer) {
+                    var duration = buffer.duration;
+                    resultDict[file.webkitRelativePath] =  duration * 1000;
+                    treatedNumberOfFiles++;
+                    console.log(treatedNumberOfFiles + "/" + totalNumberOfFiles)
+                    if(totalNumberOfFiles == treatedNumberOfFiles){
+                        resultJson = JSON.stringify(resultDict)
+                        console.log(resultJson);
+                    }
+                });
+            };
+            reader.onerror = function (event) {
+                console.error("An error ocurred reading the file: ", event);
+            };
+
+            reader.readAsArrayBuffer(file);
+        }
+    }, false);
+</script>

@@ -1,0 +1,1 @@
+js code that prints to console a json where keys are file names and values are the duration of the audio file in milliseconds
