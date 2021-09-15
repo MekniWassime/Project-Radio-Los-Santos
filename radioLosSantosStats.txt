@@ -1,9 +1,31 @@
 			number			total duration		number of unique		min duration		max duration
 Adverts			69			00:57:49		--				--			--
+Adverts < 40s		20
+Adverts > 40s		49
+
 K-DST atmosphere	14			--			2				00:10			00:15
 K-DST ID		11			00:01:38		--				--			--
 K-DST DJ		9			00:01:33		--				--			--
 K-DST Caller		3			00:01:18		--				--			--
-K-DST songs		17			
+K-DST songs		17			01:01:32		--				--
 
-	
+	A Horse with no name			00:03:26		3 intro 1 mid 3 outro
+	Barracuda				00:03:13		3 intro 1 mid 3 outro
+	Eminence				00:04:14		3 intro 1 mid 3 outro
+	Free bird				00:05:45		3 intro 1 mid 3 outro
+	Get down to it				00:03:06		3 intro 1 mid 3 outro
+	Green River				00:02:16		3 intro 1 mid 2 outro
+	Hold the line				00:03:29		1 intro 1 mid 1 outro
+	Running down a dream			00:04:17		3 intro 1 mid 3 outro
+	Slow ride				00:03:08		3 intro 1 mid 3 outro
+	Smokin					00:03:25		3 intro 1 mid 3 outro
+	Some kind of wonderful			00:03:06		3 intro 1 mid 3 outro
+	Somebody up the Likes me		00:03:56		3 intro 1 mid 2 outro
+	Strutter				00:03:08		3 intro 1 mid 3 outro
+	Two tickets to paradise			00:03:29		3 intro 1 mid 3 outro
+	White wedding 				00:03:40		3 intro 1 mid 3 outro
+	Woman to Woman				00:03:51		3 intro 1 mid 3 outro
+	Young turks				00:04:03		3 intro 1 mid 3 outro
+
+K-DST seq		[S][ID]{[DJ*9]|[ATMO*2]|[Caller*3]|</>}([AD<40],[AD>40])  # *n play n unique max, {|} play either one, (,) play in random order 
+K-DST total				

@@ -20,8 +20,8 @@ class _PlayerScreenState extends State<PlayerScreen> {
 
   Future<void> init() async {
     player = AudioPlayer();
-    await player.setAsset(
-        "assets/audio/Adverts/'Law' on Weazel 2 ('Because paperwork is dramatic').ogg");
+    await player
+        .setAsset("assets/audio/Adverts/Zebra Bar 1 (What about nuts).ogg");
     loading = false;
   }
 
