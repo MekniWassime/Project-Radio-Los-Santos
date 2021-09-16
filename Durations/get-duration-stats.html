@@ -27,13 +27,19 @@
             drawTable()
         }
 
+        function deleteElement(index) {
+            fileList.splice(index, 1)
+            drawTable()
+        }
+
         function drawTable() {
             totalDuration = 0;
             table = document.getElementById("filedisplay")
             table.innerHTML = "<thead class=\"thead-dark\"><tr>" +
                 "<th>file name</th>" +
                 "<th>duration (ms)</th>" +
-                "<th>is selected</th>" +
+                "<th>selection</th>" +
+                "<th>removal</th>" +
                 "</tr></thead>"
             for (let index = 0; index < fileList.length; index++) {
                 const entry = fileList[index];
@@ -45,23 +51,27 @@
                 var td1 = document.createElement('td');
                 var td2 = document.createElement('td');
                 var td3 = document.createElement('td');
+                var td4 = document.createElement('td');
 
-                td3.style.textAlign = "center";
 
                 var fileNameElement = document.createTextNode(entry.file.name);
                 var durationElement = document.createTextNode(entry.duration);
-                var button = document.createElement("button")
+                var selectButton = document.createElement("button")
                 if (entry.selected)
-                    button.innerHTML = "deselect"
+                    selectButton.innerHTML = "deselect"
                 else
-                    button.innerHTML = "select"
-                button.addEventListener('click', function () { toggleSelection(index) })
+                    selectButton.innerHTML = "select"
+                selectButton.addEventListener('click', function () { toggleSelection(index) })
+                var deleteButton = document.createElement("button")
+                deleteButton.innerHTML = "delete"
+                deleteButton.addEventListener('click', function () { deleteElement(index) })
 
                 td1.appendChild(fileNameElement);
                 td2.appendChild(durationElement);
-                td3.appendChild(button);
+                td3.appendChild(selectButton);
+                td4.appendChild(deleteButton);
 
-                tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3);
+                tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3); tr.appendChild(td4)
 
                 table.appendChild(tr);
 
@@ -74,6 +84,7 @@
 
         document.getElementById("fileinput").addEventListener('change', function () {
             totalNumberOfFiles = this.files.length;
+            fileList = []
             for (let index = 0; index < totalNumberOfFiles; index++) {
                 const file = this.files[index];
                 var reader = new FileReader();
