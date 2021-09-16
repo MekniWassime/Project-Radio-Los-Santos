@@ -1,1 +1,2 @@
-js code that prints to console a json where keys are file names and values are the duration of the audio file in milliseconds
+    - js code that prints to console a json where keys are file names and values are the duration of the audio file in milliseconds
+    - a utility tool in js that makes it easy to get stats of the durations of multiple audio files

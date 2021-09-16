@@ -1,0 +1,99 @@
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <input type="file" id="fileinput" multiple />
+    <table id="filedisplay" class="table"></table>
+    <br>
+    <p id="stats"></p>
+    <button onclick="sortByName()">sort by name</button>
+    <button onclick="sortByDuration()">sort by duration</button>
+    <script>
+        var fileList = []
+        function sortByName() {
+            fileList.sort((a, b) => a.file.name.localeCompare(b.file.name))
+            drawTable()
+        }
+
+        function sortByDuration() {
+            fileList.sort((a, b) => a.duration - b.duration)
+            drawTable()
+        }
+
+        function toggleSelection(index) {
+            fileList[index].selected = !fileList[index].selected;
+            drawTable()
+        }
+
+        function drawTable() {
+            totalDuration = 0;
+            table = document.getElementById("filedisplay")
+            table.innerHTML = "<thead class=\"thead-dark\"><tr>" +
+                "<th>file name</th>" +
+                "<th>duration (ms)</th>" +
+                "<th>is selected</th>" +
+                "</tr></thead>"
+            for (let index = 0; index < fileList.length; index++) {
+                const entry = fileList[index];
+                var tr = document.createElement('tr');
+
+                if (entry.selected)
+                    tr.className = "table-primary"
+
+                var td1 = document.createElement('td');
+                var td2 = document.createElement('td');
+                var td3 = document.createElement('td');
+
+                td3.style.textAlign = "center";
+
+                var fileNameElement = document.createTextNode(entry.file.name);
+                var durationElement = document.createTextNode(entry.duration);
+                var button = document.createElement("button")
+                if (entry.selected)
+                    button.innerHTML = "deselect"
+                else
+                    button.innerHTML = "select"
+                button.addEventListener('click', function () { toggleSelection(index) })
+
+                td1.appendChild(fileNameElement);
+                td2.appendChild(durationElement);
+                td3.appendChild(button);
+
+                tr.appendChild(td1); tr.appendChild(td2); tr.appendChild(td3);
+
+                table.appendChild(tr);
+
+                var statsElement = document.getElementById("stats")
+                if (entry.selected)
+                    totalDuration += entry.duration;
+                stats.innerText = "total duration = " + totalDuration;
+            }
+        }
+
+        document.getElementById("fileinput").addEventListener('change', function () {
+            totalNumberOfFiles = this.files.length;
+            for (let index = 0; index < totalNumberOfFiles; index++) {
+                const file = this.files[index];
+                var reader = new FileReader();
+                // When the file has been succesfully read
+                reader.onload = function (event) {
+                    var audioContext = new (window.AudioContext || window.webkitAudioContext)();
+                    audioContext.decodeAudioData(event.target.result, function (buffer) {
+                        var duration = Math.round(buffer.duration * 1000);
+                        var entry = { "file": file, "duration": duration, "selected": true }
+                        fileList.push(entry)
+                        console.log(fileList)
+                        drawTable()
+                    });
+                };
+                reader.onerror = function (event) {
+                    console.error("An error ocurred reading the file: ", event);
+                };
+
+                reader.readAsArrayBuffer(file);
+            }
+        }, false);
+    </script>
+</body>
