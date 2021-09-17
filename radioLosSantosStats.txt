@@ -1,42 +1,42 @@
 			number			total duration		number of unique		min duration		max duration
-Adverts			69			00:57:49		--				--			--
+Adverts			69			3470190 (00:57:50)	--				--			--
 Adverts < 40s		20
 Adverts > 40s		49
 
-K-DST atmosphere	14			--			2				00:10			00:15
-K-DST ID		11			00:01:38		--				--			--
-K-DST DJ		9			00:01:33		--				--			--
-K-DST Caller		3			00:01:18		--				--			--
-K-DST songs		17			01:01:43		--				--
+K-DST atmosphere	12(mor3, night3 ommited)--			2				10632 (00:00:10)	15888 (00:00:15)
+K-DST ID		11			98536 (00:01:38)	--				--			--
+K-DST DJ		9			93226 (00:01:33)		--				--			--
+K-DST Caller		3			78362 (00:01:18)		--				--			--
+K-DST songs		17			3703438 (01:01:43)		--				--
 
-	A Horse with no name			00:03:26		3 intro 1 mid 3 outro
-	Barracuda				00:03:13		3 intro 1 mid 3 outro
-	Eminence				00:04:14		3 intro 1 mid 3 outro
-	Free bird				00:05:45		3 intro 1 mid 3 outro
-	Get down to it				00:03:06		3 intro 1 mid 3 outro
-	Green River				00:02:16		3 intro 1 mid 2 outro
-	Hold the line				00:03:29		1 intro 1 mid 1 outro
-	Running down a dream			00:04:17		3 intro 1 mid 3 outro
-	Slow ride				00:03:08		3 intro 1 mid 3 outro
-	Smokin					00:03:25		3 intro 1 mid 3 outro
-	Some kind of wonderful			00:03:06		3 intro 1 mid 3 outro
-	Somebody up the Likes me		00:03:56		3 intro 1 mid 2 outro
-	Strutter				00:03:08		3 intro 1 mid 3 outro
-	Two tickets to paradise			00:03:29		3 intro 1 mid 3 outro
-	White wedding 				00:03:40		3 intro 1 mid 3 outro
-	Woman to Woman				00:03:51		3 intro 1 mid 3 outro
-	Young turks				00:04:03		3 intro 1 mid 3 outro
+	A Horse with no name			207762 (00:03:27)	3 intro 1 mid 3 outro
+	Barracuda				194022 (00:03:14)	3 intro 1 mid 3 outro
+	Eminence				255570 (00:04:15)	3 intro 1 mid 3 outro
+	Free bird				346242 (00:05:46)	3 intro 1 mid 3 outro
+	Get down to it				187718 (00:03:07)	3 intro 1 mid 3 outro
+	Green River				136550 (00:02:16)	3 intro 1 mid 2 outro
+	Hold the line				209602 (00:03:29)	1 intro 1 mid 1 outro
+	Running down a dream			258238 (00:04:18)	3 intro 1 mid 3 outro
+	Slow ride				190102 (00:03:10)	3 intro 1 mid 3 outro
+	Smokin					206770 (00:03:26)	3 intro 1 mid 3 outro
+	Some kind of wonderful			187042 (00:03:07)	3 intro 1 mid 3 outro
+	Somebody up the Likes me		237002 (00:03:57)	3 intro 1 mid 2 outro
+	Strutter				189098 (00:03:09)	3 intro 1 mid 3 outro
+	Two tickets to paradise			211818 (00:03:31)	3 intro 1 mid 3 outro
+	White wedding 				220782 (00:03:40)	3 intro 1 mid 3 outro
+	Woman to Woman				220758 (00:03:40)	3 intro 1 mid 3 outro
+	Young turks				244362 (00:04:04)	3 intro 1 mid 3 outro
 
 * K-DST SEQUENCE
 [S][ID]{[DJ*9]|[ATMO*2]|[Caller*3]|</>}([AD<=40],[AD>40])  # *n play n unique max, {|} play either one, (,) play in random order 
 
 			min duration		max duration		delta
-DJ*9			00:01:33		00:01:33		00:00:00
-ATMO*2			00:00:10		00:00:15		00:00:05
-Caller*3		00:01:18		00:01:18		00:00:00
-ID (17)			00:02:32		00:02:48		00:00:16
-S  (17)			01:01:43		01:01:43		00:00:00
-AD <= 40 (17)		00:07:19		00:08:22		00:01:03
-AD >  40 (17)		00:13:19		00:20:50		00:07:31
-Total			01:27:54		01:36:49		00:08:55
+DJ*9			93226 (00:01:33)	93226 (00:01:33)	--
+ATMO*2			10632 (00:00:10)	15888 (00:00:15)	5256 (00:00:05)
+Caller*3		78362 (00:01:18)	78362 (00:01:18)	--
+ID (17)			143894 (00:02:23)	160580(00:02:40)	16686 (00:00:16)
+S  (17)			3703438 (01:01:43)	3703438 (01:01:43)	--
+AD <= 40 (17)		439586 (00:07:19)	502210 (00:08:22)	62624 (00:01:02)
+AD >  40 (17)		799330 (00:13:19)	1250722 (00:20:50)	451392 (00:07:31)
+Total			5268468 (01:27:48)	5804426 (01:36:44)	535958 (00:08:55)
 				

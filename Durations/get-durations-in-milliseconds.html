@@ -1,10 +1,10 @@
 <input type="file" id="fileinput" webkitdirectory directory multiple />
 <script>
     document.getElementById("fileinput").addEventListener('change', function () {
-        
+
         totalNumberOfFiles = this.files.length;
         treatedNumberOfFiles = 0;
-        var resultDict = {}
+        var resultList = []
         var resultJson;
         for (let index = 0; index < totalNumberOfFiles; index++) {
             const file = this.files[index];
@@ -14,11 +14,13 @@
                 var audioContext = new (window.AudioContext || window.webkitAudioContext)();
                 audioContext.decodeAudioData(event.target.result, function (buffer) {
                     var duration = buffer.duration;
-                    resultDict[file.webkitRelativePath] =  duration * 1000;
+                    var entry = { "file": file.webkitRelativePath, "duration": Math.round(duration * 1000) }
+                    resultList.push(entry)
+                    resultList.sort((a, b) => a.duration - b.duration)
                     treatedNumberOfFiles++;
                     console.log(treatedNumberOfFiles + "/" + totalNumberOfFiles)
-                    if(totalNumberOfFiles == treatedNumberOfFiles){
-                        resultJson = JSON.stringify(resultDict)
+                    if (totalNumberOfFiles == treatedNumberOfFiles) {
+                        resultJson = JSON.stringify(resultList)
                         console.log(resultJson);
                     }
                 });

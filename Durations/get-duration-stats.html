@@ -4,14 +4,31 @@
 </head>
 
 <body>
-    <input type="file" id="fileinput" multiple />
+    <input type="file" id="fileinput" multiple /><span id='progress'></span>
     <table id="filedisplay" class="table"></table>
     <br>
-    <p id="stats"></p>
-    <button onclick="sortByName()">sort by name</button>
-    <button onclick="sortByDuration()">sort by duration</button>
+    <br>
+    <br>
+    <br>
+    <div style="position:fixed;bottom:0;right:0;background-color: white;">
+        <p id="stats"></p>
+        <button onclick="sortByName()">sort by name</button>
+        <button onclick="sortByDuration()">sort by duration</button>
+        <button onclick="selectAll()">select all</button>
+        <button onclick="deselectAll()">deselect all</button>
+        <br>
+        <input type="number" id="input-milliseconds" oninput='updateConverted()'>
+        <span id="converted"></span>
+    </div>
     <script>
         var fileList = []
+
+        function updateConverted() {
+            var input = document.getElementById("input-milliseconds")
+            var converted = document.getElementById("converted")
+            converted.innerHTML = humanReadableDuration(input.value)
+        }
+
         function sortByName() {
             fileList.sort((a, b) => a.file.name.localeCompare(b.file.name))
             drawTable()
@@ -32,8 +49,34 @@
             drawTable()
         }
 
+        function deselectAll() {
+            fileList.forEach(entry => {
+                entry.selected = false;
+            });
+            drawTable()
+        }
+
+
+        function selectAll() {
+            fileList.forEach(entry => {
+                entry.selected = true;
+            });
+            drawTable()
+        }
+
+        function humanReadableDuration(milliseconds) {
+            var seconds = Math.floor(milliseconds / 1000)
+            var minutes = Math.floor(seconds / 60)
+            var hours = Math.floor(minutes / 60)
+            milliseconds -= seconds * 1000
+            seconds -= minutes * 60;
+            minutes -= hours * 60;
+            return String(hours).padStart(2, '0') + ":" + String(minutes).padStart(2, '0') + ":" + String(seconds).padStart(2, '0')
+        }
+
         function drawTable() {
             totalDuration = 0;
+            numberSelected = 0;
             table = document.getElementById("filedisplay")
             table.innerHTML = "<thead class=\"thead-dark\"><tr>" +
                 "<th>file name</th>" +
@@ -55,7 +98,7 @@
 
 
                 var fileNameElement = document.createTextNode(entry.file.name);
-                var durationElement = document.createTextNode(entry.duration);
+                var durationElement = document.createTextNode(entry.duration + " " + humanReadableDuration(entry.duration));
                 var selectButton = document.createElement("button")
                 if (entry.selected)
                     selectButton.innerHTML = "deselect"
@@ -76,14 +119,21 @@
                 table.appendChild(tr);
 
                 var statsElement = document.getElementById("stats")
-                if (entry.selected)
+                if (entry.selected) {
                     totalDuration += entry.duration;
-                stats.innerText = "total duration = " + totalDuration;
+                    numberSelected++;
+                }
+                var milliseconds = totalDuration
+
+
+                stats.innerText = "total duration = " + totalDuration + " (" + humanReadableDuration(totalDuration) + ") number = " + numberSelected
             }
         }
 
         document.getElementById("fileinput").addEventListener('change', function () {
+            progressIndicator = document.getElementById('progress')
             totalNumberOfFiles = this.files.length;
+            numberOfFilesTreated = 0;
             fileList = []
             for (let index = 0; index < totalNumberOfFiles; index++) {
                 const file = this.files[index];
@@ -95,8 +145,9 @@
                         var duration = Math.round(buffer.duration * 1000);
                         var entry = { "file": file, "duration": duration, "selected": true }
                         fileList.push(entry)
-                        console.log(fileList)
-                        drawTable()
+                        numberOfFilesTreated++;
+                        progressIndicator.innerHTML = ((numberOfFilesTreated / totalNumberOfFiles) * 100).toFixed() + '%'
+                        sortByName()
                     });
                 };
                 reader.onerror = function (event) {
