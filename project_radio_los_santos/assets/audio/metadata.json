@@ -1,5 +1,5 @@
 {
-    "Adverts": [
+    "adverts": [
         {
             "file": "Adverts/San Andreas Telephone 1 (Orphan).ogg",
             "duration": 16434
@@ -277,635 +277,773 @@
             "duration": 85758
         }
     ],
-    "K-DST": {
-        "Atmosphere": {
-            ""
-        }
+    "k-dst": {
+        "atmosphere": {
+            "evening": [
+                {
+                    "file": "K-DST/(Atmosphere) Evening 1.ogg",
+                    "duration": 7686
+                },
+                {
+                    "file": "K-DST/(Atmosphere) Evening 2.ogg",
+                    "duration": 5850
+                }
+            ],
+            "fog": [
+                {
+                    "file": "K-DST/(Atmosphere) Fog 1.ogg",
+                    "duration": 8414
+                },
+                {
+                    "file": "K-DST/(Atmosphere) Fog 2.ogg",
+                    "duration": 7474
+                }
+            ],
+            "morning": [
+                {
+                    "file": "K-DST/(Atmosphere) Morning 1.ogg",
+                    "duration": 7772
+                },
+                {
+                    "file": "K-DST/(Atmosphere) Morning 2.ogg",
+                    "duration": 7542
+                }
+            ],
+            "night": [
+                {
+                    "file": "K-DST/(Atmosphere) Night 1.ogg",
+                    "duration": 9486
+                },
+                {
+                    "file": "K-DST/(Atmosphere) Night 2.ogg",
+                    "duration": 5282
+                }
+            ],
+            "rain": [
+                {
+                    "file": "K-DST/(Atmosphere) Rain 1.ogg",
+                    "duration": 8534
+                },
+                {
+                    "file": "K-DST/(Atmosphere) Rain 2.ogg",
+                    "duration": 6710
+                }
+            ],
+            "sunny": [
+                {
+                    "file": "K-DST/(Atmosphere) Sunny 1.ogg",
+                    "duration": 7000
+                },
+                {
+                    "file": "K-DST/(Atmosphere) Sunny 2.ogg",
+                    "duration": 8074
+                }
+            ]
+        },
+        "caller": [
+            {
+                "file": "K-DST/(Caller) Im in hell, right.ogg",
+                "duration": 31106
+            },
+            {
+                "file": "K-DST/(Caller) That band you were in.ogg",
+                "duration": 22802
+            },
+            {
+                "file": "K-DST/(Caller) Youre so lame.ogg",
+                "duration": 24454
+            }
+        ],
+        "dj": [
+            {
+                "file": "K-DST/(DJ) 1977...What a year!.ogg",
+                "duration": 8294
+            },
+            {
+                "file": "K-DST/(DJ) Get to the clinic.ogg",
+                "duration": 8686
+            },
+            {
+                "file": "K-DST/(DJ) I live the dream.ogg",
+                "duration": 9086
+            },
+            {
+                "file": "K-DST/(DJ) Keeping the spirit of rock alive.ogg",
+                "duration": 19918
+            },
+            {
+                "file": "K-DST/(DJ) Music may not be the food of love.ogg",
+                "duration": 5718
+            },
+            {
+                "file": "K-DST/(DJ) Rock n roll or classical.ogg",
+                "duration": 11442
+            },
+            {
+                "file": "K-DST/(DJ) Two kinds of people.ogg",
+                "duration": 6346
+            },
+            {
+                "file": "K-DST/(DJ) Werent the 70s great.ogg",
+                "duration": 16218
+            },
+            {
+                "file": "K-DST/(DJ) Whatever happened to Love Fist.ogg",
+                "duration": 7518
+            }
+        ],
+        "id": [
+            {
+                "file": "K-DST/(ID) Ashes to ashes, Dust to Dust.ogg",
+                "duration": 9474
+            },
+            {
+                "file": "K-DST/(ID) Gone to rehab.ogg",
+                "duration": 11318
+            },
+            {
+                "file": "K-DST/(ID) If the police cant stop you 1.ogg",
+                "duration": 8852
+            },
+            {
+                "file": "K-DST/(ID) If the police cant stop you 2.ogg",
+                "duration": 8866
+            },
+            {
+                "file": "K-DST/(ID) Ive got a word for you, homey -- Dust.ogg",
+                "duration": 9678
+            },
+            {
+                "file": "K-DST/(ID) K-DST -- The Dust.ogg",
+                "duration": 5986
+            },
+            {
+                "file": "K-DST/(ID) Music never gets old.ogg",
+                "duration": 8638
+            },
+            {
+                "file": "K-DST/(ID) Real rockers wear leather jackets.ogg",
+                "duration": 8874
+            },
+            {
+                "file": "K-DST/(ID) Songs about abusing drugs and women.ogg",
+                "duration": 13834
+            },
+            {
+                "file": "K-DST/(ID) The way it was meant to be enjoyed.ogg",
+                "duration": 6754
+            },
+            {
+                "file": "K-DST/(ID) Tommy The Nightmare Smith on the Dust.ogg",
+                "duration": 6262
+            }
+        ],
+        "songs": [
+            {
+                "name": "Horse with no name",
+                "intro": [
+                    {
+                        "file": "K-DST/A Horse with No Name (Intro DJ 1).ogg",
+                        "duration": 7564
+                    },
+                    {
+                        "file": "K-DST/A Horse with No Name (Intro DJ 2).ogg",
+                        "duration": 7564
+                    },
+                    {
+                        "file": "K-DST/A Horse with No Name (Intro).ogg",
+                        "duration": 7564
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/A Horse with No Name (Mid).ogg",
+                        "duration": 188736
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/A Horse with No Name (Outro DJ 1).ogg",
+                        "duration": 11462
+                    },
+                    {
+                        "file": "K-DST/A Horse with No Name (Outro DJ 2).ogg",
+                        "duration": 11462
+                    },
+                    {
+                        "file": "K-DST/A Horse with No Name (Outro).ogg",
+                        "duration": 11462
+                    }
+                ]
+            },
+            {
+                "name": "Barracuda",
+                "intro": [
+                    {
+                        "file": "K-DST/Barracuda (Intro DJ 1).ogg",
+                        "duration": 14068
+                    },
+                    {
+                        "file": "K-DST/Barracuda (Intro DJ 2).ogg",
+                        "duration": 14068
+                    },
+                    {
+                        "file": "K-DST/Barracuda (Intro).ogg",
+                        "duration": 14068
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Barracuda (Mid).ogg",
+                        "duration": 157572
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Barracuda (Outro DJ 1).ogg",
+                        "duration": 22382
+                    },
+                    {
+                        "file": "K-DST/Barracuda (Outro DJ 2).ogg",
+                        "duration": 22386
+                    },
+                    {
+                        "file": "K-DST/Barracuda (Outro).ogg",
+                        "duration": 22382
+                    }
+                ]
+            },
+            {
+                "name": "Eminence Front",
+                "intro": [
+                    {
+                        "file": "K-DST/Eminence Front (Intro DJ 1).ogg",
+                        "duration": 17164
+                    },
+                    {
+                        "file": "K-DST/Eminence Front (Intro DJ 2).ogg",
+                        "duration": 17164
+                    },
+                    {
+                        "file": "K-DST/Eminence Front (Intro).ogg",
+                        "duration": 17164
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Eminence Front (Mid).ogg",
+                        "duration": 219560
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Eminence Front (Outro DJ 1).ogg",
+                        "duration": 18846
+                    },
+                    {
+                        "file": "K-DST/Eminence Front (Outro DJ 2).ogg",
+                        "duration": 18846
+                    },
+                    {
+                        "file": "K-DST/Eminence Front (Outro).ogg",
+                        "duration": 18846
+                    }
+                ]
+            },
+            {
+                "name": "Free Bird",
+                "intro": [
+                    {
+                        "file": "K-DST/Free Bird (Intro DJ 1).ogg",
+                        "duration": 18068
+                    },
+                    {
+                        "file": "K-DST/Free Bird (Intro DJ 2).ogg",
+                        "duration": 18068
+                    },
+                    {
+                        "file": "K-DST/Free Bird (Intro).ogg",
+                        "duration": 18068
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Free Bird (Mid).ogg",
+                        "duration": 313584
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Free Bird (Outro DJ 1).ogg",
+                        "duration": 14590
+                    },
+                    {
+                        "file": "K-DST/Free Bird (Outro DJ 2).ogg",
+                        "duration": 14590
+                    },
+                    {
+                        "file": "K-DST/Free Bird (Outro).ogg",
+                        "duration": 14590
+                    }
+                ]
+            },
+            {
+                "name": "Get Down to It",
+                "intro": [
+                    {
+                        "file": "K-DST/Get Down to It (Intro DJ 1).ogg",
+                        "duration": 26432
+                    },
+                    {
+                        "file": "K-DST/Get Down to It (Intro DJ 2).ogg",
+                        "duration": 26432
+                    },
+                    {
+                        "file": "K-DST/Get Down to It (Intro).ogg",
+                        "duration": 26432
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Get Down to It (Mid).ogg",
+                        "duration": 147552
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Get Down to It (Outro DJ 1).ogg",
+                        "duration": 13734
+                    },
+                    {
+                        "file": "K-DST/Get Down to It (Outro DJ 2).ogg",
+                        "duration": 13734
+                    },
+                    {
+                        "file": "K-DST/Get Down to It (Outro).ogg",
+                        "duration": 13734
+                    }
+                ]
+            },
+            {
+                "name": "Green River",
+                "intro": [
+                    {
+                        "file": "K-DST/Green River (Intro DJ 1).ogg",
+                        "duration": 14096
+                    },
+                    {
+                        "file": "K-DST/Green River (Intro DJ 2).ogg",
+                        "duration": 14096
+                    },
+                    {
+                        "file": "K-DST/Green River (Intro).ogg",
+                        "duration": 14096
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Green River (Mid).ogg",
+                        "duration": 109152
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Green River (Outro DJ 1).ogg",
+                        "duration": 13302
+                    },
+                    {
+                        "file": "K-DST/Green River (Outro).ogg",
+                        "duration": 13302
+                    }
+                ]
+            },
+            {
+                "name": "Hold the Line",
+                "intro": [
+                    {
+                        "file": "K-DST/Hold the Line (Intro).ogg",
+                        "duration": 10152
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Hold the Line (Mid).ogg",
+                        "duration": 182108
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Hold the Line (Outro).ogg",
+                        "duration": 17342
+                    }
+                ]
+            },
+            {
+                "name": "Running Down a Dream",
+                "intro": [
+                    {
+                        "file": "K-DST/Running Down a Dream (Intro DJ 1).ogg",
+                        "duration": 13192
+                    },
+                    {
+                        "file": "K-DST/Running Down a Dream (Intro DJ 2).ogg",
+                        "duration": 13192
+                    },
+                    {
+                        "file": "K-DST/Running Down a Dream (Intro).ogg",
+                        "duration": 13192
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Running Down a Dream (Mid).ogg",
+                        "duration": 233244
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Running Down a Dream (Outro DJ 1).ogg",
+                        "duration": 11802
+                    },
+                    {
+                        "file": "K-DST/Running Down a Dream (Outro DJ 2).ogg",
+                        "duration": 11802
+                    },
+                    {
+                        "file": "K-DST/Running Down a Dream (Outro).ogg",
+                        "duration": 11802
+                    }
+                ]
+            },
+            {
+                "name": "Slow Ride",
+                "intro": [
+                    {
+                        "file": "K-DST/Slow Ride (Intro DJ 1).ogg",
+                        "duration": 15876
+                    },
+                    {
+                        "file": "K-DST/Slow Ride (Intro DJ 2).ogg",
+                        "duration": 15876
+                    },
+                    {
+                        "file": "K-DST/Slow Ride (Intro).ogg",
+                        "duration": 15876
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Slow Ride (Mid).ogg",
+                        "duration": 160652
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Slow Ride (Outro DJ 1).ogg",
+                        "duration": 13574
+                    },
+                    {
+                        "file": "K-DST/Slow Ride (Outro DJ 2).ogg",
+                        "duration": 13574
+                    },
+                    {
+                        "file": "K-DST/Slow Ride (Outro).ogg",
+                        "duration": 13574
+                    }
+                ]
+            },
+            {
+                "name": "Smokin",
+                "intro": [
+                    {
+                        "file": "K-DST/Smokin (Intro DJ 1).ogg",
+                        "duration": 11296
+                    },
+                    {
+                        "file": "K-DST/Smokin (Intro DJ 2).ogg",
+                        "duration": 11296
+                    },
+                    {
+                        "file": "K-DST/Smokin (Intro).ogg",
+                        "duration": 11296
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Smokin (Mid).ogg",
+                        "duration": 183740
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Smokin (Outro DJ 1).ogg",
+                        "duration": 11734
+                    },
+                    {
+                        "file": "K-DST/Smokin (Outro DJ 2).ogg",
+                        "duration": 11734
+                    },
+                    {
+                        "file": "K-DST/Smokin (Outro).ogg",
+                        "duration": 11734
+                    }
+                ]
+            },
+            {
+                "name": "Some Kind of Wonderful",
+                "intro": [
+                    {
+                        "file": "K-DST/Some Kind of Wonderful (Intro DJ 1).ogg",
+                        "duration": 8448
+                    },
+                    {
+                        "file": "K-DST/Some Kind of Wonderful (Intro DJ 2).ogg",
+                        "duration": 8448
+                    },
+                    {
+                        "file": "K-DST/Some Kind of Wonderful (Intro).ogg",
+                        "duration": 8448
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Some Kind of Wonderful (Mid).ogg",
+                        "duration": 165492
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Some Kind of Wonderful (Outro DJ 1).ogg",
+                        "duration": 13102
+                    },
+                    {
+                        "file": "K-DST/Some Kind of Wonderful (Outro DJ 2).ogg",
+                        "duration": 13102
+                    },
+                    {
+                        "file": "K-DST/Some Kind of Wonderful (Outro).ogg",
+                        "duration": 13102
+                    }
+                ]
+            },
+            {
+                "name": "Somebody Up There Likes Me",
+                "intro": [
+                    {
+                        "file": "K-DST/Somebody Up There Likes Me (Intro DJ 1).ogg",
+                        "duration": 12224
+                    },
+                    {
+                        "file": "K-DST/Somebody Up There Likes Me (Intro DJ 2).ogg",
+                        "duration": 12224
+                    },
+                    {
+                        "file": "K-DST/Somebody Up There Likes Me (Intro).ogg",
+                        "duration": 12224
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Somebody Up There Likes Me (Mid).ogg",
+                        "duration": 199156
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Somebody Up There Likes Me (Outro DJ 1).ogg",
+                        "duration": 25622
+                    },
+                    {
+                        "file": "K-DST/Somebody Up There Likes Me (Outro).ogg",
+                        "duration": 25622
+                    }
+                ]
+            },
+            {
+                "name": "Strutter",
+                "intro": [
+                    {
+                        "file": "K-DST/Strutter (Intro DJ 1).ogg",
+                        "duration": 18344
+                    },
+                    {
+                        "file": "K-DST/Strutter (Intro DJ 2).ogg",
+                        "duration": 18344
+                    },
+                    {
+                        "file": "K-DST/Strutter (Intro).ogg",
+                        "duration": 18344
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Strutter (Mid).ogg",
+                        "duration": 157068
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Strutter (Outro DJ 1).ogg",
+                        "duration": 13686
+                    },
+                    {
+                        "file": "K-DST/Strutter (Outro DJ 2).ogg",
+                        "duration": 13686
+                    },
+                    {
+                        "file": "K-DST/Strutter (Outro).ogg",
+                        "duration": 13686
+                    }
+                ]
+            },
+            {
+                "name": "Two Tickets to Paradise",
+                "intro": [
+                    {
+                        "file": "K-DST/Two Tickets to Paradise (Intro DJ 1).ogg",
+                        "duration": 16908
+                    },
+                    {
+                        "file": "K-DST/Two Tickets to Paradise (Intro DJ 2).ogg",
+                        "duration": 16908
+                    },
+                    {
+                        "file": "K-DST/Two Tickets to Paradise (Intro).ogg",
+                        "duration": 16908
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Two Tickets to Paradise (Mid).ogg",
+                        "duration": 175992
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Two Tickets to Paradise (Outro DJ 1).ogg",
+                        "duration": 18918
+                    },
+                    {
+                        "file": "K-DST/Two Tickets to Paradise (Outro DJ 2).ogg",
+                        "duration": 18918
+                    },
+                    {
+                        "file": "K-DST/Two Tickets to Paradise (Outro).ogg",
+                        "duration": 18918
+                    }
+                ]
+            },
+            {
+                "name": "White Wedding",
+                "intro": [
+                    {
+                        "file": "K-DST/White Wedding (Intro DJ 1).ogg",
+                        "duration": 7064
+                    },
+                    {
+                        "file": "K-DST/White Wedding (Intro DJ 2).ogg",
+                        "duration": 7064
+                    },
+                    {
+                        "file": "K-DST/White Wedding (Intro).ogg",
+                        "duration": 7064
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/White Wedding (Mid).ogg",
+                        "duration": 191500
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/White Wedding (Outro DJ 1).ogg",
+                        "duration": 22218
+                    },
+                    {
+                        "file": "K-DST/White Wedding (Outro DJ 2).ogg",
+                        "duration": 22218
+                    },
+                    {
+                        "file": "K-DST/White Wedding (Outro).ogg",
+                        "duration": 22218
+                    }
+                ]
+            },
+            {
+                "name": "Woman to Woman",
+                "intro": [
+                    {
+                        "file": "K-DST/Woman to Woman (Intro DJ 1).ogg",
+                        "duration": 11220
+                    },
+                    {
+                        "file": "K-DST/Woman to Woman (Intro DJ 2).ogg",
+                        "duration": 11220
+                    },
+                    {
+                        "file": "K-DST/Woman to Woman (Intro).ogg",
+                        "duration": 11220
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Woman to Woman (Mid).ogg",
+                        "duration": 183312
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Woman to Woman (Outro DJ 1).ogg",
+                        "duration": 26226
+                    },
+                    {
+                        "file": "K-DST/Woman to Woman (Outro DJ 2).ogg",
+                        "duration": 26226
+                    },
+                    {
+                        "file": "K-DST/Woman to Woman (Outro).ogg",
+                        "duration": 26226
+                    }
+                ]
+            },
+            {
+                "name": "",
+                "intro": [
+                    {
+                        "file": "K-DST/Young Turks (Intro DJ 1).ogg",
+                        "duration": 19172
+                    },
+                    {
+                        "file": "K-DST/Young Turks (Intro DJ 2).ogg",
+                        "duration": 19172
+                    },
+                    {
+                        "file": "K-DST/Young Turks (Intro).ogg",
+                        "duration": 19172
+                    }
+                ],
+                "mid": [
+                    {
+                        "file": "K-DST/Young Turks (Mid).ogg",
+                        "duration": 204260
+                    }
+                ],
+                "outro": [
+                    {
+                        "file": "K-DST/Young Turks (Outro DJ 1).ogg",
+                        "duration": 20930
+                    },
+                    {
+                        "file": "K-DST/Young Turks (Outro DJ 2).ogg",
+                        "duration": 20930
+                    },
+                    {
+                        "file": "K-DST/Young Turks (Outro).ogg",
+                        "duration": 20930
+                    }
+                ]
+            }
+        ]
     }
-    [
-        {
-            "file": "K-DST/(Atmosphere) Night 2.ogg",
-            "duration": 5282
-        },
-        {
-            "file": "K-DST/(Atmosphere) Night 3.ogg",
-            "duration": 5350
-        },
-        {
-            "file": "K-DST/(Atmosphere) Morning 3.ogg",
-            "duration": 5694
-        },
-        {
-            "file": "K-DST/(DJ) Music may not be the food of love.ogg",
-            "duration": 5718
-        },
-        {
-            "file": "K-DST/(Atmosphere) Evening 2.ogg",
-            "duration": 5850
-        },
-        {
-            "file": "K-DST/(ID) K-DST -- The Dust.ogg",
-            "duration": 5986
-        },
-        {
-            "file": "K-DST/(ID) Tommy The Nightmare Smith on the Dust.ogg",
-            "duration": 6262
-        },
-        {
-            "file": "K-DST/(DJ) Two kinds of people.ogg",
-            "duration": 6346
-        },
-        {
-            "file": "K-DST/(Atmosphere) Rain 2.ogg",
-            "duration": 6710
-        },
-        {
-            "file": "K-DST/(Story) Weed Farm Burned Down.ogg",
-            "duration": 6714
-        },
-        {
-            "file": "K-DST/(ID) The way it was meant to be enjoyed.ogg",
-            "duration": 6754
-        },
-        {
-            "file": "K-DST/(Atmosphere) Sunny 1.ogg",
-            "duration": 7000
-        },
-        {
-            "file": "K-DST/White Wedding (Intro DJ 2).ogg",
-            "duration": 7064
-        },
-        {
-            "file": "K-DST/White Wedding (Intro DJ 1).ogg",
-            "duration": 7064
-        },
-        {
-            "file": "K-DST/White Wedding (Intro).ogg",
-            "duration": 7064
-        },
-        {
-            "file": "K-DST/(Atmosphere) Fog 2.ogg",
-            "duration": 7474
-        },
-        {
-            "file": "K-DST/(DJ) Whatever happened to Love Fist.ogg",
-            "duration": 7518
-        },
-        {
-            "file": "K-DST/(Atmosphere) Morning 2.ogg",
-            "duration": 7542
-        },
-        {
-            "file": "K-DST/A Horse with No Name (Intro DJ 1).ogg",
-            "duration": 7564
-        },
-        {
-            "file": "K-DST/A Horse with No Name (Intro DJ 2).ogg",
-            "duration": 7564
-        },
-        {
-            "file": "K-DST/A Horse with No Name (Intro).ogg",
-            "duration": 7564
-        },
-        {
-            "file": "K-DST/(Atmosphere) Evening 1.ogg",
-            "duration": 7686
-        },
-        {
-            "file": "K-DST/(Atmosphere) Morning 1.ogg",
-            "duration": 7772
-        },
-        {
-            "file": "K-DST/(Atmosphere) Sunny 2.ogg",
-            "duration": 8074
-        },
-        {
-            "file": "K-DST/(DJ) 1977...What a year!.ogg",
-            "duration": 8294
-        },
-        {
-            "file": "K-DST/(Atmosphere) Fog 1.ogg",
-            "duration": 8414
-        },
-        {
-            "file": "K-DST/Some Kind of Wonderful (Intro DJ 2).ogg",
-            "duration": 8448
-        },
-        {
-            "file": "K-DST/Some Kind of Wonderful (Intro).ogg",
-            "duration": 8448
-        },
-        {
-            "file": "K-DST/Some Kind of Wonderful (Intro DJ 1).ogg",
-            "duration": 8448
-        },
-        {
-            "file": "K-DST/(Atmosphere) Rain 1.ogg",
-            "duration": 8534
-        },
-        {
-            "file": "K-DST/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
-            "duration": 8534
-        },
-        {
-            "file": "K-DST/(ID) Music never gets old.ogg",
-            "duration": 8638
-        },
-        {
-            "file": "K-DST/(DJ) Get to the clinic.ogg",
-            "duration": 8686
-        },
-        {
-            "file": "K-DST/(Bridge Announce 1) Can access LS only.ogg",
-            "duration": 8698
-        },
-        {
-            "file": "K-DST/(ID) If the police cant stop you 1.ogg",
-            "duration": 8852
-        },
-        {
-            "file": "K-DST/(ID) If the police cant stop you 2.ogg",
-            "duration": 8866
-        },
-        {
-            "file": "K-DST/(ID) Real rockers wear leather jackets.ogg",
-            "duration": 8874
-        },
-        {
-            "file": "K-DST/(Story) Prosecutor Busted for Weed.ogg",
-            "duration": 9038
-        },
-        {
-            "file": "K-DST/(DJ) I live the dream.ogg",
-            "duration": 9086
-        },
-        {
-            "file": "K-DST/(ID) Ashes to ashes, Dust to Dust.ogg",
-            "duration": 9474
-        },
-        {
-            "file": "K-DST/(Atmosphere) Night 1.ogg",
-            "duration": 9486
-        },
-        {
-            "file": "K-DST/(ID) Ive got a word for you, homey -- Dust.ogg",
-            "duration": 9678
-        },
-        {
-            "file": "K-DST/Hold the Line (Intro).ogg",
-            "duration": 10152
-        },
-        {
-            "file": "K-DST/Woman to Woman (Intro DJ 2).ogg",
-            "duration": 11220
-        },
-        {
-            "file": "K-DST/Woman to Woman (Intro DJ 1).ogg",
-            "duration": 11220
-        },
-        {
-            "file": "K-DST/Woman to Woman (Intro).ogg",
-            "duration": 11220
-        },
-        {
-            "file": "K-DST/Smokin (Intro DJ 2).ogg",
-            "duration": 11296
-        },
-        {
-            "file": "K-DST/Smokin (Intro DJ 1).ogg",
-            "duration": 11296
-        },
-        {
-            "file": "K-DST/Smokin (Intro).ogg",
-            "duration": 11296
-        },
-        {
-            "file": "K-DST/(ID) Gone to rehab.ogg",
-            "duration": 11318
-        },
-        {
-            "file": "K-DST/(DJ) Rock n roll or classical.ogg",
-            "duration": 11442
-        },
-        {
-            "file": "K-DST/A Horse with No Name (Outro DJ 2).ogg",
-            "duration": 11462
-        },
-        {
-            "file": "K-DST/A Horse with No Name (Outro DJ 1).ogg",
-            "duration": 11462
-        },
-        {
-            "file": "K-DST/A Horse with No Name (Outro).ogg",
-            "duration": 11462
-        },
-        {
-            "file": "K-DST/(Story) Lights in Desert.ogg",
-            "duration": 11602
-        },
-        {
-            "file": "K-DST/Smokin (Outro DJ 1).ogg",
-            "duration": 11734
-        },
-        {
-            "file": "K-DST/Smokin (Outro).ogg",
-            "duration": 11734
-        },
-        {
-            "file": "K-DST/Smokin (Outro DJ 2).ogg",
-            "duration": 11734
-        },
-        {
-            "file": "K-DST/Running Down a Dream (Outro DJ 1).ogg",
-            "duration": 11802
-        },
-        {
-            "file": "K-DST/Running Down a Dream (Outro DJ 2).ogg",
-            "duration": 11802
-        },
-        {
-            "file": "K-DST/Running Down a Dream (Outro).ogg",
-            "duration": 11802
-        },
-        {
-            "file": "K-DST/Somebody Up There Likes Me (Intro DJ 1).ogg",
-            "duration": 12224
-        },
-        {
-            "file": "K-DST/Somebody Up There Likes Me (Intro).ogg",
-            "duration": 12224
-        },
-        {
-            "file": "K-DST/Somebody Up There Likes Me (Intro DJ 2).ogg",
-            "duration": 12224
-        },
-        {
-            "file": "K-DST/Some Kind of Wonderful (Outro DJ 1).ogg",
-            "duration": 13102
-        },
-        {
-            "file": "K-DST/Some Kind of Wonderful (Outro DJ 2).ogg",
-            "duration": 13102
-        },
-        {
-            "file": "K-DST/Some Kind of Wonderful (Outro).ogg",
-            "duration": 13102
-        },
-        {
-            "file": "K-DST/Running Down a Dream (Intro).ogg",
-            "duration": 13192
-        },
-        {
-            "file": "K-DST/Running Down a Dream (Intro DJ 2).ogg",
-            "duration": 13192
-        },
-        {
-            "file": "K-DST/Running Down a Dream (Intro DJ 1).ogg",
-            "duration": 13192
-        },
-        {
-            "file": "K-DST/Green River (Outro DJ 1).ogg",
-            "duration": 13302
-        },
-        {
-            "file": "K-DST/Green River (Outro).ogg",
-            "duration": 13302
-        },
-        {
-            "file": "K-DST/(Bridge Announce 2) Can access LS and SF.ogg",
-            "duration": 13398
-        },
-        {
-            "file": "K-DST/Slow Ride (Outro DJ 2).ogg",
-            "duration": 13574
-        },
-        {
-            "file": "K-DST/Slow Ride (Outro DJ 1).ogg",
-            "duration": 13574
-        },
-        {
-            "file": "K-DST/Slow Ride (Outro).ogg",
-            "duration": 13574
-        },
-        {
-            "file": "K-DST/Strutter (Outro DJ 2).ogg",
-            "duration": 13686
-        },
-        {
-            "file": "K-DST/Strutter (Outro DJ 1).ogg",
-            "duration": 13686
-        },
-        {
-            "file": "K-DST/Strutter (Outro).ogg",
-            "duration": 13686
-        },
-        {
-            "file": "K-DST/Get Down to It (Outro DJ 2).ogg",
-            "duration": 13734
-        },
-        {
-            "file": "K-DST/Get Down to It (Outro DJ 1).ogg",
-            "duration": 13734
-        },
-        {
-            "file": "K-DST/Get Down to It (Outro).ogg",
-            "duration": 13734
-        },
-        {
-            "file": "K-DST/(ID) Songs about abusing drugs and women.ogg",
-            "duration": 13834
-        },
-        {
-            "file": "K-DST/Barracuda (Intro DJ 1).ogg",
-            "duration": 14068
-        },
-        {
-            "file": "K-DST/Barracuda (Intro).ogg",
-            "duration": 14068
-        },
-        {
-            "file": "K-DST/Barracuda (Intro DJ 2).ogg",
-            "duration": 14068
-        },
-        {
-            "file": "K-DST/Green River (Intro DJ 2).ogg",
-            "duration": 14096
-        },
-        {
-            "file": "K-DST/Green River (Intro DJ 1).ogg",
-            "duration": 14096
-        },
-        {
-            "file": "K-DST/Green River (Intro).ogg",
-            "duration": 14096
-        },
-        {
-            "file": "K-DST/Free Bird (Outro DJ 2).ogg",
-            "duration": 14590
-        },
-        {
-            "file": "K-DST/Free Bird (Outro DJ 1).ogg",
-            "duration": 14590
-        },
-        {
-            "file": "K-DST/Free Bird (Outro).ogg",
-            "duration": 14590
-        },
-        {
-            "file": "K-DST/Slow Ride (Intro DJ 1).ogg",
-            "duration": 15876
-        },
-        {
-            "file": "K-DST/Slow Ride (Intro).ogg",
-            "duration": 15876
-        },
-        {
-            "file": "K-DST/Slow Ride (Intro DJ 2).ogg",
-            "duration": 15876
-        },
-        {
-            "file": "K-DST/(DJ) Werent the 70s great.ogg",
-            "duration": 16218
-        },
-        {
-            "file": "K-DST/Two Tickets to Paradise (Intro DJ 2).ogg",
-            "duration": 16908
-        },
-        {
-            "file": "K-DST/Two Tickets to Paradise (Intro DJ 1).ogg",
-            "duration": 16908
-        },
-        {
-            "file": "K-DST/Two Tickets to Paradise (Intro).ogg",
-            "duration": 16908
-        },
-        {
-            "file": "K-DST/Eminence Front (Intro DJ 1).ogg",
-            "duration": 17164
-        },
-        {
-            "file": "K-DST/Eminence Front (Intro).ogg",
-            "duration": 17164
-        },
-        {
-            "file": "K-DST/Eminence Front (Intro DJ 2).ogg",
-            "duration": 17164
-        },
-        {
-            "file": "K-DST/Hold the Line (Outro).ogg",
-            "duration": 17342
-        },
-        {
-            "file": "K-DST/Free Bird (Intro DJ 1).ogg",
-            "duration": 18068
-        },
-        {
-            "file": "K-DST/Free Bird (Intro DJ 2).ogg",
-            "duration": 18068
-        },
-        {
-            "file": "K-DST/Free Bird (Intro).ogg",
-            "duration": 18068
-        },
-        {
-            "file": "K-DST/Strutter (Intro DJ 1).ogg",
-            "duration": 18344
-        },
-        {
-            "file": "K-DST/Strutter (Intro).ogg",
-            "duration": 18344
-        },
-        {
-            "file": "K-DST/Strutter (Intro DJ 2).ogg",
-            "duration": 18344
-        },
-        {
-            "file": "K-DST/Eminence Front (Outro DJ 1).ogg",
-            "duration": 18846
-        },
-        {
-            "file": "K-DST/Eminence Front (Outro DJ 2).ogg",
-            "duration": 18846
-        },
-        {
-            "file": "K-DST/Eminence Front (Outro).ogg",
-            "duration": 18846
-        },
-        {
-            "file": "K-DST/Two Tickets to Paradise (Outro DJ 1).ogg",
-            "duration": 18918
-        },
-        {
-            "file": "K-DST/Two Tickets to Paradise (Outro DJ 2).ogg",
-            "duration": 18918
-        },
-        {
-            "file": "K-DST/Two Tickets to Paradise (Outro).ogg",
-            "duration": 18918
-        },
-        {
-            "file": "K-DST/Young Turks (Intro DJ 2).ogg",
-            "duration": 19172
-        },
-        {
-            "file": "K-DST/Young Turks (Intro).ogg",
-            "duration": 19172
-        },
-        {
-            "file": "K-DST/Young Turks (Intro DJ 1).ogg",
-            "duration": 19172
-        },
-        {
-            "file": "K-DST/(DJ) Keeping the spirit of rock alive.ogg",
-            "duration": 19918
-        },
-        {
-            "file": "K-DST/Young Turks (Outro).ogg",
-            "duration": 20930
-        },
-        {
-            "file": "K-DST/Young Turks (Outro DJ 2).ogg",
-            "duration": 20930
-        },
-        {
-            "file": "K-DST/Young Turks (Outro DJ 1).ogg",
-            "duration": 20930
-        },
-        {
-            "file": "K-DST/White Wedding (Outro DJ 1).ogg",
-            "duration": 22218
-        },
-        {
-            "file": "K-DST/White Wedding (Outro DJ 2).ogg",
-            "duration": 22218
-        },
-        {
-            "file": "K-DST/White Wedding (Outro).ogg",
-            "duration": 22218
-        },
-        {
-            "file": "K-DST/Barracuda (Outro).ogg",
-            "duration": 22382
-        },
-        {
-            "file": "K-DST/Barracuda (Outro DJ 1).ogg",
-            "duration": 22382
-        },
-        {
-            "file": "K-DST/Barracuda (Outro DJ 2).ogg",
-            "duration": 22386
-        },
-        {
-            "file": "K-DST/(Caller) That band you were in.ogg",
-            "duration": 22802
-        },
-        {
-            "file": "K-DST/(Caller) Youre so lame.ogg",
-            "duration": 24454
-        },
-        {
-            "file": "K-DST/Somebody Up There Likes Me (Outro).ogg",
-            "duration": 25622
-        },
-        {
-            "file": "K-DST/Somebody Up There Likes Me (Outro DJ 1).ogg",
-            "duration": 25622
-        },
-        {
-            "file": "K-DST/Woman to Woman (Outro DJ 2).ogg",
-            "duration": 26226
-        },
-        {
-            "file": "K-DST/Woman to Woman (Outro).ogg",
-            "duration": 26226
-        },
-        {
-            "file": "K-DST/Woman to Woman (Outro DJ 1).ogg",
-            "duration": 26226
-        },
-        {
-            "file": "K-DST/Get Down to It (Intro DJ 1).ogg",
-            "duration": 26432
-        },
-        {
-            "file": "K-DST/Get Down to It (Intro).ogg",
-            "duration": 26432
-        },
-        {
-            "file": "K-DST/Get Down to It (Intro DJ 2).ogg",
-            "duration": 26432
-        },
-        {
-            "file": "K-DST/(Caller) Im in hell, right.ogg",
-            "duration": 31106
-        },
-        {
-            "file": "K-DST/Green River (Mid).ogg",
-            "duration": 109152
-        },
-        {
-            "file": "K-DST/Get Down to It (Mid).ogg",
-            "duration": 147552
-        },
-        {
-            "file": "K-DST/Strutter (Mid).ogg",
-            "duration": 157068
-        },
-        {
-            "file": "K-DST/Barracuda (Mid).ogg",
-            "duration": 157572
-        },
-        {
-            "file": "K-DST/Slow Ride (Mid).ogg",
-            "duration": 160652
-        },
-        {
-            "file": "K-DST/Some Kind of Wonderful (Mid).ogg",
-            "duration": 165492
-        },
-        {
-            "file": "K-DST/Two Tickets to Paradise (Mid).ogg",
-            "duration": 175992
-        },
-        {
-            "file": "K-DST/Hold the Line (Mid).ogg",
-            "duration": 182108
-        },
-        {
-            "file": "K-DST/Woman to Woman (Mid).ogg",
-            "duration": 183312
-        },
-        {
-            "file": "K-DST/Smokin (Mid).ogg",
-            "duration": 183740
-        },
-        {
-            "file": "K-DST/A Horse with No Name (Mid).ogg",
-            "duration": 188736
-        },
-        {
-            "file": "K-DST/White Wedding (Mid).ogg",
-            "duration": 191500
-        },
-        {
-            "file": "K-DST/Somebody Up There Likes Me (Mid).ogg",
-            "duration": 199156
-        },
-        {
-            "file": "K-DST/Young Turks (Mid).ogg",
-            "duration": 204260
-        },
-        {
-            "file": "K-DST/Eminence Front (Mid).ogg",
-            "duration": 219560
-        },
-        {
-            "file": "K-DST/Running Down a Dream (Mid).ogg",
-            "duration": 233244
-        },
-        {
-            "file": "K-DST/Free Bird (Mid).ogg",
-            "duration": 313584
-        }
-    ]
 }

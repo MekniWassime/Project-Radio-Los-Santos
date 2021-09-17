@@ -4,7 +4,7 @@
 </head>
 
 <body>
-    <input type="file" id="fileinput" multiple /><span id='progress'></span>
+    <input type="file" id="fileinput" webkitdirectory directory multiple /><span id='progress'></span>
     <table id="filedisplay" class="table"></table>
     <br>
     <br>
@@ -16,12 +16,43 @@
         <button onclick="sortByDuration()">sort by duration</button>
         <button onclick="selectAll()">select all</button>
         <button onclick="deselectAll()">deselect all</button>
+        <button onclick="deleteSelected()">delete selected</button>
+        <button onclick="generateJsonAndCopyToClipboard()">Generate json array and copy</button>
         <br>
         <input type="number" id="input-milliseconds" oninput='updateConverted()'>
         <span id="converted"></span>
+        <input type="hidden" id="json-string">
     </div>
     <script>
         var fileList = []
+
+        function generateJsonAndCopyToClipboard() {
+            var result = []
+            fileList.forEach(entry => {
+                if (entry.selected)
+                    result.push({ "file": entry.file.webkitRelativePath, "duration": entry.duration })
+            });
+            var jsonString = JSON.stringify(result)
+            var hiddenInput = document.getElementById("json-string")
+            hiddenInput.type = "text"
+            hiddenInput.value = jsonString
+            hiddenInput.select()
+            navigator.clipboard.writeText(hiddenInput.value).then(function () {
+                hiddenInput.type = "hidden"
+                alert("json string copied to clipboard");
+            });
+        }
+
+        function deleteSelected() {
+            for (let index = 0; index < fileList.length; index++) {
+                const entry = fileList[index];
+                if (entry.selected) {
+                    fileList.splice(index, 1)
+                    index--
+                }
+                drawTable()
+            }
+        }
 
         function updateConverted() {
             var input = document.getElementById("input-milliseconds")
@@ -95,7 +126,6 @@
                 var td2 = document.createElement('td');
                 var td3 = document.createElement('td');
                 var td4 = document.createElement('td');
-
 
                 var fileNameElement = document.createTextNode(entry.file.name);
                 var durationElement = document.createTextNode(entry.duration + " " + humanReadableDuration(entry.duration));
