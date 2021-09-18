@@ -1,7 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:project_radio_los_santos/Screens/player_screen.dart';
+import 'package:project_radio_los_santos/SplashScreen.dart';
 
 void main() {
+  runApp(const SplashScreen(initDoneCallback: mainApp));
+}
+
+void mainApp() {
   runApp(const MyApp());
 }
 
@@ -11,7 +16,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Radio Los Santos',
       theme: ThemeData(
         primarySwatch: Colors.blue,
       ),
