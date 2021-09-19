@@ -1,4 +1,3 @@
-import 'package:flutter/foundation.dart';
 import 'package:project_radio_los_santos/Services/PathService.dart';
 
 class AudioFile {
@@ -11,5 +10,10 @@ class AudioFile {
     return AudioFile(
         path: PathService.appendAssetFolder(json['file']),
         duration: json['duration']);
+  }
+
+  @override
+  String toString() {
+    return "[$path, $duration]";
   }
 }

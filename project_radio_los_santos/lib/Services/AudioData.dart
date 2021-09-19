@@ -1,5 +1,6 @@
 import 'dart:convert';
 
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/services.dart';
 import 'package:project_radio_los_santos/Models/AudioFile.dart';
 import 'package:project_radio_los_santos/Models/RadioStation.dart';
@@ -23,9 +24,9 @@ class AudioData {
     int medianOfAdverts = adverts.length ~/ 2;
     shortAdverts = adverts.sublist(0, medianOfAdverts);
     longAdverts = adverts.sublist(medianOfAdverts);
-    print("*\n**\n***\nLoaded Radio Stations :");
+    debugPrint("*\n**\n***\nLoaded Radio Stations :");
     for (var item in radioStations) {
-      print(item.toString());
+      debugPrint(item.toString());
     }
   }
 }

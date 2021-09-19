@@ -1,8 +1,6 @@
 import 'dart:math';
 
 import 'package:flutter/material.dart';
-import 'package:just_audio/just_audio.dart';
-import 'package:project_radio_los_santos/Models/PlayableSong.dart';
 import 'package:project_radio_los_santos/Models/Sequence.dart';
 import 'package:project_radio_los_santos/Services/AudioData.dart';
 
@@ -16,7 +14,8 @@ class PlayerScreen extends StatefulWidget {
 class _PlayerScreenState extends State<PlayerScreen> {
   //late AudioPlayer player;
   //bool loading = true;
-  Sequence sequence = Sequence(AudioData.radioStations[0]);
+  Sequence sequence =
+      Sequence.buildCurrent(radioStation: AudioData.radioStations[0]);
   @override
   void initState() {
     init();
@@ -43,24 +42,25 @@ class _PlayerScreenState extends State<PlayerScreen> {
             children: [
               ElevatedButton(
                   onPressed: () {
-                    debugPrint(sequence.toString());
+                    var file = sequence.currentFileWithPointer;
+                    debugPrint(
+                        "${file.path} pointer=${Duration(milliseconds: file.pointer)} duration=${Duration(milliseconds: file.duration)}");
                   },
-                  child: Text("print sequence")),
+                  child: const Text("generate sequencen")),
               ListView.builder(
+                physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
                 itemBuilder: (context, index) {
-                  Color color;
-                  if (sequence.playabelSequence[index] is PlayableSong)
-                    color = Colors.red;
-                  else
-                    color = Colors.black;
                   return Container(
-                      height: sequence.playabelSequence[index].duration / 1000 +
-                          0.0,
-                      color: color
-                          .withOpacity(0.25 + Random().nextDouble() * 0.75));
+                    height: sequence.sequence[index].duration / 500 + 0.0,
+                    color: Colors.red
+                        .withOpacity(0.25 + Random().nextDouble() * 0.75),
+                    child: FittedBox(
+                      child: Text(sequence.sequence[index].path),
+                    ),
+                  );
                 },
-                itemCount: sequence.playabelSequence.length,
+                itemCount: sequence.sequence.length,
               ),
             ],
           ),

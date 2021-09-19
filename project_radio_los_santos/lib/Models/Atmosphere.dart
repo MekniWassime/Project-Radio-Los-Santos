@@ -87,6 +87,7 @@ class Atmosphere {
       return TimeOfDay(timeOfDay);
   }
 
+  // ignore: non_constant_identifier_names
   List<AudioFile> TimeOfDay(int timeOfDay) {
     if (timeOfDay == 0)
       return morning;

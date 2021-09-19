@@ -36,19 +36,16 @@ class RadioStation {
     int maxDuration = _sumDurationOfSongs();
     int numberOfSongs = songs.length; //length is supposed to be >2
     int minUnique;
-    //adverts and ids are played after each song
+    //adverts and ids are played after each song, the worst case is the same ad with the longest duration playing each time
     numberOfSongs = songs.length;
     maxDuration += id.maxDuration(numberOfSongs);
     maxDuration += AudioData.longAdverts.maxDuration(numberOfSongs);
     maxDuration += AudioData.shortAdverts.maxDuration(numberOfSongs);
     //two atmoshpere info are played
     maxDuration += atmosphere.maxDuration;
-    numberOfSongs -= 2;
     //play max possible number of dj and caller without repeating
     minUnique = min<int>(djAndCaller.length, numberOfSongs);
     maxDuration += djAndCaller.maxDuration(minUnique);
-    numberOfSongs -= minUnique;
-    if (numberOfSongs == 0) return maxDuration;
 
     return maxDuration;
   }

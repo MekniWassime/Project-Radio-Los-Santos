@@ -12,7 +12,7 @@ class Song {
       required this.intro,
       required this.mid,
       required this.outro})
-      : this.duration = intro[0].duration + mid[0].duration + outro[0].duration;
+      : duration = intro[0].duration + mid[0].duration + outro[0].duration;
 
   factory Song.fromJson(json) {
     var intro =
@@ -21,5 +21,12 @@ class Song {
     var outro =
         (json['outro'] as List).map((e) => AudioFile.fromJson(e)).toList();
     return Song(name: json['name'], intro: intro, mid: mid, outro: outro);
+  }
+
+  List<AudioFile> getAudioFiles(
+      {required int introIndex,
+      required int midIndex,
+      required int outroIndex}) {
+    return [intro[introIndex], mid[midIndex], outro[outroIndex]];
   }
 }

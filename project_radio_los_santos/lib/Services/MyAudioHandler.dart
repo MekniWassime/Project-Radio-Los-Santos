@@ -8,7 +8,7 @@ class MyAudioHandler extends BaseAudioHandler {
   static Future<void> initService() async {
     _audioHandler = await AudioService.init(
       builder: () => MyAudioHandler(),
-      config: AudioServiceConfig(
+      config: const AudioServiceConfig(
         androidNotificationChannelId: 'com.mycompany.myapp.audio',
         androidNotificationChannelName: 'Audio Service Demo',
         androidNotificationOngoing: true,
