@@ -1,14 +1,17 @@
 import 'dart:math';
 
+import 'package:audio_service/audio_service.dart';
 import 'package:project_radio_los_santos/Models/Atmosphere.dart';
 import 'package:project_radio_los_santos/Models/AudioFile.dart';
 import 'package:project_radio_los_santos/Models/Song.dart';
 import 'package:project_radio_los_santos/Services/AudioData.dart';
 import 'package:project_radio_los_santos/Services/AudioFileListExtention.dart';
+import 'package:project_radio_los_santos/Services/PathService.dart';
 
 class RadioStation {
   final String name;
   final Atmosphere atmosphere;
+  final String art;
   final List<AudioFile> djAndCaller;
   final List<AudioFile> id;
   final List<Song> songs;
@@ -19,7 +22,8 @@ class RadioStation {
       required this.atmosphere,
       required this.djAndCaller,
       required this.id,
-      required this.songs});
+      required this.songs,
+      required this.art});
 
   int get maxDuration {
     int? currentCache = _maxDurationCache;
@@ -65,11 +69,16 @@ class RadioStation {
     dj.addAll(caller);
     var songs = (json['songs'] as List).map((e) => Song.fromJson(e)).toList();
     return RadioStation(
+        art: PathService.appendAssetFolder(json['art']),
         name: json['name'],
         atmosphere: atmosphere,
         djAndCaller: dj,
         id: id,
         songs: songs);
+  }
+
+  MediaItem getMediaItem() {
+    return MediaItem(id: name, title: name);
   }
 
   @override

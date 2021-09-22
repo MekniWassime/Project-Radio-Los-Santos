@@ -280,6 +280,7 @@
     "stations": [
         {
             "name": "K-DST",
+            "art": "K-DST/K-DST.jpg",
             "atmosphere": {
                 "evening": [
                     {

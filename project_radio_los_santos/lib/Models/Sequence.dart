@@ -3,9 +3,11 @@
 import 'dart:math';
 
 import 'package:flutter/foundation.dart';
+import 'package:just_audio/just_audio.dart';
 import 'package:project_radio_los_santos/Models/AudioFile.dart';
 import 'package:project_radio_los_santos/Models/AudioFileWithPointer.dart';
 import 'package:project_radio_los_santos/Models/RadioStation.dart';
+import 'package:project_radio_los_santos/Models/SequenceIndex.dart';
 import 'package:project_radio_los_santos/Models/Song.dart';
 import 'package:project_radio_los_santos/Services/AudioData.dart';
 import 'package:project_radio_los_santos/Services/AudioFileListExtention.dart';
@@ -15,14 +17,18 @@ class Sequence {
   late int startTime;
   late int seed;
   late int duration;
+  late int endTime;
+  late int maxEndTime;
+  late RadioStation radioStation;
 
-  Sequence._build(RadioStation radioStation, {int seedOffset = 0}) {
+  Sequence._build(this.radioStation, {int? setSeed, int seedOffset = 0}) {
     debugPrint("****\ngenerating sequence\n****");
     var currentDate = DateTime.now();
     int currentTimeInMilliseconds = currentDate.millisecondsSinceEpoch;
     int stationMaxDuration = radioStation.maxDuration;
-
-    seed = currentTimeInMilliseconds ~/ stationMaxDuration + seedOffset;
+    seed =
+        setSeed ?? currentTimeInMilliseconds ~/ stationMaxDuration + seedOffset;
+    //seed = currentTimeInMilliseconds ~/ stationMaxDuration + seedOffset;
     startTime = seed * stationMaxDuration;
     debugPrint(
       "    seed = $seed" +
@@ -80,6 +86,7 @@ class Sequence {
       }
     }
     //need to fill the difference between the sequence current length and the max length of the radio station
+    duration = sequence.sumDuration();
     int difference = radioStation.maxDuration - duration;
     int shortestFile = min<int>(
         shortAdverts.shortestFile().duration, id.shortestFile().duration);
@@ -122,20 +129,45 @@ class Sequence {
         difference -= shortAdverts[adIndex].duration;
       }
     }
+    duration = sequence.sumDuration();
+    endTime = startTime + duration;
+    maxEndTime = startTime + radioStation.maxDuration;
     debugPrint(
       "    max end time = ${DateTime.fromMillisecondsSinceEpoch(startTime + radioStation.maxDuration)}" +
-          "\n    end time = ${DateTime.fromMillisecondsSinceEpoch(startTime + duration)}" +
+          "\n    end time = ${DateTime.fromMillisecondsSinceEpoch(endTime)}" +
           "\n    max length: ${radioStation.maxDuration}, seq length: $duration, difference: ${radioStation.maxDuration - duration}" +
           "\nfirst file = ${sequence[0]}",
     );
-    duration = sequence.sumDuration();
   }
 
   int get pointerPosition => DateTime.now().millisecondsSinceEpoch - startTime;
 
-  AudioFileWithPointer get currentFileWithPointer {
+  int get millisecondsUntilMaxEnd =>
+      maxEndTime - DateTime.now().millisecondsSinceEpoch;
+
+  bool isOver() {
+    return pointerPosition > duration;
+  }
+
+  bool isNotReached() {
+    return pointerPosition < 0;
+  }
+
+  bool isInInterval() {
+    var pointer = pointerPosition;
+    return pointer >= 0 && pointer <= duration;
+  }
+
+  bool isCurrent() {
+    var currentTime = DateTime.now().millisecondsSinceEpoch;
+    return currentTime >= startTime && currentTime <= maxEndTime;
+  }
+
+  SequenceIndex getCurrentIndex() {
     int pointer = pointerPosition;
-    assert(pointer >= 0);
+    if (pointer < 0)
+      throw SequenceNotReachedYetException();
+    else if (pointer > duration) throw SequenceOverException();
     int tempPointer = 0;
     int fileIndex = 0;
     var audioFile = sequence[fileIndex];
@@ -144,7 +176,16 @@ class Sequence {
       fileIndex++;
       audioFile = sequence[fileIndex];
     }
-    return AudioFileWithPointer(audioFile, pointer: pointer - tempPointer);
+    return SequenceIndex(
+        index: fileIndex,
+        position: Duration(milliseconds: pointer - tempPointer));
+  }
+
+  ConcatenatingAudioSource getPlaylist() {
+    return ConcatenatingAudioSource(
+        children: sequence
+            .map((e) => AudioSource.uri(Uri.parse("asset:///${e.path}")))
+            .toList());
   }
 
   factory Sequence.buildCurrent({required RadioStation radioStation}) {
@@ -154,6 +195,12 @@ class Sequence {
   factory Sequence.buildNext({required RadioStation radioStation}) {
     return Sequence._build(radioStation, seedOffset: 1);
   }
+
+  factory Sequence.buildFromSeed(
+      {required RadioStation radioStation, required int seed}) {
+    return Sequence._build(radioStation, setSeed: seed);
+  }
+
   @override
   String toString() {
     String result = "Sequence: ";
@@ -162,4 +209,12 @@ class Sequence {
     }
     return result;
   }
+
+  Sequence getNextSequence() {
+    return Sequence.buildFromSeed(radioStation: radioStation, seed: seed + 1);
+  }
 }
+
+class SequenceOverException implements Exception {}
+
+class SequenceNotReachedYetException implements Exception {}

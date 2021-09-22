@@ -1,8 +1,12 @@
 import 'dart:math';
 
+import 'package:audio_service/audio_service.dart';
 import 'package:flutter/material.dart';
+import 'package:just_audio/just_audio.dart';
+import 'package:project_radio_los_santos/Models/AudioFileWithPointer.dart';
 import 'package:project_radio_los_santos/Models/Sequence.dart';
 import 'package:project_radio_los_santos/Services/AudioData.dart';
+import 'package:project_radio_los_santos/Services/MyAudioHandler.dart';
 
 class PlayerScreen extends StatefulWidget {
   const PlayerScreen({Key? key}) : super(key: key);
@@ -14,8 +18,8 @@ class PlayerScreen extends StatefulWidget {
 class _PlayerScreenState extends State<PlayerScreen> {
   //late AudioPlayer player;
   //bool loading = true;
-  Sequence sequence =
-      Sequence.buildCurrent(radioStation: AudioData.radioStations[0]);
+  late Sequence sequence;
+
   @override
   void initState() {
     init();
@@ -23,10 +27,19 @@ class _PlayerScreenState extends State<PlayerScreen> {
   }
 
   Future<void> init() async {
-    /*player = AudioPlayer();
-    await player
-        .setAsset("assets/audio/Adverts/Zebra Bar 1 (What about nuts).ogg");
-    loading = false;*/
+    MyAudioHandler.instance.play();
+    sequence = Sequence.buildCurrent(radioStation: AudioData.radioStations[0]);
+    //AudioFileWithPointer current = sequence.currentFileWithPointer;
+    //var audioSource = AudioSource.uri(
+    //  Uri.parse("asset:///${current.path}"),
+    //   tag: const MediaItem(
+    //    id: '1',
+    //   album: "Album name",
+    //    title: "Song name",
+    //  ),
+    // );
+    //player = AudioPlayer();
+    //await player.setAudioSource(audioSource);
   }
 
   @override
@@ -42,11 +55,21 @@ class _PlayerScreenState extends State<PlayerScreen> {
             children: [
               ElevatedButton(
                   onPressed: () {
-                    var file = sequence.currentFileWithPointer;
-                    debugPrint(
-                        "${file.path} pointer=${Duration(milliseconds: file.pointer)} duration=${Duration(milliseconds: file.duration)}");
+                    //player.play();
+                    MyAudioHandler.instance.play();
+                    //var file = sequence.currentFileWithPointer;
+                    //debugPrint(
+                    //    "${file.path} pointer=${Duration(milliseconds: file.pointer)} duration=${Duration(milliseconds: file.duration)}");
                   },
                   child: const Text("generate sequencen")),
+              ElevatedButton(
+                  onPressed: () {
+                    //player.play();
+                    //MyAudioHandler.instance.play();
+                    Sequence.buildCurrent(
+                        radioStation: AudioData.radioStations[0]);
+                  },
+                  child: const Text("print sequance stats")),
               ListView.builder(
                 physics: const NeverScrollableScrollPhysics(),
                 shrinkWrap: true,
