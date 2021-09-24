@@ -22,9 +22,46 @@
         <input type="number" id="input-milliseconds" oninput='updateConverted()'>
         <span id="converted"></span>
         <input type="hidden" id="json-string">
+        <button onclick="generateSongListAndCopyToClipboard()">songs list</button>
     </div>
     <script>
         var fileList = []
+
+        function generateSongListAndCopyToClipboard(){
+            var result = []
+            var reachedMid = false
+            var entry = {"name":"","intro":[],"mid":[],"outro":[]}
+            for (let index = 0; index < fileList.length; index++) {
+                const element = fileList[index];
+                if(fileList[index].file.webkitRelativePath.includes("Intro")){
+                    if(reachedMid){
+                        result.push(entry);
+                        entry = {"name":"","intro":[],"mid":[],"outro":[]};
+                        reachedMid = false;
+                    }
+                    entry.intro.push({ "file": fileList[index].file.webkitRelativePath, "duration": fileList[index].duration })
+                }
+                if(fileList[index].file.webkitRelativePath.includes("Mid")){
+                    reachedMid = true;
+                    entry.name = fileList[index].file.name.replace(' (Mid).ogg','')
+                    entry.mid.push({ "file": fileList[index].file.webkitRelativePath, "duration": fileList[index].duration })
+                }
+                if(fileList[index].file.webkitRelativePath.includes("Outro")){
+                    entry.outro.push({ "file": fileList[index].file.webkitRelativePath, "duration": fileList[index].duration })
+                }
+            }
+            result.push(entry)
+            
+            var jsonString = JSON.stringify(result)
+            var hiddenInput = document.getElementById("json-string")
+            hiddenInput.type = "text"
+            hiddenInput.value = jsonString
+            hiddenInput.select()
+            navigator.clipboard.writeText(hiddenInput.value).then(function () {
+                hiddenInput.type = "hidden"
+                //alert("json string copied to clipboard");
+            });
+        }
 
         function generateJsonAndCopyToClipboard() {
             var result = []
@@ -39,7 +76,7 @@
             hiddenInput.select()
             navigator.clipboard.writeText(hiddenInput.value).then(function () {
                 hiddenInput.type = "hidden"
-                alert("json string copied to clipboard");
+                //alert("json string copied to clipboard");
             });
         }
 

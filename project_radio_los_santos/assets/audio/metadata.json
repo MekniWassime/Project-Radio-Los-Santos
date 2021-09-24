@@ -280,7 +280,32 @@
     "stations": [
         {
             "name": "K-DST",
-            "art": "K-DST/K-DST.jpg",
+            "special": [
+                {
+                    "file": "K-DST/(Bridge Announce 1) Can access LS only.ogg",
+                    "duration": 8698
+                },
+                {
+                    "file": "K-DST/(Bridge Announce 2) Can access LS and SF.ogg",
+                    "duration": 13398
+                },
+                {
+                    "file": "K-DST/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                    "duration": 8534
+                },
+                {
+                    "file": "K-DST/(Story) Lights in Desert.ogg",
+                    "duration": 11602
+                },
+                {
+                    "file": "K-DST/(Story) Prosecutor Busted for Weed.ogg",
+                    "duration": 9038
+                },
+                {
+                    "file": "K-DST/(Story) Weed Farm Burned Down.ogg",
+                    "duration": 6714
+                }
+            ],
             "atmosphere": {
                 "evening": [
                     {
@@ -310,6 +335,10 @@
                     {
                         "file": "K-DST/(Atmosphere) Morning 2.ogg",
                         "duration": 7542
+                    },
+                    {
+                        "file": "K-DST/(Atmosphere) Morning 3.ogg",
+                        "duration": 5694
                     }
                 ],
                 "night": [
@@ -320,6 +349,10 @@
                     {
                         "file": "K-DST/(Atmosphere) Night 2.ogg",
                         "duration": 5282
+                    },
+                    {
+                        "file": "K-DST/(Atmosphere) Night 3.ogg",
+                        "duration": 5350
                     }
                 ],
                 "rain": [
@@ -341,9 +374,11 @@
                         "file": "K-DST/(Atmosphere) Sunny 2.ogg",
                         "duration": 8074
                     }
-                ]
+                ],
+                "storm": [],
+                "smog": []
             },
-            "caller": [
+            "dj": [
                 {
                     "file": "K-DST/(Caller) Im in hell, right.ogg",
                     "duration": 31106
@@ -355,9 +390,7 @@
                 {
                     "file": "K-DST/(Caller) Youre so lame.ogg",
                     "duration": 24454
-                }
-            ],
-            "dj": [
+                },
                 {
                     "file": "K-DST/(DJ) 1977...What a year!.ogg",
                     "duration": 8294
@@ -1046,6 +1079,4492 @@
                             "duration": 20930
                         }
                     ]
+                }
+            ]
+        },
+        {
+            "name": "Radio Los Santos",
+            "special": [
+                {
+                    "file": "Radio Los Santos/(Bridge Announce 1) Can access LS only.ogg",
+                    "duration": 14178
+                },
+                {
+                    "file": "Radio Los Santos/(Bridge Announce 2) Can access LS and SF.ogg",
+                    "duration": 19058
+                },
+                {
+                    "file": "Radio Los Santos/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                    "duration": 16714
+                },
+                {
+                    "file": "Radio Los Santos/(Story) Gang Warfare -- Ballas and Vagos taking over.ogg",
+                    "duration": 26306
+                },
+                {
+                    "file": "Radio Los Santos/(Story) Gang Warfare -- Grove Street getting stronger.ogg",
+                    "duration": 23858
+                },
+                {
+                    "file": "Radio Los Santos/(Story) Gang Warfare.ogg",
+                    "duration": 21376
+                },
+                {
+                    "file": "Radio Los Santos/(Story) Riot.ogg",
+                    "duration": 15290
+                }
+            ],
+            "atmosphere": {
+                "evening": [
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Evening 1.ogg",
+                        "duration": 15866
+                    },
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Evening 2.ogg",
+                        "duration": 7862
+                    }
+                ],
+                "fog": [
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Fog 1.ogg",
+                        "duration": 23430
+                    },
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Fog 2.ogg",
+                        "duration": 22370
+                    }
+                ],
+                "morning": [
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Morning 1.ogg",
+                        "duration": 11022
+                    },
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Morning 2.ogg",
+                        "duration": 9826
+                    }
+                ],
+                "night": [
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Night 1.ogg",
+                        "duration": 13166
+                    },
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Night 2.ogg",
+                        "duration": 8206
+                    }
+                ],
+                "rain": [
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Rain 1.ogg",
+                        "duration": 21690
+                    },
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Rain 2.ogg",
+                        "duration": 19990
+                    }
+                ],
+                "smog": [
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Smog 1.ogg",
+                        "duration": 21678
+                    },
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Smog 2.ogg",
+                        "duration": 26502
+                    }
+                ],
+                "storm": [
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Storm 1.ogg",
+                        "duration": 16470
+                    },
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Storm 2.ogg",
+                        "duration": 19598
+                    }
+                ],
+                "sunny": [
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Sunny 1.ogg",
+                        "duration": 15882
+                    },
+                    {
+                        "file": "Radio Los Santos/(Atmosphere) Sunny 2.ogg",
+                        "duration": 22702
+                    }
+                ]
+            },
+            "dj": [
+                {
+                    "file": "Radio Los Santos/(DJ) Burglary and carjacking is both up.ogg",
+                    "duration": 25966
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) Denise is desperate.ogg",
+                    "duration": 16410
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) Difference between a rapper and a gangster.ogg",
+                    "duration": 17698
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) Dont touch that dial.ogg",
+                    "duration": 6954
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) I get it first, the others get it last.ogg",
+                    "duration": 7986
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) My man Les in the north.ogg",
+                    "duration": 13146
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) Not the home of gangster fools.ogg",
+                    "duration": 13414
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) Original home of the drive-by.ogg",
+                    "duration": 19478
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) Ruling the airwaves.ogg",
+                    "duration": 8754
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) Sam and the boys from Liberty City.ogg",
+                    "duration": 11958
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) Self-styled Audio Boys.ogg",
+                    "duration": 14654
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) The home of gangsta rap.ogg",
+                    "duration": 15356
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) The hottest shit around.ogg",
+                    "duration": 12594
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) The rest of the world can follow.ogg",
+                    "duration": 8166
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) We play the real shit.ogg",
+                    "duration": 7614
+                },
+                {
+                    "file": "Radio Los Santos/(DJ) Your man Julio G.ogg",
+                    "duration": 12482
+                }
+            ],
+            "id": [
+                {
+                    "file": "Radio Los Santos/(ID) B-Real of Cypress Hill.ogg",
+                    "duration": 11430
+                },
+                {
+                    "file": "Radio Los Santos/(ID) Can I have a t-shirt.ogg",
+                    "duration": 14714
+                },
+                {
+                    "file": "Radio Los Santos/(ID) Doin it evolution-style.ogg",
+                    "duration": 9182
+                },
+                {
+                    "file": "Radio Los Santos/(ID) Fool gave me the clap.ogg",
+                    "duration": 10954
+                },
+                {
+                    "file": "Radio Los Santos/(ID) I sent you my demo nine times.ogg",
+                    "duration": 9426
+                },
+                {
+                    "file": "Radio Los Santos/(ID) Julios the man.ogg",
+                    "duration": 8050
+                },
+                {
+                    "file": "Radio Los Santos/(ID) Madd Dogg.ogg",
+                    "duration": 13718
+                },
+                {
+                    "file": "Radio Los Santos/(ID) O.G. Loc.ogg",
+                    "duration": 10382
+                },
+                {
+                    "file": "Radio Los Santos/(ID) Shout-outs.ogg",
+                    "duration": 11898
+                },
+                {
+                    "file": "Radio Los Santos/(ID) The home of gansta rap and gangsta bitches.ogg",
+                    "duration": 13606
+                },
+                {
+                    "file": "Radio Los Santos/(ID) Your voice is sooo sexy.ogg",
+                    "duration": 8254
+                }
+            ],
+            "songs": [
+                {
+                    "name": "Alwayz Into Somethin",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/Alwayz Into Somethin (Intro DJ 1).ogg",
+                            "duration": 14176
+                        },
+                        {
+                            "file": "Radio Los Santos/Alwayz Into Somethin (Intro DJ 2).ogg",
+                            "duration": 14176
+                        },
+                        {
+                            "file": "Radio Los Santos/Alwayz Into Somethin (Intro).ogg",
+                            "duration": 14176
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/Alwayz Into Somethin (Mid).ogg",
+                            "duration": 170000
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/Alwayz Into Somethin (Outro DJ 1).ogg",
+                            "duration": 24146
+                        },
+                        {
+                            "file": "Radio Los Santos/Alwayz Into Somethin (Outro).ogg",
+                            "duration": 24146
+                        }
+                    ]
+                },
+                {
+                    "name": "Check Yo Self",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/Check Yo Self (The Message Remix) (Intro DJ 1).ogg",
+                            "duration": 19512
+                        },
+                        {
+                            "file": "Radio Los Santos/Check Yo Self (The Message Remix) (Intro DJ 2).ogg",
+                            "duration": 19512
+                        },
+                        {
+                            "file": "Radio Los Santos/Check Yo Self (The Message Remix) (Intro).ogg",
+                            "duration": 19512
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/Check Yo Self (The Message Remix) (Mid).ogg",
+                            "duration": 158348
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/Check Yo Self (The Message Remix) (Outro DJ 1).ogg",
+                            "duration": 25166
+                        },
+                        {
+                            "file": "Radio Los Santos/Check Yo Self (The Message Remix) (Outro DJ 2).ogg",
+                            "duration": 25166
+                        },
+                        {
+                            "file": "Radio Los Santos/Check Yo Self (The Message Remix) (Outro).ogg",
+                            "duration": 25166
+                        }
+                    ]
+                },
+                {
+                    "name": "Deep Cover",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/Deep Cover (Intro DJ 1).ogg",
+                            "duration": 10988
+                        },
+                        {
+                            "file": "Radio Los Santos/Deep Cover (Intro).ogg",
+                            "duration": 10988
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/Deep Cover (Mid).ogg",
+                            "duration": 199412
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/Deep Cover (Outro DJ 1).ogg",
+                            "duration": 16430
+                        },
+                        {
+                            "file": "Radio Los Santos/Deep Cover (Outro DJ 2).ogg",
+                            "duration": 16430
+                        },
+                        {
+                            "file": "Radio Los Santos/Deep Cover (Outro).ogg",
+                            "duration": 16430
+                        }
+                    ]
+                },
+                {
+                    "name": "Eazy-er Said than Dunn",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/Eazy-er Said than Dunn (Intro DJ 1).ogg",
+                            "duration": 24436
+                        },
+                        {
+                            "file": "Radio Los Santos/Eazy-er Said than Dunn (Intro DJ 2).ogg",
+                            "duration": 24436
+                        },
+                        {
+                            "file": "Radio Los Santos/Eazy-er Said than Dunn (Intro).ogg",
+                            "duration": 24436
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/Eazy-er Said than Dunn (Mid).ogg",
+                            "duration": 173628
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/Eazy-er Said than Dunn (Outro DJ 1).ogg",
+                            "duration": 21106
+                        },
+                        {
+                            "file": "Radio Los Santos/Eazy-er Said than Dunn (Outro DJ 2).ogg",
+                            "duration": 21106
+                        },
+                        {
+                            "file": "Radio Los Santos/Eazy-er Said than Dunn (Outro).ogg",
+                            "duration": 21106
+                        }
+                    ]
+                },
+                {
+                    "name": "Express Yourself",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/Express Yourself (Intro DJ 1).ogg",
+                            "duration": 28844
+                        },
+                        {
+                            "file": "Radio Los Santos/Express Yourself (Intro DJ 2).ogg",
+                            "duration": 28844
+                        },
+                        {
+                            "file": "Radio Los Santos/Express Yourself (Intro).ogg",
+                            "duration": 28844
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/Express Yourself (Mid).ogg",
+                            "duration": 186292
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/Express Yourself (Outro DJ 1).ogg",
+                            "duration": 22414
+                        },
+                        {
+                            "file": "Radio Los Santos/Express Yourself (Outro).ogg",
+                            "duration": 22414
+                        }
+                    ]
+                },
+                {
+                    "name": "Fuck wit Dre Day",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/Fuck wit Dre Day (Intro DJ 1).ogg",
+                            "duration": 20800
+                        },
+                        {
+                            "file": "Radio Los Santos/Fuck wit Dre Day (Intro DJ 2).ogg",
+                            "duration": 20800
+                        },
+                        {
+                            "file": "Radio Los Santos/Fuck wit Dre Day (Intro).ogg",
+                            "duration": 20800
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/Fuck wit Dre Day (Mid).ogg",
+                            "duration": 188064
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/Fuck wit Dre Day (Outro DJ 1).ogg",
+                            "duration": 25498
+                        },
+                        {
+                            "file": "Radio Los Santos/Fuck wit Dre Day (Outro DJ 2).ogg",
+                            "duration": 25498
+                        },
+                        {
+                            "file": "Radio Los Santos/Fuck wit Dre Day (Outro).ogg",
+                            "duration": 25498
+                        }
+                    ]
+                },
+                {
+                    "name": "Guerillas in tha Mist",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/Guerillas in tha Mist (Intro DJ 1).ogg",
+                            "duration": 20644
+                        },
+                        {
+                            "file": "Radio Los Santos/Guerillas in tha Mist (Intro DJ 2).ogg",
+                            "duration": 20644
+                        },
+                        {
+                            "file": "Radio Los Santos/Guerillas in tha Mist (Intro).ogg",
+                            "duration": 20644
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/Guerillas in tha Mist (Mid).ogg",
+                            "duration": 163340
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/Guerillas in tha Mist (Outro DJ 1).ogg",
+                            "duration": 10878
+                        },
+                        {
+                            "file": "Radio Los Santos/Guerillas in tha Mist (Outro DJ 2).ogg",
+                            "duration": 10878
+                        },
+                        {
+                            "file": "Radio Los Santos/Guerillas in tha Mist (Outro).ogg",
+                            "duration": 10878
+                        }
+                    ]
+                },
+                {
+                    "name": "Hood Took Me Under",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/Hood Took Me Under (Intro DJ 1).ogg",
+                            "duration": 13940
+                        },
+                        {
+                            "file": "Radio Los Santos/Hood Took Me Under (Intro DJ 2).ogg",
+                            "duration": 13940
+                        },
+                        {
+                            "file": "Radio Los Santos/Hood Took Me Under (Intro).ogg",
+                            "duration": 13940
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/Hood Took Me Under (Mid).ogg",
+                            "duration": 170188
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/Hood Took Me Under (Outro DJ 1).ogg",
+                            "duration": 22082
+                        },
+                        {
+                            "file": "Radio Los Santos/Hood Took Me Under (Outro DJ 2).ogg",
+                            "duration": 22066
+                        },
+                        {
+                            "file": "Radio Los Santos/Hood Took Me Under (Outro).ogg",
+                            "duration": 22066
+                        }
+                    ]
+                },
+                {
+                    "name": "How I Could Just Kill a Man",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/How I Could Just Kill a Man (Intro DJ 1).ogg",
+                            "duration": 19128
+                        },
+                        {
+                            "file": "Radio Los Santos/How I Could Just Kill a Man (Intro).ogg",
+                            "duration": 19128
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/How I Could Just Kill a Man (Mid).ogg",
+                            "duration": 199400
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/How I Could Just Kill a Man (Outro DJ 1).ogg",
+                            "duration": 17534
+                        },
+                        {
+                            "file": "Radio Los Santos/How I Could Just Kill a Man (Outro).ogg",
+                            "duration": 17534
+                        }
+                    ]
+                },
+                {
+                    "name": "I Dont Give a Fuck",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/I Dont Give a Fuck (Intro DJ 1).ogg",
+                            "duration": 29064
+                        },
+                        {
+                            "file": "Radio Los Santos/I Dont Give a Fuck (Intro DJ 2).ogg",
+                            "duration": 29064
+                        },
+                        {
+                            "file": "Radio Los Santos/I Dont Give a Fuck (Intro).ogg",
+                            "duration": 29064
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/I Dont Give a Fuck (Mid).ogg",
+                            "duration": 198324
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/I Dont Give a Fuck (Outro DJ 1).ogg",
+                            "duration": 17938
+                        },
+                        {
+                            "file": "Radio Los Santos/I Dont Give a Fuck (Outro DJ 2).ogg",
+                            "duration": 17938
+                        },
+                        {
+                            "file": "Radio Los Santos/I Dont Give a Fuck (Outro).ogg",
+                            "duration": 17938
+                        }
+                    ]
+                },
+                {
+                    "name": "It was a Good Day",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/It was a Good Day (Intro DJ 1).ogg",
+                            "duration": 23888
+                        },
+                        {
+                            "file": "Radio Los Santos/It was a Good Day (Intro).ogg",
+                            "duration": 23888
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/It was a Good Day (Mid).ogg",
+                            "duration": 152672
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/It was a Good Day (Outro DJ 1).ogg",
+                            "duration": 24170
+                        },
+                        {
+                            "file": "Radio Los Santos/It was a Good Day (Outro).ogg",
+                            "duration": 24170
+                        }
+                    ]
+                },
+                {
+                    "name": "Its Funky Enough",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/Its Funky Enough (Intro DJ 1).ogg",
+                            "duration": 12812
+                        },
+                        {
+                            "file": "Radio Los Santos/Its Funky Enough (Intro DJ 2).ogg",
+                            "duration": 12812
+                        },
+                        {
+                            "file": "Radio Los Santos/Its Funky Enough (Intro).ogg",
+                            "duration": 12812
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/Its Funky Enough (Mid).ogg",
+                            "duration": 199484
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/Its Funky Enough (Outro DJ 1).ogg",
+                            "duration": 17710
+                        },
+                        {
+                            "file": "Radio Los Santos/Its Funky Enough (Outro DJ 2).ogg",
+                            "duration": 17710
+                        },
+                        {
+                            "file": "Radio Los Santos/Its Funky Enough (Outro).ogg",
+                            "duration": 17710
+                        }
+                    ]
+                },
+                {
+                    "name": "La Raza",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/La Raza (Intro DJ 1).ogg",
+                            "duration": 9780
+                        },
+                        {
+                            "file": "Radio Los Santos/La Raza (Intro DJ 2).ogg",
+                            "duration": 9780
+                        },
+                        {
+                            "file": "Radio Los Santos/La Raza (Intro).ogg",
+                            "duration": 9780
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/La Raza (Mid).ogg",
+                            "duration": 169344
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/La Raza (Outro DJ 1).ogg",
+                            "duration": 18770
+                        },
+                        {
+                            "file": "Radio Los Santos/La Raza (Outro).ogg",
+                            "duration": 18770
+                        }
+                    ]
+                },
+                {
+                    "name": "Murder Rap",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/Murder Rap (Intro DJ 1).ogg",
+                            "duration": 20224
+                        },
+                        {
+                            "file": "Radio Los Santos/Murder Rap (Intro DJ 2).ogg",
+                            "duration": 20224
+                        },
+                        {
+                            "file": "Radio Los Santos/Murder Rap (Intro).ogg",
+                            "duration": 20224
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/Murder Rap (Mid).ogg",
+                            "duration": 216508
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/Murder Rap (Outro DJ 1).ogg",
+                            "duration": 15778
+                        },
+                        {
+                            "file": "Radio Los Santos/Murder Rap (Outro DJ 2).ogg",
+                            "duration": 15778
+                        },
+                        {
+                            "file": "Radio Los Santos/Murder Rap (Outro).ogg",
+                            "duration": 15778
+                        }
+                    ]
+                },
+                {
+                    "name": "Nuthin but a G Thang",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/Nuthin but a G Thang (Intro DJ 1).ogg",
+                            "duration": 10628
+                        },
+                        {
+                            "file": "Radio Los Santos/Nuthin but a G Thang (Intro DJ 2).ogg",
+                            "duration": 10628
+                        },
+                        {
+                            "file": "Radio Los Santos/Nuthin but a G Thang (Intro).ogg",
+                            "duration": 10628
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/Nuthin but a G Thang (Mid).ogg",
+                            "duration": 187236
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/Nuthin but a G Thang (Outro DJ 1).ogg",
+                            "duration": 17698
+                        },
+                        {
+                            "file": "Radio Los Santos/Nuthin but a G Thang (Outro DJ 2).ogg",
+                            "duration": 17698
+                        },
+                        {
+                            "file": "Radio Los Santos/Nuthin but a G Thang (Outro).ogg",
+                            "duration": 17698
+                        }
+                    ]
+                },
+                {
+                    "name": "The Ghetto",
+                    "intro": [
+                        {
+                            "file": "Radio Los Santos/The Ghetto (Intro).ogg",
+                            "duration": 14808
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio Los Santos/The Ghetto (Mid).ogg",
+                            "duration": 179480
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio Los Santos/The Ghetto (Outro DJ 1).ogg",
+                            "duration": 26230
+                        },
+                        {
+                            "file": "Radio Los Santos/The Ghetto (Outro DJ 2).ogg",
+                            "duration": 26230
+                        },
+                        {
+                            "file": "Radio Los Santos/The Ghetto (Outro).ogg",
+                            "duration": 26230
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "SFUR",
+            "special": [
+                {
+                    "file": "SFUR/(Bridge Announce 1) Can access LS only.ogg",
+                    "duration": 11970
+                },
+                {
+                    "file": "SFUR/(Bridge Announce 2) Can access LS and SF.ogg",
+                    "duration": 7770
+                },
+                {
+                    "file": "SFUR/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                    "duration": 13998
+                }
+            ],
+            "atmosphere": {
+                "evening": [
+                    {
+                        "file": "SFUR/(Atmosphere) Evening 1.ogg",
+                        "duration": 8558
+                    },
+                    {
+                        "file": "SFUR/(Atmosphere) Evening 2.ogg",
+                        "duration": 9822
+                    },
+                    {
+                        "file": "SFUR/(Atmosphere) Evening 3.ogg",
+                        "duration": 5998
+                    }
+                ],
+                "fog": [],
+                "morning": [
+                    {
+                        "file": "SFUR/(Atmosphere) Morning 1.ogg",
+                        "duration": 8838
+                    },
+                    {
+                        "file": "SFUR/(Atmosphere) Morning 2.ogg",
+                        "duration": 6302
+                    },
+                    {
+                        "file": "SFUR/(Atmosphere) Morning 3.ogg",
+                        "duration": 7626
+                    }
+                ],
+                "night": [
+                    {
+                        "file": "SFUR/(Atmosphere) Night 1.ogg",
+                        "duration": 5822
+                    },
+                    {
+                        "file": "SFUR/(Atmosphere) Night 2.ogg",
+                        "duration": 7858
+                    },
+                    {
+                        "file": "SFUR/(Atmosphere) Night 3.ogg",
+                        "duration": 6166
+                    }
+                ],
+                "rain": [],
+                "smog": [],
+                "storm": [],
+                "sunny": []
+            },
+            "dj": [
+                {
+                    "file": "SFUR/(Caller) Id like to request a song.ogg",
+                    "duration": 14790
+                },
+                {
+                    "file": "SFUR/(Caller) Play some Wagner.ogg",
+                    "duration": 28388
+                },
+                {
+                    "file": "SFUR/(DJ) Dont make me go to rehab.ogg",
+                    "duration": 9674
+                },
+                {
+                    "file": "SFUR/(DJ) European style... shaved.ogg",
+                    "duration": 6114
+                },
+                {
+                    "file": "SFUR/(DJ) Harder, faster, deeper!.ogg",
+                    "duration": 6674
+                },
+                {
+                    "file": "SFUR/(DJ) Has anyone got any cigarette papers.ogg",
+                    "duration": 6010
+                },
+                {
+                    "file": "SFUR/(DJ) Has that dealer turned up yet.ogg",
+                    "duration": 5534
+                },
+                {
+                    "file": "SFUR/(DJ) I am a rebel.ogg",
+                    "duration": 9142
+                },
+                {
+                    "file": "SFUR/(DJ) I am communing with you.ogg",
+                    "duration": 5994
+                },
+                {
+                    "file": "SFUR/(DJ) I come to America.ogg",
+                    "duration": 8814
+                },
+                {
+                    "file": "SFUR/(DJ) I love complete strangers.ogg",
+                    "duration": 6086
+                },
+                {
+                    "file": "SFUR/(DJ) I love you, San Fierro.ogg",
+                    "duration": 5662
+                },
+                {
+                    "file": "SFUR/(DJ) I want to cry.ogg",
+                    "duration": 5978
+                },
+                {
+                    "file": "SFUR/(DJ) I went to Liberty City once.ogg",
+                    "duration": 8406
+                },
+                {
+                    "file": "SFUR/(DJ) Keep the party moving in here.ogg",
+                    "duration": 5470
+                },
+                {
+                    "file": "SFUR/(DJ) Keeping it on a housey tip now.ogg",
+                    "duration": 10362
+                },
+                {
+                    "file": "SFUR/(DJ) Lets party.ogg",
+                    "duration": 6842
+                },
+                {
+                    "file": "SFUR/(DJ) Living in a digital future.ogg",
+                    "duration": 11330
+                },
+                {
+                    "file": "SFUR/(DJ) People cry when they see my record collection.ogg",
+                    "duration": 8834
+                },
+                {
+                    "file": "SFUR/(DJ) Shut up and dance, you fools!.ogg",
+                    "duration": 7782
+                },
+                {
+                    "file": "SFUR/(DJ) The computers have taken over.ogg",
+                    "duration": 5998
+                },
+                {
+                    "file": "SFUR/(DJ) We are like dolphins clicking.ogg",
+                    "duration": 7394
+                },
+                {
+                    "file": "SFUR/(DJ) Would you like a pillow.ogg",
+                    "duration": 7686
+                }
+            ],
+            "id": [],
+            "songs": [
+                {
+                    "name": "Break 4 Love",
+                    "intro": [
+                        {
+                            "file": "SFUR/Break 4 Love (Intro DJ 1).ogg",
+                            "duration": 17048
+                        },
+                        {
+                            "file": "SFUR/Break 4 Love (Intro DJ 2).ogg",
+                            "duration": 17048
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/Break 4 Love (Mid).ogg",
+                            "duration": 199216
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/Break 4 Love (Outro DJ 1).ogg",
+                            "duration": 12986
+                        },
+                        {
+                            "file": "SFUR/Break 4 Love (Outro DJ 2).ogg",
+                            "duration": 12990
+                        }
+                    ]
+                },
+                {
+                    "name": "Can You Feel It",
+                    "intro": [
+                        {
+                            "file": "SFUR/Can You Feel It (Intro DJ 1).ogg",
+                            "duration": 6556
+                        },
+                        {
+                            "file": "SFUR/Can You Feel It (Intro DJ 2).ogg",
+                            "duration": 6556
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/Can You Feel It (Mid).ogg",
+                            "duration": 220648
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/Can You Feel It (Outro DJ 1).ogg",
+                            "duration": 11938
+                        },
+                        {
+                            "file": "SFUR/Can You Feel It (Outro DJ 2).ogg",
+                            "duration": 11934
+                        }
+                    ]
+                },
+                {
+                    "name": "I Need a Rhythm",
+                    "intro": [
+                        {
+                            "file": "SFUR/I Need a Rhythm (Intro DJ 1).ogg",
+                            "duration": 22046
+                        },
+                        {
+                            "file": "SFUR/I Need a Rhythm (Intro DJ 2).ogg",
+                            "duration": 22046
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/I Need a Rhythm (Mid).ogg",
+                            "duration": 210436
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/I Need a Rhythm (Outro DJ 1).ogg",
+                            "duration": 5674
+                        },
+                        {
+                            "file": "SFUR/I Need a Rhythm (Outro DJ 2).ogg",
+                            "duration": 5654
+                        }
+                    ]
+                },
+                {
+                    "name": "Ill be Your Friend",
+                    "intro": [
+                        {
+                            "file": "SFUR/Ill be Your Friend (Intro DJ 1).ogg",
+                            "duration": 31844
+                        },
+                        {
+                            "file": "SFUR/Ill be Your Friend (Intro DJ 2).ogg",
+                            "duration": 31844
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/Ill be Your Friend (Mid).ogg",
+                            "duration": 240048
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/Ill be Your Friend (Outro DJ 1).ogg",
+                            "duration": 7518
+                        },
+                        {
+                            "file": "SFUR/Ill be Your Friend (Outro DJ 2).ogg",
+                            "duration": 7526
+                        }
+                    ]
+                },
+                {
+                    "name": "Let the Music Use You",
+                    "intro": [
+                        {
+                            "file": "SFUR/Let the Music Use You (Intro DJ 1).ogg",
+                            "duration": 16360
+                        },
+                        {
+                            "file": "SFUR/Let the Music Use You (Intro DJ 2).ogg",
+                            "duration": 16360
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/Let the Music Use You (Mid).ogg",
+                            "duration": 255144
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/Let the Music Use You (Outro DJ 1).ogg",
+                            "duration": 14454
+                        },
+                        {
+                            "file": "SFUR/Let the Music Use You (Outro DJ 2).ogg",
+                            "duration": 14454
+                        }
+                    ]
+                },
+                {
+                    "name": "Ma Foom Bey",
+                    "intro": [
+                        {
+                            "file": "SFUR/Ma Foom Bey (Intro DJ 1).ogg",
+                            "duration": 15832
+                        },
+                        {
+                            "file": "SFUR/Ma Foom Bey (Intro DJ 2).ogg",
+                            "duration": 15832
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/Ma Foom Bey (Mid).ogg",
+                            "duration": 201784
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/Ma Foom Bey (Outro DJ 1).ogg",
+                            "duration": 16410
+                        },
+                        {
+                            "file": "SFUR/Ma Foom Bey (Outro DJ 2).ogg",
+                            "duration": 16414
+                        }
+                    ]
+                },
+                {
+                    "name": "Make My Body Rock",
+                    "intro": [
+                        {
+                            "file": "SFUR/Make My Body Rock (Intro DJ 1).ogg",
+                            "duration": 16920
+                        },
+                        {
+                            "file": "SFUR/Make My Body Rock (Intro DJ 2).ogg",
+                            "duration": 16920
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/Make My Body Rock (Mid).ogg",
+                            "duration": 216008
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/Make My Body Rock (Outro DJ 1).ogg",
+                            "duration": 13614
+                        },
+                        {
+                            "file": "SFUR/Make My Body Rock (Outro DJ 2).ogg",
+                            "duration": 13618
+                        }
+                    ]
+                },
+                {
+                    "name": "Move Your Body",
+                    "intro": [
+                        {
+                            "file": "SFUR/Move Your Body (Intro DJ 1).ogg",
+                            "duration": 14800
+                        },
+                        {
+                            "file": "SFUR/Move Your Body (Intro DJ 2).ogg",
+                            "duration": 14800
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/Move Your Body (Mid).ogg",
+                            "duration": 222000
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/Move Your Body (Outro DJ 1).ogg",
+                            "duration": 6898
+                        },
+                        {
+                            "file": "SFUR/Move Your Body (Outro DJ 2).ogg",
+                            "duration": 6878
+                        }
+                    ]
+                },
+                {
+                    "name": "Pacific",
+                    "intro": [
+                        {
+                            "file": "SFUR/Pacific (Intro DJ 1).ogg",
+                            "duration": 24224
+                        },
+                        {
+                            "file": "SFUR/Pacific (Intro DJ 2).ogg",
+                            "duration": 24224
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/Pacific (Mid).ogg",
+                            "duration": 150004
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/Pacific (Outro DJ 1).ogg",
+                            "duration": 7352
+                        },
+                        {
+                            "file": "SFUR/Pacific (Outro DJ 2).ogg",
+                            "duration": 7370
+                        }
+                    ]
+                },
+                {
+                    "name": "Promised Land",
+                    "intro": [
+                        {
+                            "file": "SFUR/Promised Land (Intro DJ 1).ogg",
+                            "duration": 16912
+                        },
+                        {
+                            "file": "SFUR/Promised Land (Intro DJ 2).ogg",
+                            "duration": 16912
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/Promised Land (Mid).ogg",
+                            "duration": 151916
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/Promised Land (Outro DJ 1).ogg",
+                            "duration": 13058
+                        },
+                        {
+                            "file": "SFUR/Promised Land (Outro DJ 2).ogg",
+                            "duration": 13038
+                        }
+                    ]
+                },
+                {
+                    "name": "Someday",
+                    "intro": [
+                        {
+                            "file": "SFUR/Someday (Intro DJ 1).ogg",
+                            "duration": 16404
+                        },
+                        {
+                            "file": "SFUR/Someday (Intro DJ 2).ogg",
+                            "duration": 16404
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/Someday (Mid).ogg",
+                            "duration": 235556
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/Someday (Outro DJ 1).ogg",
+                            "duration": 8198
+                        },
+                        {
+                            "file": "SFUR/Someday (Outro DJ 2).ogg",
+                            "duration": 8210
+                        }
+                    ]
+                },
+                {
+                    "name": "The Morning After",
+                    "intro": [
+                        {
+                            "file": "SFUR/The Morning After (Intro DJ 1).ogg",
+                            "duration": 37828
+                        },
+                        {
+                            "file": "SFUR/The Morning After (Intro DJ 2).ogg",
+                            "duration": 37828
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/The Morning After (Mid).ogg",
+                            "duration": 211916
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/The Morning After (Outro DJ 1).ogg",
+                            "duration": 6350
+                        },
+                        {
+                            "file": "SFUR/The Morning After (Outro DJ 2).ogg",
+                            "duration": 6354
+                        }
+                    ]
+                },
+                {
+                    "name": "This is Acid",
+                    "intro": [
+                        {
+                            "file": "SFUR/This is Acid (Intro DJ 1).ogg",
+                            "duration": 16536
+                        },
+                        {
+                            "file": "SFUR/This is Acid (Intro DJ 2).ogg",
+                            "duration": 16536
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/This is Acid (Mid).ogg",
+                            "duration": 178800
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/This is Acid (Outro DJ 1).ogg",
+                            "duration": 12318
+                        },
+                        {
+                            "file": "SFUR/This is Acid (Outro DJ 2).ogg",
+                            "duration": 12294
+                        }
+                    ]
+                },
+                {
+                    "name": "Voodoo Ray",
+                    "intro": [
+                        {
+                            "file": "SFUR/Voodoo Ray (Intro DJ 1).ogg",
+                            "duration": 17508
+                        },
+                        {
+                            "file": "SFUR/Voodoo Ray (Intro DJ 2).ogg",
+                            "duration": 17508
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/Voodoo Ray (Mid).ogg",
+                            "duration": 198524
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/Voodoo Ray (Outro DJ 1).ogg",
+                            "duration": 11182
+                        },
+                        {
+                            "file": "SFUR/Voodoo Ray (Outro DJ 2).ogg",
+                            "duration": 11182
+                        }
+                    ]
+                },
+                {
+                    "name": "Weekend",
+                    "intro": [
+                        {
+                            "file": "SFUR/Weekend (Intro DJ 1).ogg",
+                            "duration": 14340
+                        },
+                        {
+                            "file": "SFUR/Weekend (Intro DJ 2).ogg",
+                            "duration": 14340
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/Weekend (Mid).ogg",
+                            "duration": 215328
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/Weekend (Outro DJ 1).ogg",
+                            "duration": 5464
+                        },
+                        {
+                            "file": "SFUR/Weekend (Outro DJ 2).ogg",
+                            "duration": 5490
+                        }
+                    ]
+                },
+                {
+                    "name": "",
+                    "intro": [
+                        {
+                            "file": "SFUR/Your Love (Intro DJ 1).ogg",
+                            "duration": 42184
+                        },
+                        {
+                            "file": "SFUR/Your Love (Intro DJ 2).ogg",
+                            "duration": 42184
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "SFUR/Your Love (Mid).ogg",
+                            "duration": 207264
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "SFUR/Your Love (Outro DJ 1).ogg",
+                            "duration": 18910
+                        },
+                        {
+                            "file": "SFUR/Your Love (Outro DJ 2).ogg",
+                            "duration": 18938
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Radio X",
+            "special": [
+                {
+                    "file": "Radio X/(Bridge Announce 1) Can access LS only.ogg",
+                    "duration": 19948
+                },
+                {
+                    "file": "Radio X/(Bridge Announce 2) Can access LS and SF.ogg",
+                    "duration": 13228
+                },
+                {
+                    "file": "Radio X/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                    "duration": 24122
+                },
+                {
+                    "file": "Radio X/(Story) Casino Opening.ogg",
+                    "duration": 19098
+                },
+                {
+                    "file": "Radio X/(Story) Rap Crisis.ogg",
+                    "duration": 25990
+                },
+                {
+                    "file": "Radio X/(Story) Riot.ogg",
+                    "duration": 14898
+                },
+                {
+                    "file": "Radio X/(Story) Weed Farm Burned Down.ogg",
+                    "duration": 7846
+                }
+            ],
+            "atmosphere": {
+                "evening": [
+                    {
+                        "file": "Radio X/(Atmosphere) Evening 1.ogg",
+                        "duration": 9134
+                    },
+                    {
+                        "file": "Radio X/(Atmosphere) Evening 2.ogg",
+                        "duration": 12102
+                    }
+                ],
+                "fog": [
+                    {
+                        "file": "Radio X/(Atmosphere) Fog 1.ogg",
+                        "duration": 15646
+                    },
+                    {
+                        "file": "Radio X/(Atmosphere) Fog 2.ogg",
+                        "duration": 11990
+                    }
+                ],
+                "morning": [
+                    {
+                        "file": "Radio X/(Atmosphere) Morning 1.ogg",
+                        "duration": 6346
+                    },
+                    {
+                        "file": "Radio X/(Atmosphere) Morning 2.ogg",
+                        "duration": 8766
+                    }
+                ],
+                "night": [
+                    {
+                        "file": "Radio X/(Atmosphere) Night 1.ogg",
+                        "duration": 8926
+                    },
+                    {
+                        "file": "Radio X/(Atmosphere) Night 2.ogg",
+                        "duration": 7526
+                    }
+                ],
+                "rain": [
+                    {
+                        "file": "Radio X/(Atmosphere) Rain 1.ogg",
+                        "duration": 8550
+                    },
+                    {
+                        "file": "Radio X/(Atmosphere) Rain 2.ogg",
+                        "duration": 9530
+                    }
+                ],
+                "smog": [],
+                "storm": [
+                    {
+                        "file": "Radio X/(Atmosphere) Storm.ogg",
+                        "duration": 7982
+                    }
+                ],
+                "sunny": [
+                    {
+                        "file": "Radio X/(Atmosphere) Sunny 1.ogg",
+                        "duration": 9942
+                    },
+                    {
+                        "file": "Radio X/(Atmosphere) Sunny 2.ogg",
+                        "duration": 5722
+                    }
+                ]
+            },
+            "dj": [
+                {
+                    "file": "Radio X/(Caller) What a stupid name.ogg",
+                    "duration": 53410
+                },
+                {
+                    "file": "Radio X/(Caller) You really are full of yourself.ogg",
+                    "duration": 45378
+                },
+                {
+                    "file": "Radio X/(DJ) Being a DJ is so hard.ogg",
+                    "duration": 6346
+                },
+                {
+                    "file": "Radio X/(DJ) Bombarded with commercials.ogg",
+                    "duration": 14572
+                },
+                {
+                    "file": "Radio X/(DJ) God I love crying.ogg",
+                    "duration": 12160
+                },
+                {
+                    "file": "Radio X/(DJ) Guys in skirts.ogg",
+                    "duration": 7686
+                },
+                {
+                    "file": "Radio X/(DJ) I dont want a real job.ogg",
+                    "duration": 11642
+                },
+                {
+                    "file": "Radio X/(DJ) I have to work so hard.ogg",
+                    "duration": 6446
+                },
+                {
+                    "file": "Radio X/(DJ) Like a big mix tape.ogg",
+                    "duration": 17348
+                },
+                {
+                    "file": "Radio X/(DJ) No tracers yet.ogg",
+                    "duration": 6682
+                },
+                {
+                    "file": "Radio X/(DJ) One must always go forward.ogg",
+                    "duration": 10250
+                },
+                {
+                    "file": "Radio X/(DJ) People over thirty.ogg",
+                    "duration": 14656
+                },
+                {
+                    "file": "Radio X/(DJ) Sage.ogg",
+                    "duration": 11520
+                },
+                {
+                    "file": "Radio X/(DJ) That bitch at the record store.ogg",
+                    "duration": 10540
+                },
+                {
+                    "file": "Radio X/(DJ) Yes, that is my real name.ogg",
+                    "duration": 7434
+                }
+            ],
+            "id": [
+                {
+                    "file": "Radio X/(ID) At the end of the alphabet.ogg",
+                    "duration": 6190
+                },
+                {
+                    "file": "Radio X/(ID) Jump off a bridge and die.ogg",
+                    "duration": 11790
+                },
+                {
+                    "file": "Radio X/(ID) Much better than real friends.ogg",
+                    "duration": 5886
+                },
+                {
+                    "file": "Radio X/(ID) Self-important nihilists.ogg",
+                    "duration": 8588
+                },
+                {
+                    "file": "Radio X/(ID) The birthplace of modern rock.ogg",
+                    "duration": 8382
+                },
+                {
+                    "file": "Radio X/(ID) The id, the ego, ....ogg",
+                    "duration": 7574
+                },
+                {
+                    "file": "Radio X/(ID) They dont care about money.ogg",
+                    "duration": 8378
+                },
+                {
+                    "file": "Radio X/(ID) This is our time.ogg",
+                    "duration": 10798
+                },
+                {
+                    "file": "Radio X/(ID) Trust fund babies.ogg",
+                    "duration": 7726
+                },
+                {
+                    "file": "Radio X/(ID) Were the only identity youve got.ogg",
+                    "duration": 9278
+                },
+                {
+                    "file": "Radio X/(ID) Who cares about hunger.ogg",
+                    "duration": 6790
+                }
+            ],
+            "songs": [
+                {
+                    "name": "Been Caught Stealing",
+                    "intro": [
+                        {
+                            "file": "Radio X/Been Caught Stealing (Intro DJ 1).ogg",
+                            "duration": 20624
+                        },
+                        {
+                            "file": "Radio X/Been Caught Stealing (Intro DJ 2).ogg",
+                            "duration": 20624
+                        },
+                        {
+                            "file": "Radio X/Been Caught Stealing (Intro).ogg",
+                            "duration": 20624
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Been Caught Stealing (Mid).ogg",
+                            "duration": 164212
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Been Caught Stealing (Outro DJ 1).ogg",
+                            "duration": 16062
+                        },
+                        {
+                            "file": "Radio X/Been Caught Stealing (Outro DJ 2).ogg",
+                            "duration": 16062
+                        },
+                        {
+                            "file": "Radio X/Been Caught Stealing (Outro).ogg",
+                            "duration": 16062
+                        }
+                    ]
+                },
+                {
+                    "name": "Cult of Personality",
+                    "intro": [
+                        {
+                            "file": "Radio X/Cult of Personality (Intro DJ 1).ogg",
+                            "duration": 17400
+                        },
+                        {
+                            "file": "Radio X/Cult of Personality (Intro DJ 2).ogg",
+                            "duration": 17400
+                        },
+                        {
+                            "file": "Radio X/Cult of Personality (Intro).ogg",
+                            "duration": 17400
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Cult of Personality (Mid).ogg",
+                            "duration": 157708
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Cult of Personality (Outro DJ 1).ogg",
+                            "duration": 16674
+                        },
+                        {
+                            "file": "Radio X/Cult of Personality (Outro DJ 2).ogg",
+                            "duration": 16674
+                        },
+                        {
+                            "file": "Radio X/Cult of Personality (Outro).ogg",
+                            "duration": 16674
+                        }
+                    ]
+                },
+                {
+                    "name": "Fools Gold",
+                    "intro": [
+                        {
+                            "file": "Radio X/Fools Gold (Intro DJ 1).ogg",
+                            "duration": 17096
+                        },
+                        {
+                            "file": "Radio X/Fools Gold (Intro DJ 2).ogg",
+                            "duration": 17096
+                        },
+                        {
+                            "file": "Radio X/Fools Gold (Intro).ogg",
+                            "duration": 17096
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Fools Gold (Mid).ogg",
+                            "duration": 213300
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Fools Gold (Outro DJ 1).ogg",
+                            "duration": 17346
+                        },
+                        {
+                            "file": "Radio X/Fools Gold (Outro DJ 2).ogg",
+                            "duration": 17346
+                        },
+                        {
+                            "file": "Radio X/Fools Gold (Outro).ogg",
+                            "duration": 17346
+                        }
+                    ]
+                },
+                {
+                    "name": "Hellraiser",
+                    "intro": [
+                        {
+                            "file": "Radio X/Hellraiser (Intro DJ 1).ogg",
+                            "duration": 26220
+                        },
+                        {
+                            "file": "Radio X/Hellraiser (Intro DJ 2).ogg",
+                            "duration": 26220
+                        },
+                        {
+                            "file": "Radio X/Hellraiser (Intro).ogg",
+                            "duration": 26220
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Hellraiser (Mid).ogg",
+                            "duration": 165760
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Hellraiser (Outro DJ 1).ogg",
+                            "duration": 12806
+                        },
+                        {
+                            "file": "Radio X/Hellraiser (Outro DJ 2).ogg",
+                            "duration": 12806
+                        },
+                        {
+                            "file": "Radio X/Hellraiser (Outro).ogg",
+                            "duration": 12806
+                        }
+                    ]
+                },
+                {
+                    "name": "Killing in the Name",
+                    "intro": [
+                        {
+                            "file": "Radio X/Killing in the Name (Intro DJ 1).ogg",
+                            "duration": 25452
+                        },
+                        {
+                            "file": "Radio X/Killing in the Name (Intro DJ 2).ogg",
+                            "duration": 25452
+                        },
+                        {
+                            "file": "Radio X/Killing in the Name (Intro).ogg",
+                            "duration": 25452
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Killing in the Name (Mid).ogg",
+                            "duration": 249952
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Killing in the Name (Outro DJ 1).ogg",
+                            "duration": 18522
+                        },
+                        {
+                            "file": "Radio X/Killing in the Name (Outro DJ 2).ogg",
+                            "duration": 18522
+                        },
+                        {
+                            "file": "Radio X/Killing in the Name (Outro).ogg",
+                            "duration": 18522
+                        }
+                    ]
+                },
+                {
+                    "name": "Midlife Crisis",
+                    "intro": [
+                        {
+                            "file": "Radio X/Midlife Crisis (Intro DJ 1).ogg",
+                            "duration": 19320
+                        },
+                        {
+                            "file": "Radio X/Midlife Crisis (Intro DJ 2).ogg",
+                            "duration": 19320
+                        },
+                        {
+                            "file": "Radio X/Midlife Crisis (Intro).ogg",
+                            "duration": 19320
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Midlife Crisis (Mid).ogg",
+                            "duration": 152416
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Midlife Crisis (Outro DJ 1).ogg",
+                            "duration": 15362
+                        },
+                        {
+                            "file": "Radio X/Midlife Crisis (Outro DJ 2).ogg",
+                            "duration": 15362
+                        },
+                        {
+                            "file": "Radio X/Midlife Crisis (Outro).ogg",
+                            "duration": 15362
+                        }
+                    ]
+                },
+                {
+                    "name": "",
+                    "intro": [
+                        {
+                            "file": "Radio X/Mother (Intro DJ 1).ogg",
+                            "duration": 15804
+                        },
+                        {
+                            "file": "Radio X/Mother (Intro DJ 2).ogg",
+                            "duration": 15804
+                        },
+                        {
+                            "file": "Radio X/Mother (Intro).ogg",
+                            "duration": 15804
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Mother (Mid).ogg",
+                            "duration": 152388
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Mother (Outro DJ 1).ogg",
+                            "duration": 16358
+                        },
+                        {
+                            "file": "Radio X/Mother (Outro DJ 2).ogg",
+                            "duration": 16358
+                        },
+                        {
+                            "file": "Radio X/Mother (Outro).ogg",
+                            "duration": 16358
+                        }
+                    ]
+                },
+                {
+                    "name": "Movin on Up",
+                    "intro": [
+                        {
+                            "file": "Radio X/Movin on Up (Intro DJ 1).ogg",
+                            "duration": 16156
+                        },
+                        {
+                            "file": "Radio X/Movin on Up (Intro DJ 2).ogg",
+                            "duration": 16156
+                        },
+                        {
+                            "file": "Radio X/Movin on Up (Intro).ogg",
+                            "duration": 16156
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Movin on Up (Mid).ogg",
+                            "duration": 146696
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Movin on Up (Outro DJ 1).ogg",
+                            "duration": 16166
+                        },
+                        {
+                            "file": "Radio X/Movin on Up (Outro DJ 2).ogg",
+                            "duration": 16166
+                        },
+                        {
+                            "file": "Radio X/Movin on Up (Outro).ogg",
+                            "duration": 16138
+                        }
+                    ]
+                },
+                {
+                    "name": "Personal Jesus",
+                    "intro": [
+                        {
+                            "file": "Radio X/Personal Jesus (Intro DJ 1).ogg",
+                            "duration": 17784
+                        },
+                        {
+                            "file": "Radio X/Personal Jesus (Intro DJ 2).ogg",
+                            "duration": 17784
+                        },
+                        {
+                            "file": "Radio X/Personal Jesus (Intro).ogg",
+                            "duration": 17784
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Personal Jesus (Mid).ogg",
+                            "duration": 171336
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Personal Jesus (Outro DJ 1).ogg",
+                            "duration": 24510
+                        },
+                        {
+                            "file": "Radio X/Personal Jesus (Outro DJ 2).ogg",
+                            "duration": 24510
+                        },
+                        {
+                            "file": "Radio X/Personal Jesus (Outro).ogg",
+                            "duration": 24510
+                        }
+                    ]
+                },
+                {
+                    "name": "Plush",
+                    "intro": [
+                        {
+                            "file": "Radio X/Plush (Intro).ogg",
+                            "duration": 9056
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Plush (Mid).ogg",
+                            "duration": 201044
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Plush (Outro).ogg",
+                            "duration": 7594
+                        }
+                    ]
+                },
+                {
+                    "name": "Pretend Were Dead",
+                    "intro": [
+                        {
+                            "file": "Radio X/Pretend Were Dead (Intro DJ 1).ogg",
+                            "duration": 16936
+                        },
+                        {
+                            "file": "Radio X/Pretend Were Dead (Intro DJ 2).ogg",
+                            "duration": 16936
+                        },
+                        {
+                            "file": "Radio X/Pretend Were Dead (Intro).ogg",
+                            "duration": 16936
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Pretend Were Dead (Mid).ogg",
+                            "duration": 191412
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Pretend Were Dead (Outro DJ 1).ogg",
+                            "duration": 19094
+                        },
+                        {
+                            "file": "Radio X/Pretend Were Dead (Outro DJ 2).ogg",
+                            "duration": 19094
+                        },
+                        {
+                            "file": "Radio X/Pretend Were Dead (Outro).ogg",
+                            "duration": 19094
+                        }
+                    ]
+                },
+                {
+                    "name": "Rusty Cage",
+                    "intro": [
+                        {
+                            "file": "Radio X/Rusty Cage (Intro DJ 1).ogg",
+                            "duration": 19872
+                        },
+                        {
+                            "file": "Radio X/Rusty Cage (Intro DJ 2).ogg",
+                            "duration": 19872
+                        },
+                        {
+                            "file": "Radio X/Rusty Cage (Intro).ogg",
+                            "duration": 19872
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Rusty Cage (Mid).ogg",
+                            "duration": 132008
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Rusty Cage (Outro DJ 1).ogg",
+                            "duration": 22222
+                        },
+                        {
+                            "file": "Radio X/Rusty Cage (Outro DJ 2).ogg",
+                            "duration": 22222
+                        },
+                        {
+                            "file": "Radio X/Rusty Cage (Outro).ogg",
+                            "duration": 22222
+                        }
+                    ]
+                },
+                {
+                    "name": "Them Bones",
+                    "intro": [
+                        {
+                            "file": "Radio X/Them Bones (Intro DJ 1).ogg",
+                            "duration": 10692
+                        },
+                        {
+                            "file": "Radio X/Them Bones (Intro DJ 2).ogg",
+                            "duration": 10692
+                        },
+                        {
+                            "file": "Radio X/Them Bones (Intro).ogg",
+                            "duration": 10692
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Them Bones (Mid).ogg",
+                            "duration": 121776
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Them Bones (Outro DJ 1).ogg",
+                            "duration": 15654
+                        },
+                        {
+                            "file": "Radio X/Them Bones (Outro DJ 2).ogg",
+                            "duration": 15654
+                        },
+                        {
+                            "file": "Radio X/Them Bones (Outro).ogg",
+                            "duration": 15654
+                        }
+                    ]
+                },
+                {
+                    "name": "Unsung",
+                    "intro": [
+                        {
+                            "file": "Radio X/Unsung (Intro DJ 1).ogg",
+                            "duration": 14932
+                        },
+                        {
+                            "file": "Radio X/Unsung (Intro DJ 2).ogg",
+                            "duration": 14932
+                        },
+                        {
+                            "file": "Radio X/Unsung (Intro).ogg",
+                            "duration": 14932
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Unsung (Mid).ogg",
+                            "duration": 172804
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Unsung (Outro DJ 1).ogg",
+                            "duration": 14670
+                        },
+                        {
+                            "file": "Radio X/Unsung (Outro DJ 2).ogg",
+                            "duration": 14670
+                        },
+                        {
+                            "file": "Radio X/Unsung (Outro).ogg",
+                            "duration": 14670
+                        }
+                    ]
+                },
+                {
+                    "name": "Welcome to the Jungle",
+                    "intro": [
+                        {
+                            "file": "Radio X/Welcome to the Jungle (Intro DJ 1).ogg",
+                            "duration": 32152
+                        },
+                        {
+                            "file": "Radio X/Welcome to the Jungle (Intro DJ 2).ogg",
+                            "duration": 32152
+                        },
+                        {
+                            "file": "Radio X/Welcome to the Jungle (Intro).ogg",
+                            "duration": 32152
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Radio X/Welcome to the Jungle (Mid).ogg",
+                            "duration": 187372
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Radio X/Welcome to the Jungle (Outro DJ 1).ogg",
+                            "duration": 22618
+                        },
+                        {
+                            "file": "Radio X/Welcome to the Jungle (Outro DJ 2).ogg",
+                            "duration": 22618
+                        },
+                        {
+                            "file": "Radio X/Welcome to the Jungle (Outro).ogg",
+                            "duration": 22618
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Playback FM",
+            "special": [
+                {
+                    "file": "Playback FM/(Bridge Announce 1) Can access LS only.ogg",
+                    "duration": 6834
+                },
+                {
+                    "file": "Playback FM/(Bridge Announce 2) Can access LS and SF.ogg",
+                    "duration": 6098
+                },
+                {
+                    "file": "Playback FM/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                    "duration": 12506
+                }
+            ],
+            "atmosphere": {
+                "evening": [
+                    {
+                        "file": "Playback FM/(Atmosphere) Evening 1.ogg",
+                        "duration": 18738
+                    },
+                    {
+                        "file": "Playback FM/(Atmosphere) Evening 2.ogg",
+                        "duration": 12434
+                    }
+                ],
+                "fog": [
+                    {
+                        "file": "Playback FM/(Atmosphere) Fog 1.ogg",
+                        "duration": 21734
+                    },
+                    {
+                        "file": "Playback FM/(Atmosphere) Fog 2.ogg",
+                        "duration": 12766
+                    }
+                ],
+                "morning": [
+                    {
+                        "file": "Playback FM/(Atmosphere) Morning 1.ogg",
+                        "duration": 9758
+                    },
+                    {
+                        "file": "Playback FM/(Atmosphere) Morning 2.ogg",
+                        "duration": 12038
+                    }
+                ],
+                "night": [
+                    {
+                        "file": "Playback FM/(Atmosphere) Night 1.ogg",
+                        "duration": 10226
+                    },
+                    {
+                        "file": "Playback FM/(Atmosphere) Night 2.ogg",
+                        "duration": 7552
+                    }
+                ],
+                "rain": [
+                    {
+                        "file": "Playback FM/(Atmosphere) Rain 1.ogg",
+                        "duration": 13314
+                    },
+                    {
+                        "file": "Playback FM/(Atmosphere) Rain 2.ogg",
+                        "duration": 18270
+                    },
+                    {
+                        "file": "Playback FM/(Atmosphere) Rain 3.ogg",
+                        "duration": 9644
+                    }
+                ],
+                "smog": [
+                    {
+                        "file": "Playback FM/(Atmosphere) Smog.ogg",
+                        "duration": 10094
+                    }
+                ],
+                "storm": [],
+                "sunny": [
+                    {
+                        "file": "Playback FM/(Atmosphere) Sunny 1.ogg",
+                        "duration": 5742
+                    },
+                    {
+                        "file": "Playback FM/(Atmosphere) Sunny 2.ogg",
+                        "duration": 20146
+                    }
+                ]
+            },
+            "dj": [
+                {
+                    "file": "Playback FM/(Caller) Well, actually, its CSR.ogg",
+                    "duration": 54766
+                },
+                {
+                    "file": "Playback FM/(Caller) Youre really annoying.ogg",
+                    "duration": 45786
+                },
+                {
+                    "file": "Playback FM/(DJ) Be educated on the sounds that brung ya.ogg",
+                    "duration": 15622
+                },
+                {
+                    "file": "Playback FM/(DJ) Cavern of Sorrow marathon.ogg",
+                    "duration": 17670
+                },
+                {
+                    "file": "Playback FM/(DJ) Get back to the burbs you fools!.ogg",
+                    "duration": 9134
+                },
+                {
+                    "file": "Playback FM/(DJ) Help aint no charity.ogg",
+                    "duration": 10138
+                },
+                {
+                    "file": "Playback FM/(DJ) I got seven digits as it is.ogg",
+                    "duration": 9522
+                },
+                {
+                    "file": "Playback FM/(DJ) Ill go speed of light on yall.ogg",
+                    "duration": 12742
+                },
+                {
+                    "file": "Playback FM/(DJ) Los Santos police.ogg",
+                    "duration": 8210
+                },
+                {
+                    "file": "Playback FM/(DJ) Propaganda.ogg",
+                    "duration": 13594
+                },
+                {
+                    "file": "Playback FM/(DJ) Ready for your training wheels.ogg",
+                    "duration": 12418
+                },
+                {
+                    "file": "Playback FM/(DJ) Shoulda paid more attention in school.ogg",
+                    "duration": 7736
+                },
+                {
+                    "file": "Playback FM/(DJ) Small-minded robots.ogg",
+                    "duration": 12098
+                },
+                {
+                    "file": "Playback FM/(DJ) Theres a party over here.ogg",
+                    "duration": 14242
+                },
+                {
+                    "file": "Playback FM/(DJ) This goes out to my man the Iceman.ogg",
+                    "duration": 9914
+                },
+                {
+                    "file": "Playback FM/(DJ) Ugly like yo momma.ogg",
+                    "duration": 7754
+                },
+                {
+                    "file": "Playback FM/(DJ) West Coast radio suckers.ogg",
+                    "duration": 8834
+                },
+                {
+                    "file": "Playback FM/(DJ) You dont last a minute.ogg",
+                    "duration": 9194
+                }
+            ],
+            "id": [
+                {
+                    "file": "Playback FM/(ID) Doper than anyone else.ogg",
+                    "duration": 11158
+                },
+                {
+                    "file": "Playback FM/(ID) Drop out of that whack-ass school.ogg",
+                    "duration": 9726
+                },
+                {
+                    "file": "Playback FM/(ID) Givin it to ya straight up, homeboy!.ogg",
+                    "duration": 7670
+                },
+                {
+                    "file": "Playback FM/(ID) Layin it down old skool.ogg",
+                    "duration": 7894
+                },
+                {
+                    "file": "Playback FM/(ID) Skills on the mic.ogg",
+                    "duration": 8276
+                },
+                {
+                    "file": "Playback FM/(ID) The home of classic hiphop.ogg",
+                    "duration": 7642
+                },
+                {
+                    "file": "Playback FM/(ID) The man with an opinion on everything.ogg",
+                    "duration": 10910
+                },
+                {
+                    "file": "Playback FM/(ID) The reason you put that subwoofer in your car.ogg",
+                    "duration": 11690
+                },
+                {
+                    "file": "Playback FM/(ID) While you suckers were wearing diapers.ogg",
+                    "duration": 10742
+                },
+                {
+                    "file": "Playback FM/(ID) Word to your mamma.ogg",
+                    "duration": 5768
+                },
+                {
+                    "file": "Playback FM/(ID) Word up!.ogg",
+                    "duration": 8052
+                }
+            ],
+            "songs": [
+                {
+                    "name": "B.Y.S.",
+                    "intro": [
+                        {
+                            "file": "Playback FM/B.Y.S. (Intro DJ 1).ogg",
+                            "duration": 11628
+                        },
+                        {
+                            "file": "Playback FM/B.Y.S. (Intro DJ 2).ogg",
+                            "duration": 11628
+                        },
+                        {
+                            "file": "Playback FM/B.Y.S. (Intro).ogg",
+                            "duration": 11628
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Playback FM/B.Y.S. (Mid).ogg",
+                            "duration": 142052
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Playback FM/B.Y.S. (Outro DJ 1).ogg",
+                            "duration": 28562
+                        },
+                        {
+                            "file": "Playback FM/B.Y.S. (Outro DJ 2).ogg",
+                            "duration": 28562
+                        },
+                        {
+                            "file": "Playback FM/B.Y.S. (Outro).ogg",
+                            "duration": 28562
+                        }
+                    ]
+                },
+                {
+                    "name": "Brand Nubian",
+                    "intro": [
+                        {
+                            "file": "Playback FM/Brand Nubian (Intro DJ 1).ogg",
+                            "duration": 22936
+                        },
+                        {
+                            "file": "Playback FM/Brand Nubian (Intro DJ 2).ogg",
+                            "duration": 22936
+                        },
+                        {
+                            "file": "Playback FM/Brand Nubian (Intro).ogg",
+                            "duration": 22936
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Playback FM/Brand Nubian (Mid).ogg",
+                            "duration": 145420
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Playback FM/Brand Nubian (Outro DJ 1).ogg",
+                            "duration": 20334
+                        },
+                        {
+                            "file": "Playback FM/Brand Nubian (Outro DJ 2).ogg",
+                            "duration": 20334
+                        },
+                        {
+                            "file": "Playback FM/Brand Nubian (Outro).ogg",
+                            "duration": 20334
+                        }
+                    ]
+                },
+                {
+                    "name": "Childrens Story",
+                    "intro": [
+                        {
+                            "file": "Playback FM/Childrens Story (Intro DJ 1).ogg",
+                            "duration": 17560
+                        },
+                        {
+                            "file": "Playback FM/Childrens Story (Intro DJ 2).ogg",
+                            "duration": 17560
+                        },
+                        {
+                            "file": "Playback FM/Childrens Story (Intro).ogg",
+                            "duration": 17560
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Playback FM/Childrens Story (Mid).ogg",
+                            "duration": 203528
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Playback FM/Childrens Story (Outro DJ 1).ogg",
+                            "duration": 13650
+                        },
+                        {
+                            "file": "Playback FM/Childrens Story (Outro DJ 2).ogg",
+                            "duration": 13650
+                        },
+                        {
+                            "file": "Playback FM/Childrens Story (Outro).ogg",
+                            "duration": 13650
+                        }
+                    ]
+                },
+                {
+                    "name": "Critical Beatdown",
+                    "intro": [
+                        {
+                            "file": "Playback FM/Critical Beatdown (Intro DJ 1).ogg",
+                            "duration": 17812
+                        },
+                        {
+                            "file": "Playback FM/Critical Beatdown (Intro DJ 2).ogg",
+                            "duration": 17812
+                        },
+                        {
+                            "file": "Playback FM/Critical Beatdown (Intro).ogg",
+                            "duration": 17812
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Playback FM/Critical Beatdown (Mid).ogg",
+                            "duration": 159256
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Playback FM/Critical Beatdown (Outro DJ 1).ogg",
+                            "duration": 19242
+                        },
+                        {
+                            "file": "Playback FM/Critical Beatdown (Outro DJ 2).ogg",
+                            "duration": 19242
+                        },
+                        {
+                            "file": "Playback FM/Critical Beatdown (Outro).ogg",
+                            "duration": 19242
+                        }
+                    ]
+                },
+                {
+                    "name": "I Know You Got Soul",
+                    "intro": [
+                        {
+                            "file": "Playback FM/I Know You Got Soul (Intro DJ 1).ogg",
+                            "duration": 21144
+                        },
+                        {
+                            "file": "Playback FM/I Know You Got Soul (Intro DJ 2).ogg",
+                            "duration": 21144
+                        },
+                        {
+                            "file": "Playback FM/I Know You Got Soul (Intro).ogg",
+                            "duration": 21144
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Playback FM/I Know You Got Soul (Mid).ogg",
+                            "duration": 171984
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Playback FM/I Know You Got Soul (Outro DJ 1).ogg",
+                            "duration": 10798
+                        },
+                        {
+                            "file": "Playback FM/I Know You Got Soul (Outro DJ 2).ogg",
+                            "duration": 10798
+                        },
+                        {
+                            "file": "Playback FM/I Know You Got Soul (Outro).ogg",
+                            "duration": 10798
+                        }
+                    ]
+                },
+                {
+                    "name": "It Takes Two",
+                    "intro": [
+                        {
+                            "file": "Playback FM/It Takes Two (Intro DJ 1).ogg",
+                            "duration": 19840
+                        },
+                        {
+                            "file": "Playback FM/It Takes Two (Intro DJ 2).ogg",
+                            "duration": 19840
+                        },
+                        {
+                            "file": "Playback FM/It Takes Two (Intro).ogg",
+                            "duration": 19840
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Playback FM/It Takes Two (Mid).ogg",
+                            "duration": 180800
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Playback FM/It Takes Two (Outro DJ 1).ogg",
+                            "duration": 14678
+                        },
+                        {
+                            "file": "Playback FM/It Takes Two (Outro DJ 2).ogg",
+                            "duration": 14678
+                        },
+                        {
+                            "file": "Playback FM/It Takes Two (Outro).ogg",
+                            "duration": 14678
+                        }
+                    ]
+                },
+                {
+                    "name": "Me & The Biz",
+                    "intro": [
+                        {
+                            "file": "Playback FM/Me & The Biz (Intro DJ 1).ogg",
+                            "duration": 11516
+                        },
+                        {
+                            "file": "Playback FM/Me & The Biz (Intro DJ 2).ogg",
+                            "duration": 11516
+                        },
+                        {
+                            "file": "Playback FM/Me & The Biz (Intro).ogg",
+                            "duration": 11516
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Playback FM/Me & The Biz (Mid).ogg",
+                            "duration": 183612
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Playback FM/Me & The Biz (Outro DJ 1).ogg",
+                            "duration": 18290
+                        },
+                        {
+                            "file": "Playback FM/Me & The Biz (Outro DJ 2).ogg",
+                            "duration": 18290
+                        },
+                        {
+                            "file": "Playback FM/Me & The Biz (Outro).ogg",
+                            "duration": 18290
+                        }
+                    ]
+                },
+                {
+                    "name": "Rebel Without a Pause",
+                    "intro": [
+                        {
+                            "file": "Playback FM/Rebel Without a Pause (Intro DJ 1).ogg",
+                            "duration": 13684
+                        },
+                        {
+                            "file": "Playback FM/Rebel Without a Pause (Intro DJ 2).ogg",
+                            "duration": 13684
+                        },
+                        {
+                            "file": "Playback FM/Rebel Without a Pause (Intro).ogg",
+                            "duration": 13684
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Playback FM/Rebel Without a Pause (Mid).ogg",
+                            "duration": 199296
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Playback FM/Rebel Without a Pause (Outro DJ 1).ogg",
+                            "duration": 13256
+                        },
+                        {
+                            "file": "Playback FM/Rebel Without a Pause (Outro DJ 2).ogg",
+                            "duration": 13256
+                        },
+                        {
+                            "file": "Playback FM/Rebel Without a Pause (Outro).ogg",
+                            "duration": 13274
+                        }
+                    ]
+                },
+                {
+                    "name": "Road to the Riches",
+                    "intro": [
+                        {
+                            "file": "Playback FM/Road to the Riches (Intro DJ 1).ogg",
+                            "duration": 19728
+                        },
+                        {
+                            "file": "Playback FM/Road to the Riches (Intro DJ 2).ogg",
+                            "duration": 19728
+                        },
+                        {
+                            "file": "Playback FM/Road to the Riches (Intro).ogg",
+                            "duration": 19728
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Playback FM/Road to the Riches (Mid).ogg",
+                            "duration": 187488
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Playback FM/Road to the Riches (Outro DJ 1).ogg",
+                            "duration": 14234
+                        },
+                        {
+                            "file": "Playback FM/Road to the Riches (Outro DJ 2).ogg",
+                            "duration": 14234
+                        },
+                        {
+                            "file": "Playback FM/Road to the Riches (Outro).ogg",
+                            "duration": 14234
+                        }
+                    ]
+                },
+                {
+                    "name": "The Godfather",
+                    "intro": [
+                        {
+                            "file": "Playback FM/The Godfather (Intro DJ 1).ogg",
+                            "duration": 18888
+                        },
+                        {
+                            "file": "Playback FM/The Godfather (Intro DJ 2).ogg",
+                            "duration": 18888
+                        },
+                        {
+                            "file": "Playback FM/The Godfather (Intro).ogg",
+                            "duration": 18888
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Playback FM/The Godfather (Mid).ogg",
+                            "duration": 176284
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Playback FM/The Godfather (Outro DJ 1).ogg",
+                            "duration": 10926
+                        },
+                        {
+                            "file": "Playback FM/The Godfather (Outro DJ 2).ogg",
+                            "duration": 10926
+                        },
+                        {
+                            "file": "Playback FM/The Godfather (Outro).ogg",
+                            "duration": 10926
+                        }
+                    ]
+                },
+                {
+                    "name": "The Vapors",
+                    "intro": [
+                        {
+                            "file": "Playback FM/The Vapors (Intro DJ 1).ogg",
+                            "duration": 20696
+                        },
+                        {
+                            "file": "Playback FM/The Vapors (Intro DJ 2).ogg",
+                            "duration": 20696
+                        },
+                        {
+                            "file": "Playback FM/The Vapors (Intro).ogg",
+                            "duration": 20696
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Playback FM/The Vapors (Mid).ogg",
+                            "duration": 174592
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Playback FM/The Vapors (Outro DJ 1).ogg",
+                            "duration": 27966
+                        },
+                        {
+                            "file": "Playback FM/The Vapors (Outro DJ 2).ogg",
+                            "duration": 27966
+                        },
+                        {
+                            "file": "Playback FM/The Vapors (Outro).ogg",
+                            "duration": 27966
+                        }
+                    ]
+                },
+                {
+                    "name": "Warm It Up Kan",
+                    "intro": [
+                        {
+                            "file": "Playback FM/Warm It Up Kane (Intro DJ 1).ogg",
+                            "duration": 17132
+                        },
+                        {
+                            "file": "Playback FM/Warm It Up Kane (Intro DJ 2).ogg",
+                            "duration": 17132
+                        },
+                        {
+                            "file": "Playback FM/Warm It Up Kane (Intro).ogg",
+                            "duration": 17132
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Playback FM/Warm It Up Kane (Mid).ogg",
+                            "duration": 159824
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Playback FM/Warm It Up Kane (Outro DJ 1).ogg",
+                            "duration": 10390
+                        },
+                        {
+                            "file": "Playback FM/Warm It Up Kane (Outro DJ 2).ogg",
+                            "duration": 10390
+                        },
+                        {
+                            "file": "Playback FM/Warm It Up Kane (Outro).ogg",
+                            "duration": 10390
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "Master Sounds",
+            "special": [
+                {
+                    "file": "Master Sounds/(Bridge Announce 1) Can access LS only.ogg",
+                    "duration": 10062
+                },
+                {
+                    "file": "Master Sounds/(Bridge Announce 2) Can access LS and SF.ogg",
+                    "duration": 9234
+                },
+                {
+                    "file": "Master Sounds/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                    "duration": 14154
+                },
+                {
+                    "file": "Master Sounds/(Story) Countryside Racing.ogg",
+                    "duration": 9858
+                },
+                {
+                    "file": "Master Sounds/(Story) Lights in Desert.ogg",
+                    "duration": 12298
+                },
+                {
+                    "file": "Master Sounds/(Story) Mafia Family Killed.ogg",
+                    "duration": 10018
+                },
+                {
+                    "file": "Master Sounds/(Story) Police Trial.ogg",
+                    "duration": 11666
+                }
+            ],
+            "atmosphere": {
+                "evening": [
+                    {
+                        "file": "Master Sounds/(Atmosphere) Evening 1.ogg",
+                        "duration": 11166
+                    },
+                    {
+                        "file": "Master Sounds/(Atmosphere) Evening 2.ogg",
+                        "duration": 7578
+                    }
+                ],
+                "fog": [
+                    {
+                        "file": "Master Sounds/(Atmosphere) Fog 1.ogg",
+                        "duration": 13702
+                    },
+                    {
+                        "file": "Master Sounds/(Atmosphere) Fog 2.ogg",
+                        "duration": 9494
+                    },
+                    {
+                        "file": "Master Sounds/(Atmosphere) Fog 3.ogg",
+                        "duration": 6550
+                    }
+                ],
+                "morning": [
+                    {
+                        "file": "Master Sounds/(Atmosphere) Morning 1.ogg",
+                        "duration": 13710
+                    },
+                    {
+                        "file": "Master Sounds/(Atmosphere) Morning 2.ogg",
+                        "duration": 10314
+                    }
+                ],
+                "night": [
+                    {
+                        "file": "Master Sounds/(Atmosphere) Night 1.ogg",
+                        "duration": 10334
+                    },
+                    {
+                        "file": "Master Sounds/(Atmosphere) Night 2.ogg",
+                        "duration": 10274
+                    }
+                ],
+                "rain": [
+                    {
+                        "file": "Master Sounds/(Atmosphere) Rain 1.ogg",
+                        "duration": 15798
+                    },
+                    {
+                        "file": "Master Sounds/(Atmosphere) Rain 2.ogg",
+                        "duration": 9626
+                    }
+                ],
+                "smog": [],
+                "storm": [],
+                "sunny": [
+                    {
+                        "file": "Master Sounds/(Atmosphere) Sunny.ogg",
+                        "duration": 20106
+                    }
+                ]
+            },
+            "dj": [
+                {
+                    "file": "Master Sounds/(Caller) How tall are you.ogg",
+                    "duration": 43674
+                },
+                {
+                    "file": "Master Sounds/(Caller) I get a great boner.ogg",
+                    "duration": 12062
+                },
+                {
+                    "file": "Master Sounds/(Caller) We love you.ogg",
+                    "duration": 25082
+                },
+                {
+                    "file": "Master Sounds/(Caller) What was that racket last night.ogg",
+                    "duration": 31554
+                },
+                {
+                    "file": "Master Sounds/(Caller) Your attitude is disgusting.ogg",
+                    "duration": 30230
+                },
+                {
+                    "file": "Master Sounds/(DJ) A little dude wit a attitude.ogg",
+                    "duration": 10120
+                },
+                {
+                    "file": "Master Sounds/(DJ) Big Daddy.ogg",
+                    "duration": 22006
+                },
+                {
+                    "file": "Master Sounds/(DJ) Check out your headlights.ogg",
+                    "duration": 6238
+                },
+                {
+                    "file": "Master Sounds/(DJ) Dont be a fool and be defiant.ogg",
+                    "duration": 16082
+                },
+                {
+                    "file": "Master Sounds/(DJ) Eye-level with your kitty-cat.ogg",
+                    "duration": 20306
+                },
+                {
+                    "file": "Master Sounds/(DJ) Gonna end up in the hospital.ogg",
+                    "duration": 10430
+                },
+                {
+                    "file": "Master Sounds/(DJ) I am the Giant.ogg",
+                    "duration": 14354
+                },
+                {
+                    "file": "Master Sounds/(DJ) I know you thinkin girl.ogg",
+                    "duration": 13102
+                },
+                {
+                    "file": "Master Sounds/(DJ) Im about to suck you right on up.ogg",
+                    "duration": 9422
+                },
+                {
+                    "file": "Master Sounds/(DJ) Its all pink on the inside.ogg",
+                    "duration": 7794
+                },
+                {
+                    "file": "Master Sounds/(DJ) Keep the groove groovin.ogg",
+                    "duration": 15418
+                },
+                {
+                    "file": "Master Sounds/(DJ) Lovin you, coz you my bitch.ogg",
+                    "duration": 9618
+                },
+                {
+                    "file": "Master Sounds/(DJ) My book.ogg",
+                    "duration": 13662
+                },
+                {
+                    "file": "Master Sounds/(DJ) Playing it for keeps.ogg",
+                    "duration": 12222
+                },
+                {
+                    "file": "Master Sounds/(DJ) Right in your earhole, 3D style.ogg",
+                    "duration": 6790
+                },
+                {
+                    "file": "Master Sounds/(DJ) Small packages.ogg",
+                    "duration": 13262
+                },
+                {
+                    "file": "Master Sounds/(DJ) The art of love and...sensible advice.ogg",
+                    "duration": 21806
+                },
+                {
+                    "file": "Master Sounds/(DJ) The love doctor.ogg",
+                    "duration": 9758
+                },
+                {
+                    "file": "Master Sounds/(DJ) The master of the rare groove.ogg",
+                    "duration": 6990
+                },
+                {
+                    "file": "Master Sounds/(DJ) To Heaven like nineteen times.ogg",
+                    "duration": 38026
+                },
+                {
+                    "file": "Master Sounds/(DJ) Too much soul.ogg",
+                    "duration": 11798
+                },
+                {
+                    "file": "Master Sounds/(DJ) Youre tuned into who.ogg",
+                    "duration": 7422
+                }
+            ],
+            "id": [
+                {
+                    "file": "Master Sounds/(ID) Before it got sampled.ogg",
+                    "duration": 18630
+                },
+                {
+                    "file": "Master Sounds/(ID) Big Daddys back in town.ogg",
+                    "duration": 12478
+                },
+                {
+                    "file": "Master Sounds/(ID) Find a beat to steer you.ogg",
+                    "duration": 11690
+                },
+                {
+                    "file": "Master Sounds/(ID) Its the Love Giant.ogg",
+                    "duration": 12982
+                },
+                {
+                    "file": "Master Sounds/(ID) Stop, listen, and learn.ogg",
+                    "duration": 14210
+                },
+                {
+                    "file": "Master Sounds/(ID) The home of cool rare grooves.ogg",
+                    "duration": 14846
+                },
+                {
+                    "file": "Master Sounds/(ID) Were bringing it back.ogg",
+                    "duration": 15310
+                },
+                {
+                    "file": "Master Sounds/(ID) When the rhythm method was king.ogg",
+                    "duration": 11858
+                }
+            ],
+            "songs": [
+                {
+                    "name": "(I got) So Much Trouble in My Mind",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/(I got) So Much Trouble in My Mind (Intro DJ 1).ogg",
+                            "duration": 24876
+                        },
+                        {
+                            "file": "Master Sounds/(I got) So Much Trouble in My Mind (Intro DJ 2).ogg",
+                            "duration": 24876
+                        },
+                        {
+                            "file": "Master Sounds/(I got) So Much Trouble in My Mind (Intro).ogg",
+                            "duration": 24876
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/(I got) So Much Trouble in My Mind (Mid).ogg",
+                            "duration": 185140
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/(I got) So Much Trouble in My Mind (Outro DJ 1).ogg",
+                            "duration": 20778
+                        },
+                        {
+                            "file": "Master Sounds/(I got) So Much Trouble in My Mind (Outro).ogg",
+                            "duration": 20778
+                        }
+                    ]
+                },
+                {
+                    "name": "Cross the Tracks (We Better Go Back)",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Cross the Tracks (We Better Go Back) (Intro DJ 1).ogg",
+                            "duration": 12828
+                        },
+                        {
+                            "file": "Master Sounds/Cross the Tracks (We Better Go Back) (Intro DJ 2).ogg",
+                            "duration": 12828
+                        },
+                        {
+                            "file": "Master Sounds/Cross the Tracks (We Better Go Back) (Intro).ogg",
+                            "duration": 12828
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Cross the Tracks (We Better Go Back) (Mid).ogg",
+                            "duration": 157960
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Cross the Tracks (We Better Go Back) (Outro DJ 1).ogg",
+                            "duration": 22750
+                        },
+                        {
+                            "file": "Master Sounds/Cross the Tracks (We Better Go Back) (Outro DJ 2).ogg",
+                            "duration": 22750
+                        },
+                        {
+                            "file": "Master Sounds/Cross the Tracks (We Better Go Back) (Outro).ogg",
+                            "duration": 22750
+                        }
+                    ]
+                },
+                {
+                    "name": "Express Yourself",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Express Yourself (Intro DJ 1).ogg",
+                            "duration": 11224
+                        },
+                        {
+                            "file": "Master Sounds/Express Yourself (Intro DJ 2).ogg",
+                            "duration": 11224
+                        },
+                        {
+                            "file": "Master Sounds/Express Yourself (Intro).ogg",
+                            "duration": 11224
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Express Yourself (Mid).ogg",
+                            "duration": 183024
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Express Yourself (Outro DJ 1).ogg",
+                            "duration": 21874
+                        },
+                        {
+                            "file": "Master Sounds/Express Yourself (Outro DJ 2).ogg",
+                            "duration": 21874
+                        },
+                        {
+                            "file": "Master Sounds/Express Yourself (Outro).ogg",
+                            "duration": 21874
+                        }
+                    ]
+                },
+                {
+                    "name": "Funky President",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Funky President (Intro DJ 1).ogg",
+                            "duration": 16516
+                        },
+                        {
+                            "file": "Master Sounds/Funky President (Intro DJ 2).ogg",
+                            "duration": 16516
+                        },
+                        {
+                            "file": "Master Sounds/Funky President (Intro).ogg",
+                            "duration": 16516
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Funky President (Mid).ogg",
+                            "duration": 197092
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Funky President (Outro DJ 1).ogg",
+                            "duration": 18982
+                        },
+                        {
+                            "file": "Master Sounds/Funky President (Outro DJ 2).ogg",
+                            "duration": 18982
+                        },
+                        {
+                            "file": "Master Sounds/Funky President (Outro).ogg",
+                            "duration": 18982
+                        }
+                    ]
+                },
+                {
+                    "name": "Green Onions",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Green Onions (Intro DJ 1).ogg",
+                            "duration": 30560
+                        },
+                        {
+                            "file": "Master Sounds/Green Onions (Intro DJ 2).ogg",
+                            "duration": 30560
+                        },
+                        {
+                            "file": "Master Sounds/Green Onions (Intro).ogg",
+                            "duration": 30560
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Green Onions (Mid).ogg",
+                            "duration": 120204
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Green Onions (Outro DJ 1).ogg",
+                            "duration": 15926
+                        },
+                        {
+                            "file": "Master Sounds/Green Onions (Outro DJ 2).ogg",
+                            "duration": 15926
+                        },
+                        {
+                            "file": "Master Sounds/Green Onions (Outro).ogg",
+                            "duration": 15926
+                        }
+                    ]
+                },
+                {
+                    "name": "Grunt",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Grunt (Intro DJ 1).ogg",
+                            "duration": 6388
+                        },
+                        {
+                            "file": "Master Sounds/Grunt (Intro DJ 2).ogg",
+                            "duration": 6388
+                        },
+                        {
+                            "file": "Master Sounds/Grunt (Intro).ogg",
+                            "duration": 6388
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Grunt (Mid).ogg",
+                            "duration": 142272
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Grunt (Outro DJ 1).ogg",
+                            "duration": 12562
+                        },
+                        {
+                            "file": "Master Sounds/Grunt (Outro DJ 2).ogg",
+                            "duration": 12562
+                        },
+                        {
+                            "file": "Master Sounds/Grunt (Outro).ogg",
+                            "duration": 12562
+                        }
+                    ]
+                },
+                {
+                    "name": "Hot Pants",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Hot Pants (Intro DJ 1).ogg",
+                            "duration": 13692
+                        },
+                        {
+                            "file": "Master Sounds/Hot Pants (Intro DJ 2).ogg",
+                            "duration": 13692
+                        },
+                        {
+                            "file": "Master Sounds/Hot Pants (Intro).ogg",
+                            "duration": 13692
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Hot Pants (Mid).ogg",
+                            "duration": 112068
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Hot Pants (Outro DJ 1).ogg",
+                            "duration": 18018
+                        },
+                        {
+                            "file": "Master Sounds/Hot Pants (Outro DJ 2).ogg",
+                            "duration": 18018
+                        },
+                        {
+                            "file": "Master Sounds/Hot Pants (Outro).ogg",
+                            "duration": 18018
+                        }
+                    ]
+                },
+                {
+                    "name": "I Know You Got Soul",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/I Know You Got Soul (Intro DJ 1).ogg",
+                            "duration": 9272
+                        },
+                        {
+                            "file": "Master Sounds/I Know You Got Soul (Intro DJ 2).ogg",
+                            "duration": 9272
+                        },
+                        {
+                            "file": "Master Sounds/I Know You Got Soul (Intro).ogg",
+                            "duration": 9272
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/I Know You Got Soul (Mid).ogg",
+                            "duration": 194464
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/I Know You Got Soul (Outro DJ 1).ogg",
+                            "duration": 17702
+                        },
+                        {
+                            "file": "Master Sounds/I Know You Got Soul (Outro).ogg",
+                            "duration": 17702
+                        }
+                    ]
+                },
+                {
+                    "name": "Jungle Fever",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Jungle Fever (Intro DJ 1).ogg",
+                            "duration": 20338
+                        },
+                        {
+                            "file": "Master Sounds/Jungle Fever (Intro DJ 2).ogg",
+                            "duration": 20338
+                        },
+                        {
+                            "file": "Master Sounds/Jungle Fever (Intro).ogg",
+                            "duration": 20338
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Jungle Fever (Mid).ogg",
+                            "duration": 164804
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Jungle Fever (Outro DJ 1).ogg",
+                            "duration": 29846
+                        },
+                        {
+                            "file": "Master Sounds/Jungle Fever (Outro DJ 2).ogg",
+                            "duration": 29846
+                        },
+                        {
+                            "file": "Master Sounds/Jungle Fever (Outro).ogg",
+                            "duration": 29846
+                        }
+                    ]
+                },
+                {
+                    "name": "Low Rider",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Low Rider (Intro DJ 1).ogg",
+                            "duration": 7756
+                        },
+                        {
+                            "file": "Master Sounds/Low Rider (Intro DJ 2).ogg",
+                            "duration": 7756
+                        },
+                        {
+                            "file": "Master Sounds/Low Rider (Intro).ogg",
+                            "duration": 7756
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Low Rider (Mid).ogg",
+                            "duration": 137188
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Low Rider (Outro DJ 1).ogg",
+                            "duration": 20718
+                        },
+                        {
+                            "file": "Master Sounds/Low Rider (Outro DJ 2).ogg",
+                            "duration": 20718
+                        },
+                        {
+                            "file": "Master Sounds/Low Rider (Outro).ogg",
+                            "duration": 20718
+                        }
+                    ]
+                },
+                {
+                    "name": "Nautilus",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Nautilus (Intro DJ 1).ogg",
+                            "duration": 11140
+                        },
+                        {
+                            "file": "Master Sounds/Nautilus (Intro DJ 2).ogg",
+                            "duration": 11140
+                        },
+                        {
+                            "file": "Master Sounds/Nautilus (Intro).ogg",
+                            "duration": 11140
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Nautilus (Mid).ogg",
+                            "duration": 190204
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Nautilus (Outro DJ 1).ogg",
+                            "duration": 25034
+                        },
+                        {
+                            "file": "Master Sounds/Nautilus (Outro).ogg",
+                            "duration": 25034
+                        }
+                    ]
+                },
+                {
+                    "name": "Rock Creek Park",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Rock Creek Park (Intro DJ 1).ogg",
+                            "duration": 18256
+                        },
+                        {
+                            "file": "Master Sounds/Rock Creek Park (Intro DJ 2).ogg",
+                            "duration": 18256
+                        },
+                        {
+                            "file": "Master Sounds/Rock Creek Park (Intro).ogg",
+                            "duration": 18256
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Rock Creek Park (Mid).ogg",
+                            "duration": 163116
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Rock Creek Park (Outro DJ 1).ogg",
+                            "duration": 27006
+                        },
+                        {
+                            "file": "Master Sounds/Rock Creek Park (Outro DJ 2).ogg",
+                            "duration": 27006
+                        },
+                        {
+                            "file": "Master Sounds/Rock Creek Park (Outro).ogg",
+                            "duration": 27006
+                        }
+                    ]
+                },
+                {
+                    "name": "Rock Me Again and Again",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Rock Me Again and Again (Intro DJ 1).ogg",
+                            "duration": 19496
+                        },
+                        {
+                            "file": "Master Sounds/Rock Me Again and Again (Intro DJ 2).ogg",
+                            "duration": 19496
+                        },
+                        {
+                            "file": "Master Sounds/Rock Me Again and Again (Intro).ogg",
+                            "duration": 19496
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Rock Me Again and Again (Mid).ogg",
+                            "duration": 169332
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Rock Me Again and Again (Outro DJ 1).ogg",
+                            "duration": 11534
+                        },
+                        {
+                            "file": "Master Sounds/Rock Me Again and Again (Outro DJ 2).ogg",
+                            "duration": 11534
+                        },
+                        {
+                            "file": "Master Sounds/Rock Me Again and Again (Outro).ogg",
+                            "duration": 11534
+                        }
+                    ]
+                },
+                {
+                    "name": "Smokin Cheeba Cheeba",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Smokin Cheeba Cheeba (Intro DJ 1).ogg",
+                            "duration": 21172
+                        },
+                        {
+                            "file": "Master Sounds/Smokin Cheeba Cheeba (Intro DJ 2).ogg",
+                            "duration": 21172
+                        },
+                        {
+                            "file": "Master Sounds/Smokin Cheeba Cheeba (Intro).ogg",
+                            "duration": 21172
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Smokin Cheeba Cheeba (Mid).ogg",
+                            "duration": 207628
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Smokin Cheeba Cheeba (Outro DJ 1).ogg",
+                            "duration": 31378
+                        },
+                        {
+                            "file": "Master Sounds/Smokin Cheeba Cheeba (Outro DJ 2).ogg",
+                            "duration": 31378
+                        },
+                        {
+                            "file": "Master Sounds/Smokin Cheeba Cheeba (Outro).ogg",
+                            "duration": 31378
+                        }
+                    ]
+                },
+                {
+                    "name": "Soul Power 74",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Soul Power 74 (Intro DJ 1).ogg",
+                            "duration": 10392
+                        },
+                        {
+                            "file": "Master Sounds/Soul Power 74 (Intro).ogg",
+                            "duration": 10392
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Soul Power 74 (Mid).ogg",
+                            "duration": 183484
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Soul Power 74 (Outro DJ 1).ogg",
+                            "duration": 29554
+                        },
+                        {
+                            "file": "Master Sounds/Soul Power 74 (Outro).ogg",
+                            "duration": 29554
+                        }
+                    ]
+                },
+                {
+                    "name": "Tainted Love",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Tainted Love (Intro).ogg",
+                            "duration": 8520
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Tainted Love (Mid).ogg",
+                            "duration": 103216
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Tainted Love (Outro).ogg",
+                            "duration": 9266
+                        }
+                    ]
+                },
+                {
+                    "name": "The Payback",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/The Payback (Intro DJ 1).ogg",
+                            "duration": 21172
+                        },
+                        {
+                            "file": "Master Sounds/The Payback (Intro DJ 2).ogg",
+                            "duration": 21172
+                        },
+                        {
+                            "file": "Master Sounds/The Payback (Intro).ogg",
+                            "duration": 21172
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/The Payback (Mid).ogg",
+                            "duration": 189048
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/The Payback (Outro).ogg",
+                            "duration": 22382
+                        }
+                    ]
+                },
+                {
+                    "name": "Think About It",
+                    "intro": [
+                        {
+                            "file": "Master Sounds/Think About It (Intro DJ 1).ogg",
+                            "duration": 34552
+                        },
+                        {
+                            "file": "Master Sounds/Think About It (Intro DJ 2).ogg",
+                            "duration": 34552
+                        },
+                        {
+                            "file": "Master Sounds/Think About It (Intro).ogg",
+                            "duration": 34552
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "Master Sounds/Think About It (Mid).ogg",
+                            "duration": 142172
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "Master Sounds/Think About It (Outro DJ 1).ogg",
+                            "duration": 18982
+                        },
+                        {
+                            "file": "Master Sounds/Think About It (Outro DJ 2).ogg",
+                            "duration": 18982
+                        },
+                        {
+                            "file": "Master Sounds/Think About It (Outro).ogg",
+                            "duration": 18982
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "KROSE",
+            "special": [
+                {
+                    "file": "KROSE/(Bridge Announce 1) Can access LS only.ogg",
+                    "duration": 13184
+                },
+                {
+                    "file": "KROSE/(Bridge Announce 2) Can access LS and SF.ogg",
+                    "duration": 13734
+                },
+                {
+                    "file": "KROSE/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                    "duration": 13322
+                },
+                {
+                    "file": "KROSE/(Story) Badlands Robberies.ogg",
+                    "duration": 12106
+                },
+                {
+                    "file": "KROSE/(Story) Gang Warfare.ogg",
+                    "duration": 14086
+                },
+                {
+                    "file": "KROSE/(Story) Lights in Desert.ogg",
+                    "duration": 13062
+                },
+                {
+                    "file": "KROSE/(Story) Police Trial.ogg",
+                    "duration": 9322
+                },
+                {
+                    "file": "KROSE/(Story) Weed Farm Burned Down.ogg",
+                    "duration": 12478
+                }
+            ],
+            "atmosphere": {
+                "evening": [],
+                "fog": [
+                    {
+                        "file": "KROSE/(Atmosphere) Fog 1.ogg",
+                        "duration": 9446
+                    },
+                    {
+                        "file": "KROSE/(Atmosphere) Fog 2.ogg",
+                        "duration": 11206
+                    }
+                ],
+                "morning": [
+                    {
+                        "file": "KROSE/(Atmosphere) Morning 1.ogg",
+                        "duration": 7134
+                    },
+                    {
+                        "file": "KROSE/(Atmosphere) Morning 2.ogg",
+                        "duration": 6982
+                    }
+                ],
+                "night": [
+                    {
+                        "file": "KROSE/(Atmosphere) Night 1.ogg",
+                        "duration": 7238
+                    },
+                    {
+                        "file": "KROSE/(Atmosphere) Night 2.ogg",
+                        "duration": 7142
+                    }
+                ],
+                "rain": [
+                    {
+                        "file": "KROSE/(Atmosphere) Rain.ogg",
+                        "duration": 6858
+                    }
+                ],
+                "smog": [],
+                "storm": [
+                    {
+                        "file": "KROSE/(Atmosphere) Storm 1.ogg",
+                        "duration": 12002
+                    },
+                    {
+                        "file": "KROSE/(Atmosphere) Storm 2.ogg",
+                        "duration": 10822
+                    }
+                ],
+                "sunny": [
+                    {
+                        "file": "KROSE/(Atmosphere) Sunny 1.ogg",
+                        "duration": 9226
+                    },
+                    {
+                        "file": "KROSE/(Atmosphere) Sunny 2.ogg",
+                        "duration": 10638
+                    }
+                ]
+            },
+            "dj": [
+                {
+                    "file": "KROSE/(Caller) Being faithful and cheating at the same time.ogg",
+                    "duration": 39318
+                },
+                {
+                    "file": "KROSE/(Caller) Wicked, evil, wealthy woman.ogg",
+                    "duration": 44858
+                },
+                {
+                    "file": "KROSE/(DJ) Belt buckles.ogg",
+                    "duration": 12622
+                },
+                {
+                    "file": "KROSE/(DJ) Darwinism.ogg",
+                    "duration": 7434
+                },
+                {
+                    "file": "KROSE/(DJ) Downstairs harmonica talents.ogg",
+                    "duration": 14114
+                },
+                {
+                    "file": "KROSE/(DJ) Euthanasia is a beautiful thing.ogg",
+                    "duration": 6654
+                },
+                {
+                    "file": "KROSE/(DJ) Harmonica down South again.ogg",
+                    "duration": 18958
+                },
+                {
+                    "file": "KROSE/(DJ) Harmonica in my pants.ogg",
+                    "duration": 11462
+                },
+                {
+                    "file": "KROSE/(DJ) Hurts a little when I try to put it in.ogg",
+                    "duration": 21294
+                },
+                {
+                    "file": "KROSE/(DJ) I am shit-faced.ogg",
+                    "duration": 11142
+                },
+                {
+                    "file": "KROSE/(DJ) I keep moving on.ogg",
+                    "duration": 7680
+                },
+                {
+                    "file": "KROSE/(DJ) I might start to cry.ogg",
+                    "duration": 6066
+                },
+                {
+                    "file": "KROSE/(DJ) It aint easy raising nine kids.ogg",
+                    "duration": 11666
+                },
+                {
+                    "file": "KROSE/(DJ) Its like Kant said.ogg",
+                    "duration": 9338
+                },
+                {
+                    "file": "KROSE/(DJ) Latte.ogg",
+                    "duration": 16150
+                },
+                {
+                    "file": "KROSE/(DJ) Legs akimbo.ogg",
+                    "duration": 7262
+                },
+                {
+                    "file": "KROSE/(DJ) Like the plug, but a musical version.ogg",
+                    "duration": 11162
+                },
+                {
+                    "file": "KROSE/(DJ) Love everyone like myself.ogg",
+                    "duration": 15558
+                },
+                {
+                    "file": "KROSE/(DJ) Make you want to square dance.ogg",
+                    "duration": 5494
+                },
+                {
+                    "file": "KROSE/(DJ) On the prairie.ogg",
+                    "duration": 8152
+                },
+                {
+                    "file": "KROSE/(DJ) Play a harmonica and sing at the same time.ogg",
+                    "duration": 17758
+                },
+                {
+                    "file": "KROSE/(DJ) You know what war Im talking about.ogg",
+                    "duration": 12234
+                }
+            ],
+            "id": [
+                {
+                    "file": "KROSE/(ID) All America loves a cowboy.ogg",
+                    "duration": 6786
+                },
+                {
+                    "file": "KROSE/(ID) Barefoot and pregnant again.ogg",
+                    "duration": 6770
+                },
+                {
+                    "file": "KROSE/(ID) Farm Animals.ogg",
+                    "duration": 11002
+                },
+                {
+                    "file": "KROSE/(ID) From cow poking to cow-tipping.ogg",
+                    "duration": 8446
+                },
+                {
+                    "file": "KROSE/(ID) Invented the electric guitar.ogg",
+                    "duration": 8662
+                },
+                {
+                    "file": "KROSE/(ID) Iron horse with a drinking problem.ogg",
+                    "duration": 7338
+                },
+                {
+                    "file": "KROSE/(ID) It takes a cowboy to know when to shoot.ogg",
+                    "duration": 11718
+                },
+                {
+                    "file": "KROSE/(ID) When love shoots you in the back.ogg",
+                    "duration": 7762
+                },
+                {
+                    "file": "KROSE/(ID) Whistle on a lonely night.ogg",
+                    "duration": 10270
+                }
+            ],
+            "songs": [
+                {
+                    "name": "All My Exes Live in Texas",
+                    "intro": [
+                        {
+                            "file": "KROSE/All My Exes Live in Texas (Intro DJ 1).ogg",
+                            "duration": 17696
+                        },
+                        {
+                            "file": "KROSE/All My Exes Live in Texas (Intro DJ 2).ogg",
+                            "duration": 17696
+                        },
+                        {
+                            "file": "KROSE/All My Exes Live in Texas (Intro).ogg",
+                            "duration": 17696
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/All My Exes Live in Texas (Mid).ogg",
+                            "duration": 156868
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/All My Exes Live in Texas (Outro DJ 1).ogg",
+                            "duration": 21254
+                        },
+                        {
+                            "file": "KROSE/All My Exes Live in Texas (Outro DJ 2).ogg",
+                            "duration": 21254
+                        },
+                        {
+                            "file": "KROSE/All My Exes Live in Texas (Outro).ogg",
+                            "duration": 21254
+                        }
+                    ]
+                },
+                {
+                    "name": "Always Wanting You",
+                    "intro": [
+                        {
+                            "file": "KROSE/Always Wanting You (Intro DJ 1).ogg",
+                            "duration": 22032
+                        },
+                        {
+                            "file": "KROSE/Always Wanting You (Intro DJ 2).ogg",
+                            "duration": 22032
+                        },
+                        {
+                            "file": "KROSE/Always Wanting You (Intro).ogg",
+                            "duration": 22032
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/Always Wanting You (Mid).ogg",
+                            "duration": 141548
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/Always Wanting You (Outro DJ 1).ogg",
+                            "duration": 18938
+                        },
+                        {
+                            "file": "KROSE/Always Wanting You (Outro DJ 2).ogg",
+                            "duration": 18938
+                        },
+                        {
+                            "file": "KROSE/Always Wanting You (Outro).ogg",
+                            "duration": 18938
+                        }
+                    ]
+                },
+                {
+                    "name": "Amos Moses",
+                    "intro": [
+                        {
+                            "file": "KROSE/Amos Moses (Intro DJ 1).ogg",
+                            "duration": 8544
+                        },
+                        {
+                            "file": "KROSE/Amos Moses (Intro DJ 2).ogg",
+                            "duration": 8544
+                        },
+                        {
+                            "file": "KROSE/Amos Moses (Intro).ogg",
+                            "duration": 8544
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/Amos Moses (Mid).ogg",
+                            "duration": 108472
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/Amos Moses (Outro DJ 1).ogg",
+                            "duration": 16106
+                        },
+                        {
+                            "file": "KROSE/Amos Moses (Outro DJ 2).ogg",
+                            "duration": 16106
+                        },
+                        {
+                            "file": "KROSE/Amos Moses (Outro).ogg",
+                            "duration": 16106
+                        }
+                    ]
+                },
+                {
+                    "name": "Bed of Roses",
+                    "intro": [
+                        {
+                            "file": "KROSE/Bed of Roses (Intro DJ 1).ogg",
+                            "duration": 23812
+                        },
+                        {
+                            "file": "KROSE/Bed of Roses (Intro DJ 2).ogg",
+                            "duration": 23812
+                        },
+                        {
+                            "file": "KROSE/Bed of Roses (Intro).ogg",
+                            "duration": 23812
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/Bed of Roses (Mid).ogg",
+                            "duration": 97692
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/Bed of Roses (Outro DJ 1).ogg",
+                            "duration": 21526
+                        },
+                        {
+                            "file": "KROSE/Bed of Roses (Outro DJ 2).ogg",
+                            "duration": 21526
+                        },
+                        {
+                            "file": "KROSE/Bed of Roses (Outro).ogg",
+                            "duration": 21526
+                        }
+                    ]
+                },
+                {
+                    "name": "Crazy",
+                    "intro": [
+                        {
+                            "file": "KROSE/Crazy (Intro DJ 1).ogg",
+                            "duration": 15316
+                        },
+                        {
+                            "file": "KROSE/Crazy (Intro DJ 2).ogg",
+                            "duration": 15316
+                        },
+                        {
+                            "file": "KROSE/Crazy (Intro).ogg",
+                            "duration": 15316
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/Crazy (Mid).ogg",
+                            "duration": 198280
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/Crazy (Outro DJ 1).ogg",
+                            "duration": 21754
+                        },
+                        {
+                            "file": "KROSE/Crazy (Outro DJ 2).ogg",
+                            "duration": 21754
+                        },
+                        {
+                            "file": "KROSE/Crazy (Outro).ogg",
+                            "duration": 21754
+                        }
+                    ]
+                },
+                {
+                    "name": "Hey Good Lookin",
+                    "intro": [
+                        {
+                            "file": "KROSE/Hey Good Lookin (Intro DJ 1).ogg",
+                            "duration": 9848
+                        },
+                        {
+                            "file": "KROSE/Hey Good Lookin (Intro DJ 2).ogg",
+                            "duration": 9848
+                        },
+                        {
+                            "file": "KROSE/Hey Good Lookin (Intro).ogg",
+                            "duration": 9848
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/Hey Good Lookin (Mid).ogg",
+                            "duration": 146660
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/Hey Good Lookin (Outro DJ 1).ogg",
+                            "duration": 15070
+                        },
+                        {
+                            "file": "KROSE/Hey Good Lookin (Outro DJ 2).ogg",
+                            "duration": 15070
+                        },
+                        {
+                            "file": "KROSE/Hey Good Lookin (Outro).ogg",
+                            "duration": 15070
+                        }
+                    ]
+                },
+                {
+                    "name": "I Love a Rainy Night",
+                    "intro": [
+                        {
+                            "file": "KROSE/I Love a Rainy Night (Intro DJ 1).ogg",
+                            "duration": 7508
+                        },
+                        {
+                            "file": "KROSE/I Love a Rainy Night (Intro DJ 2).ogg",
+                            "duration": 7508
+                        },
+                        {
+                            "file": "KROSE/I Love a Rainy Night (Intro).ogg",
+                            "duration": 7508
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/I Love a Rainy Night (Mid).ogg",
+                            "duration": 121292
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/I Love a Rainy Night (Outro DJ 1).ogg",
+                            "duration": 24126
+                        },
+                        {
+                            "file": "KROSE/I Love a Rainy Night (Outro DJ 2).ogg",
+                            "duration": 24126
+                        },
+                        {
+                            "file": "KROSE/I Love a Rainy Night (Outro).ogg",
+                            "duration": 24126
+                        }
+                    ]
+                },
+                {
+                    "name": "Louisiana woman, Mississippi man",
+                    "intro": [
+                        {
+                            "file": "KROSE/Louisiana woman, Mississippi man (Intro DJ 1).ogg",
+                            "duration": 12236
+                        },
+                        {
+                            "file": "KROSE/Louisiana woman, Mississippi man (Intro DJ 2).ogg",
+                            "duration": 12236
+                        },
+                        {
+                            "file": "KROSE/Louisiana woman, Mississippi man (Intro).ogg",
+                            "duration": 12236
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/Louisiana woman, Mississippi man (Mid).ogg",
+                            "duration": 109940
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/Louisiana woman, Mississippi man (Outro DJ 1).ogg",
+                            "duration": 17246
+                        },
+                        {
+                            "file": "KROSE/Louisiana woman, Mississippi man (Outro DJ 2).ogg",
+                            "duration": 17246
+                        },
+                        {
+                            "file": "KROSE/Louisiana woman, Mississippi man (Outro).ogg",
+                            "duration": 17246
+                        }
+                    ]
+                },
+                {
+                    "name": "Make the World Go Away",
+                    "intro": [
+                        {
+                            "file": "KROSE/Make the World Go Away (Intro DJ 1).ogg",
+                            "duration": 20396
+                        },
+                        {
+                            "file": "KROSE/Make the World Go Away (Intro DJ 2).ogg",
+                            "duration": 20396
+                        },
+                        {
+                            "file": "KROSE/Make the World Go Away (Intro).ogg",
+                            "duration": 20396
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/Make the World Go Away (Mid).ogg",
+                            "duration": 118828
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/Make the World Go Away (Outro DJ 1).ogg",
+                            "duration": 19082
+                        },
+                        {
+                            "file": "KROSE/Make the World Go Away (Outro DJ 2).ogg",
+                            "duration": 19082
+                        },
+                        {
+                            "file": "KROSE/Make the World Go Away (Outro).ogg",
+                            "duration": 19082
+                        }
+                    ]
+                },
+                {
+                    "name": "Mammas Dont Let Your Babies Grow Up to be Cowboys",
+                    "intro": [
+                        {
+                            "file": "KROSE/Mammas Dont Let Your Babies Grow Up to be Cowboys (Intro DJ 1).ogg",
+                            "duration": 20452
+                        },
+                        {
+                            "file": "KROSE/Mammas Dont Let Your Babies Grow Up to be Cowboys (Intro DJ 2).ogg",
+                            "duration": 20452
+                        },
+                        {
+                            "file": "KROSE/Mammas Dont Let Your Babies Grow Up to be Cowboys (Intro).ogg",
+                            "duration": 20452
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/Mammas Dont Let Your Babies Grow Up to be Cowboys (Mid).ogg",
+                            "duration": 148924
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/Mammas Dont Let Your Babies Grow Up to be Cowboys (Outro DJ 1).ogg",
+                            "duration": 19042
+                        },
+                        {
+                            "file": "KROSE/Mammas Dont Let Your Babies Grow Up to be Cowboys (Outro DJ 2).ogg",
+                            "duration": 19042
+                        },
+                        {
+                            "file": "KROSE/Mammas Dont Let Your Babies Grow Up to be Cowboys (Outro).ogg",
+                            "duration": 19042
+                        }
+                    ]
+                },
+                {
+                    "name": "New York City",
+                    "intro": [
+                        {
+                            "file": "KROSE/New York City (Intro DJ 1).ogg",
+                            "duration": 9904
+                        },
+                        {
+                            "file": "KROSE/New York City (Intro DJ 2).ogg",
+                            "duration": 9904
+                        },
+                        {
+                            "file": "KROSE/New York City (Intro).ogg",
+                            "duration": 9904
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/New York City (Mid).ogg",
+                            "duration": 135872
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/New York City (Outro DJ 1).ogg",
+                            "duration": 19008
+                        },
+                        {
+                            "file": "KROSE/New York City (Outro DJ 2).ogg",
+                            "duration": 19008
+                        },
+                        {
+                            "file": "KROSE/New York City (Outro).ogg",
+                            "duration": 19008
+                        }
+                    ]
+                },
+                {
+                    "name": "One Step Forward",
+                    "intro": [
+                        {
+                            "file": "KROSE/One Step Forward (Intro DJ 1).ogg",
+                            "duration": 15384
+                        },
+                        {
+                            "file": "KROSE/One Step Forward (Intro DJ 2).ogg",
+                            "duration": 15384
+                        },
+                        {
+                            "file": "KROSE/One Step Forward (Intro).ogg",
+                            "duration": 15384
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/One Step Forward (Mid).ogg",
+                            "duration": 146728
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/One Step Forward (Outro DJ 1).ogg",
+                            "duration": 14378
+                        },
+                        {
+                            "file": "KROSE/One Step Forward (Outro DJ 2).ogg",
+                            "duration": 14378
+                        },
+                        {
+                            "file": "KROSE/One Step Forward (Outro).ogg",
+                            "duration": 14378
+                        }
+                    ]
+                },
+                {
+                    "name": "Queen of Hearts",
+                    "intro": [
+                        {
+                            "file": "KROSE/Queen of Hearts (Intro DJ 1).ogg",
+                            "duration": 14300
+                        },
+                        {
+                            "file": "KROSE/Queen of Hearts (Intro DJ 2).ogg",
+                            "duration": 14300
+                        },
+                        {
+                            "file": "KROSE/Queen of Hearts (Intro).ogg",
+                            "duration": 14300
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/Queen of Hearts (Mid).ogg",
+                            "duration": 153500
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/Queen of Hearts (Outro DJ 1).ogg",
+                            "duration": 20154
+                        },
+                        {
+                            "file": "KROSE/Queen of Hearts (Outro DJ 2).ogg",
+                            "duration": 20154
+                        },
+                        {
+                            "file": "KROSE/Queen of Hearts (Outro).ogg",
+                            "duration": 20140
+                        }
+                    ]
+                },
+                {
+                    "name": "The Letter that Johnny Walker Read",
+                    "intro": [
+                        {
+                            "file": "KROSE/The Letter that Johnny Walker Read (Intro DJ 1).ogg",
+                            "duration": 22152
+                        },
+                        {
+                            "file": "KROSE/The Letter that Johnny Walker Read (Intro DJ 2).ogg",
+                            "duration": 22152
+                        },
+                        {
+                            "file": "KROSE/The Letter that Johnny Walker Read (Intro).ogg",
+                            "duration": 22152
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/The Letter that Johnny Walker Read (Mid).ogg",
+                            "duration": 146304
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/The Letter that Johnny Walker Read (Outro DJ 1).ogg",
+                            "duration": 14442
+                        },
+                        {
+                            "file": "KROSE/The Letter that Johnny Walker Read (Outro DJ 2).ogg",
+                            "duration": 14442
+                        },
+                        {
+                            "file": "KROSE/The Letter that Johnny Walker Read (Outro).ogg",
+                            "duration": 14442
+                        }
+                    ]
+                },
+                {
+                    "name": "Three Cigarettes in the Ashtray",
+                    "intro": [
+                        {
+                            "file": "KROSE/Three Cigarettes in the Ashtray (Intro DJ 1).ogg",
+                            "duration": 11120
+                        },
+                        {
+                            "file": "KROSE/Three Cigarettes in the Ashtray (Intro DJ 2).ogg",
+                            "duration": 11120
+                        },
+                        {
+                            "file": "KROSE/Three Cigarettes in the Ashtray (Intro).ogg",
+                            "duration": 11120
+                        }
+                    ],
+                    "mid": [
+                        {
+                            "file": "KROSE/Three Cigarettes in the Ashtray (Mid).ogg",
+                            "duration": 103800
+                        }
+                    ],
+                    "outro": [
+                        {
+                            "file": "KROSE/Three Cigarettes in the Ashtray (Outro DJ 1).ogg",
+                            "duration": 17186
+                        },
+                        {
+                            "file": "KROSE/Three Cigarettes in the Ashtray (Outro DJ 2).ogg",
+                            "duration": 17186
+                        },
+                        {
+                            "file": "KROSE/Three Cigarettes in the Ashtray (Outro).ogg",
+                            "duration": 17186
+                        }
+                    ]
+                }
+            ]
+        },
+        {
+            "name": "",
+            "special": [],
+            "atmosphere": {
+                "evening": [],
+                "fog": [],
+                "morning": [],
+                "night": [],
+                "rain": [],
+                "smog": [],
+                "storm": [],
+                "sunny": []
+            },
+            "dj": [],
+            "id": [],
+            "songs": [
+                {
+                    "name": "",
+                    "intro": [],
+                    "mid": [],
+                    "outro": []
                 }
             ]
         }
