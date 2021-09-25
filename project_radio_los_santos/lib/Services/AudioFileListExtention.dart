@@ -1,17 +1,26 @@
-import 'package:project_radio_los_santos/Models/AudioFile.dart';
+import 'package:project_radio_los_santos/Models/EmptyAudioFile.dart';
+import 'package:project_radio_los_santos/Models/IAudioFile.dart';
 
-extension AudioFileListExtention on List<AudioFile> {
-  int sumDuration() {
+extension AudioFileListExtention on List<IAudioFile> {
+  int get totalDuration {
     int duration = 0;
     for (var item in this) duration += item.duration;
     return duration;
   }
 
-  int maxDuration(int number) {
-    List<AudioFile> sortedList = List<AudioFile>.from(this);
+  /// copy the first length elements including Empty items nbEmpty
+  List<IAudioFile> copyAndAddEmptyElements({int nbEmpty = 0}) {
+    var result = List<IAudioFile>.from(this);
+    for (var i = 0; i < nbEmpty; i++) result.add(EmptyAudioFile());
+    return result;
+  }
+
+  int maxDurationForNumberOfElements(int number) {
+    if (isEmpty) return 0;
+    List<IAudioFile> sortedList = List<IAudioFile>.from(this);
     sortedList.sort((a, b) => b.duration - a.duration);
     int duration = 0;
-    int sumOfDurations = sumDuration();
+    int sumOfDurations = totalDuration;
     while (number >= length) {
       duration += sumOfDurations;
       number -= length;
@@ -22,20 +31,22 @@ extension AudioFileListExtention on List<AudioFile> {
     return duration;
   }
 
-  AudioFile longestFile() {
-    AudioFile longest = this[0];
+  int longestDuration() {
+    if (isEmpty) return 0;
+    int longest = this[0].duration;
     for (var i = 1; i < length; i++) {
       var currentFile = this[i];
-      if (longest.duration < currentFile.duration) longest = currentFile;
+      if (longest < currentFile.duration) longest = currentFile.duration;
     }
     return longest;
   }
 
-  AudioFile shortestFile() {
-    AudioFile shortest = this[0];
+  int shortestDuration() {
+    if (isEmpty) return 0;
+    int shortest = this[0].duration;
     for (var i = 1; i < length; i++) {
       var currentFile = this[i];
-      if (shortest.duration > currentFile.duration) shortest = currentFile;
+      if (shortest > currentFile.duration) shortest = currentFile.duration;
     }
     return shortest;
   }

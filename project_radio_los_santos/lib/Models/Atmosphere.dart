@@ -11,25 +11,31 @@ class Atmosphere {
   final List<AudioFile> sunny;
   final List<AudioFile> rain;
   final List<AudioFile> fog;
+  final List<AudioFile> smog;
+  final List<AudioFile> storm;
   final int maxDuration;
 
-  Atmosphere(
-      {required this.morning,
-      required this.evening,
-      required this.night,
-      required this.sunny,
-      required this.rain,
-      required this.fog})
-      : maxDuration = MyUtility.getMax([
-              morning.sumDuration(),
-              evening.sumDuration(),
-              night.sumDuration(),
-              sunny.sumDuration(),
-              rain.sumDuration(),
-              fog.sumDuration()
+  Atmosphere({
+    required this.morning,
+    required this.evening,
+    required this.night,
+    required this.sunny,
+    required this.rain,
+    required this.fog,
+    required this.smog,
+    required this.storm,
+  }) : maxDuration = MyUtility.getMax([
+              morning.longestDuration(),
+              evening.longestDuration(),
+              night.longestDuration(),
+              sunny.longestDuration(),
+              rain.longestDuration(),
+              fog.longestDuration(),
+              smog.longestDuration(),
+              storm.longestDuration()
             ]) ??
             0;
-
+  //TODO; use smog and storm also treat the case where one of the lists or more are empty
   List<AudioFile> selectAppropriateAtmosphere(
       DateTime currentDate, bool isWeather) {
     int timeOfDay; //0: morning 1: evening 2:night
@@ -109,12 +115,18 @@ class Atmosphere {
     var rain =
         (json['rain'] as List).map((e) => AudioFile.fromJson(e)).toList();
     var fog = (json['fog'] as List).map((e) => AudioFile.fromJson(e)).toList();
+    var smog =
+        (json['smog'] as List).map((e) => AudioFile.fromJson(e)).toList();
+    var storm =
+        (json['storm'] as List).map((e) => AudioFile.fromJson(e)).toList();
     return Atmosphere(
         morning: morning,
         evening: evening,
         night: night,
         sunny: sunny,
         rain: rain,
-        fog: fog);
+        fog: fog,
+        smog: smog,
+        storm: storm);
   }
 }

@@ -11,8 +11,8 @@ import 'package:project_radio_los_santos/Services/PathService.dart';
 class RadioStation {
   final String name;
   final Atmosphere atmosphere;
-  final String art;
-  final List<AudioFile> djAndCaller;
+  final List<AudioFile> special;
+  final List<AudioFile> dj;
   final List<AudioFile> id;
   final List<Song> songs;
   int? _maxDurationCache;
@@ -20,10 +20,10 @@ class RadioStation {
   RadioStation(
       {required this.name,
       required this.atmosphere,
-      required this.djAndCaller,
+      required this.dj,
       required this.id,
       required this.songs,
-      required this.art});
+      required this.special});
 
   int get maxDuration {
     int? currentCache = _maxDurationCache;
@@ -40,16 +40,21 @@ class RadioStation {
     int maxDuration = _sumDurationOfSongs();
     int numberOfSongs = songs.length; //length is supposed to be >2
     int minUnique;
+    int thirdOfSongs = numberOfSongs ~/ 3;
     //adverts and ids are played after each song, the worst case is the same ad with the longest duration playing each time
     numberOfSongs = songs.length;
-    maxDuration += id.maxDuration(numberOfSongs);
-    maxDuration += AudioData.longAdverts.maxDuration(numberOfSongs);
-    maxDuration += AudioData.shortAdverts.maxDuration(numberOfSongs);
-    //two atmoshpere info are played
+    maxDuration += id.longestDuration() * numberOfSongs;
+    maxDuration += AudioData.longAdverts.longestDuration() *
+        (numberOfSongs - thirdOfSongs);
+    maxDuration += AudioData.shortAdverts.longestDuration() *
+        (numberOfSongs - thirdOfSongs);
+    //one atmoshpere info are played
     maxDuration += atmosphere.maxDuration;
+    //one special is played
+    maxDuration += special.longestDuration();
     //play max possible number of dj and caller without repeating
-    minUnique = min<int>(djAndCaller.length, numberOfSongs);
-    maxDuration += djAndCaller.maxDuration(minUnique);
+    minUnique = min<int>(dj.length, numberOfSongs);
+    maxDuration += dj.maxDurationForNumberOfElements(minUnique);
 
     return maxDuration;
   }
@@ -62,17 +67,16 @@ class RadioStation {
 
   factory RadioStation.fromJson(json) {
     var atmosphere = Atmosphere.fromJson(json['atmosphere']);
-    var caller =
-        (json['caller'] as List).map((e) => AudioFile.fromJson(e)).toList();
+    var special =
+        (json['special'] as List).map((e) => AudioFile.fromJson(e)).toList();
     var id = (json['id'] as List).map((e) => AudioFile.fromJson(e)).toList();
     var dj = (json['dj'] as List).map((e) => AudioFile.fromJson(e)).toList();
-    dj.addAll(caller);
     var songs = (json['songs'] as List).map((e) => Song.fromJson(e)).toList();
     return RadioStation(
-        art: PathService.appendAssetFolder(json['art']),
+        special: special,
         name: json['name'],
         atmosphere: atmosphere,
-        djAndCaller: dj,
+        dj: dj,
         id: id,
         songs: songs);
   }
@@ -83,6 +87,6 @@ class RadioStation {
 
   @override
   String toString() {
-    return "RadioStation $name, songs(${songs.length}), djAndCaller(${djAndCaller.length}), id(${id.length}))";
+    return "RadioStation $name, songs(${songs.length}), dj(${dj.length}), id(${id.length})), special(${special.length})";
   }
 }

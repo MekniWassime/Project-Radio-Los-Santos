@@ -11,6 +11,7 @@ class AudioData {
   static late final List<RadioStation> radioStations;
   static late final List<AudioFile> shortAdverts;
   static late final List<AudioFile> longAdverts;
+  static late final AudioFile silent;
 
   static Future<void> initialize() async {
     String data = await rootBundle.loadString("assets/audio/metadata.json");
@@ -21,6 +22,7 @@ class AudioData {
     radioStations = (jsonData['stations'] as List)
         .map((e) => RadioStation.fromJson(e))
         .toList();
+    silent = AudioFile.fromJson(jsonData['silent']);
     int medianOfAdverts = adverts.length ~/ 2;
     shortAdverts = adverts.sublist(0, medianOfAdverts);
     longAdverts = adverts.sublist(medianOfAdverts);

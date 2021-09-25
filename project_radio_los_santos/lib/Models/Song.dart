@@ -1,4 +1,7 @@
+import 'package:just_audio/just_audio.dart';
 import 'package:project_radio_los_santos/Models/AudioFile.dart';
+import 'package:project_radio_los_santos/Models/IAudioFile.dart';
+import 'package:project_radio_los_santos/Models/IndexedSong.dart';
 
 class Song {
   final String name;
@@ -23,10 +26,14 @@ class Song {
     return Song(name: json['name'], intro: intro, mid: mid, outro: outro);
   }
 
-  List<AudioFile> getAudioFiles(
+  IndexedSong getIndexedSong(
       {required int introIndex,
       required int midIndex,
       required int outroIndex}) {
-    return [intro[introIndex], mid[midIndex], outro[outroIndex]];
+    return IndexedSong(
+        song: this,
+        introIndex: introIndex,
+        midIndex: midIndex,
+        outroIndex: outroIndex);
   }
 }

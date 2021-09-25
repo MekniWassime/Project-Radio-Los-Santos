@@ -1,4 +1,8 @@
 {
+    "silent": {
+        "file": "Silence.ogg",
+        "duration": 17567
+    },
     "adverts": [
         {
             "file": "Adverts/San Andreas Telephone 1 (Orphan).ogg",
@@ -107,10 +111,6 @@
         {
             "file": "Adverts/Sprunk.ogg",
             "duration": 47106
-        },
-        {
-            "file": "Adverts/Renegade Cologne.ogg",
-            "duration": 47734
         },
         {
             "file": "Adverts/Abiggo Brokerage and Pawn.ogg",
