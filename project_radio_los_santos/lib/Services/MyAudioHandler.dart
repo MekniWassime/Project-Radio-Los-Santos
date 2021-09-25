@@ -1,4 +1,5 @@
 import 'dart:io';
+import 'dart:math';
 
 import 'package:audio_service/audio_service.dart';
 import 'package:flutter/material.dart';
@@ -85,22 +86,24 @@ class MyAudioHandler extends BaseAudioHandler {
 
   @override
   Future<void> skipToPrevious() async {
-    print("skip");
-    currentRadioIndex = (currentRadioIndex + 1) % radioStations.length;
+    int newIndex = (currentRadioIndex + 1) % radioStations.length;
+    setRadioStationIndex(newIndex);
+  }
+
+  void setRadioStationIndex(int newIndex) {
+    print("\n*\n**\n***\n****new Index ========= $newIndex");
+    currentRadioIndex = newIndex;
     currentSequence = Sequence.buildCurrent(radioStation: currentStation);
     nextSequence = currentSequence.getNextSequence();
     play();
+    mediaItem.add(currentStation.getMediaItem());
   }
 
   @override
   Future<void> skipToNext() async {
-    print("skip next");
-    currentRadioIndex = (currentRadioIndex - 1);
-    if (currentRadioIndex == -1) currentRadioIndex = radioStations.length - 1;
-
-    currentSequence = Sequence.buildCurrent(radioStation: currentStation);
-    nextSequence = currentSequence.getNextSequence();
-    play();
+    int newIndex = currentRadioIndex - 1;
+    if (newIndex == -1) newIndex = radioStations.length - 1;
+    setRadioStationIndex(newIndex);
   }
 
   PlaybackState _transformEvent(PlaybackEvent event) {

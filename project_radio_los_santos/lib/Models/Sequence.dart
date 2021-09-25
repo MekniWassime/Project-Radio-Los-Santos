@@ -49,7 +49,6 @@ class Sequence {
     int numberOfSongs = songsList.listLength;
     int thirdOfSongs = numberOfSongs ~/ 3;
     var longAdvertsList = LimitedFileList(
-        debug: true,
         list: AudioData.longAdverts,
         emptyProbablity: 1 / 3,
         randomGenerator: randomGenerator,
