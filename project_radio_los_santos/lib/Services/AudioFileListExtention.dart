@@ -1,4 +1,3 @@
-import 'package:project_radio_los_santos/Models/EmptyAudioFile.dart';
 import 'package:project_radio_los_santos/Models/IAudioFile.dart';
 
 extension AudioFileListExtention on List<IAudioFile> {
@@ -9,10 +8,14 @@ extension AudioFileListExtention on List<IAudioFile> {
   }
 
   /// copy the first length elements including Empty items nbEmpty
-  List<IAudioFile> copyAndAddEmptyElements({int nbEmpty = 0}) {
-    var result = List<IAudioFile>.from(this);
-    for (var i = 0; i < nbEmpty; i++) result.add(EmptyAudioFile());
-    return result;
+  List<IAudioFile> copy() {
+    return List<IAudioFile>.from(this);
+  }
+
+  bool addNotNull(IAudioFile? element) {
+    if (element == null) return false;
+    add(element);
+    return true;
   }
 
   int maxDurationForNumberOfElements(int number) {

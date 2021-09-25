@@ -3,7 +3,7 @@ import 'dart:math';
 import 'package:audio_service/audio_service.dart';
 import 'package:flutter/material.dart';
 import 'package:just_audio/just_audio.dart';
-import 'package:project_radio_los_santos/Models/AudioFileWithPointer.dart';
+
 import 'package:project_radio_los_santos/Models/Sequence.dart';
 import 'package:project_radio_los_santos/Services/AudioData.dart';
 import 'package:project_radio_los_santos/Services/MyAudioHandler.dart';
@@ -79,7 +79,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                     color: Colors.red
                         .withOpacity(0.25 + Random().nextDouble() * 0.75),
                     child: FittedBox(
-                      child: Text(sequence.sequence[index].path),
+                      child: Text(sequence.sequence[index].name),
                     ),
                   );
                 },

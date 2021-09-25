@@ -1044,7 +1044,7 @@
                     ]
                 },
                 {
-                    "name": "",
+                    "name": "Young Turks",
                     "intro": [
                         {
                             "file": "K-DST/Young Turks (Intro DJ 1).ogg",
@@ -5541,30 +5541,6 @@
                             "duration": 17186
                         }
                     ]
-                }
-            ]
-        },
-        {
-            "name": "",
-            "special": [],
-            "atmosphere": {
-                "evening": [],
-                "fog": [],
-                "morning": [],
-                "night": [],
-                "rain": [],
-                "smog": [],
-                "storm": [],
-                "sunny": []
-            },
-            "dj": [],
-            "id": [],
-            "songs": [
-                {
-                    "name": "",
-                    "intro": [],
-                    "mid": [],
-                    "outro": []
                 }
             ]
         }

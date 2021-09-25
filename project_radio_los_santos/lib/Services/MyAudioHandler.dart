@@ -86,11 +86,21 @@ class MyAudioHandler extends BaseAudioHandler {
   @override
   Future<void> skipToPrevious() async {
     print("skip");
+    currentRadioIndex = (currentRadioIndex + 1) % radioStations.length;
+    currentSequence = Sequence.buildCurrent(radioStation: currentStation);
+    nextSequence = currentSequence.getNextSequence();
+    play();
   }
 
   @override
   Future<void> skipToNext() async {
     print("skip next");
+    currentRadioIndex = (currentRadioIndex - 1);
+    if (currentRadioIndex == -1) currentRadioIndex = radioStations.length - 1;
+
+    currentSequence = Sequence.buildCurrent(radioStation: currentStation);
+    nextSequence = currentSequence.getNextSequence();
+    play();
   }
 
   PlaybackState _transformEvent(PlaybackEvent event) {

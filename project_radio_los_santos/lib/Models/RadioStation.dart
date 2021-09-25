@@ -16,6 +16,7 @@ class RadioStation {
   final List<AudioFile> id;
   final List<Song> songs;
   int? _maxDurationCache;
+  int silenceDuration = 250;
 
   RadioStation(
       {required this.name,
@@ -39,7 +40,7 @@ class RadioStation {
   int _calculateMaxDuration() {
     int maxDuration = _sumDurationOfSongs();
     int numberOfSongs = songs.length; //length is supposed to be >2
-    int minUnique;
+
     int thirdOfSongs = numberOfSongs ~/ 3;
     //adverts and ids are played after each song, the worst case is the same ad with the longest duration playing each time
     numberOfSongs = songs.length;
@@ -53,9 +54,12 @@ class RadioStation {
     //one special is played
     maxDuration += special.longestDuration();
     //play max possible number of dj and caller without repeating
-    minUnique = min<int>(dj.length, numberOfSongs);
+    int minUnique = min<int>(dj.length, numberOfSongs);
     maxDuration += dj.maxDurationForNumberOfElements(minUnique);
-
+    //silence of 500 ms added after each file (except the end)
+    maxDuration +=
+        (numberOfSongs + (numberOfSongs - thirdOfSongs) * 2 + minUnique + 1) *
+            silenceDuration;
     return maxDuration;
   }
 

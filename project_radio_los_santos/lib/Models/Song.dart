@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:just_audio/just_audio.dart';
 import 'package:project_radio_los_santos/Models/AudioFile.dart';
 import 'package:project_radio_los_santos/Models/IAudioFile.dart';
@@ -18,12 +19,18 @@ class Song {
       : duration = intro[0].duration + mid[0].duration + outro[0].duration;
 
   factory Song.fromJson(json) {
-    var intro =
-        (json['intro'] as List).map((e) => AudioFile.fromJson(e)).toList();
-    var mid = (json['mid'] as List).map((e) => AudioFile.fromJson(e)).toList();
-    var outro =
-        (json['outro'] as List).map((e) => AudioFile.fromJson(e)).toList();
-    return Song(name: json['name'], intro: intro, mid: mid, outro: outro);
+    try {
+      var intro =
+          (json['intro'] as List).map((e) => AudioFile.fromJson(e)).toList();
+      var mid =
+          (json['mid'] as List).map((e) => AudioFile.fromJson(e)).toList();
+      var outro =
+          (json['outro'] as List).map((e) => AudioFile.fromJson(e)).toList();
+      return Song(name: json['name'], intro: intro, mid: mid, outro: outro);
+    } catch (e) {
+      debugPrint(json.toString());
+      rethrow;
+    }
   }
 
   IndexedSong getIndexedSong(
