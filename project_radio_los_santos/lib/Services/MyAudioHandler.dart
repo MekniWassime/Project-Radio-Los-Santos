@@ -98,6 +98,7 @@ class MyAudioHandler extends BaseAudioHandler {
 
   void setRadioStationIndex(int newIndex) async {
     print("\n*\n**\n***\n****new Index ========= $newIndex");
+    assert(newIndex >= 0 && newIndex < radioStations.length, "invalid range");
     currentRadioIndex = newIndex;
     currentSequence = Sequence.buildCurrent(radioStation: currentStation);
     nextSequence = currentSequence.getNextSequence();
