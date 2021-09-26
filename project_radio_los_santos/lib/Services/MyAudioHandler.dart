@@ -1,3 +1,4 @@
+import 'dart:async';
 import 'dart:io';
 import 'dart:math';
 
@@ -9,20 +10,25 @@ import 'package:project_radio_los_santos/Models/Sequence.dart';
 import 'package:project_radio_los_santos/Services/AudioData.dart';
 
 class MyAudioHandler extends BaseAudioHandler {
-  static late AudioHandler _audioHandler;
+  static late MyAudioHandler _audioHandler;
   final _player = AudioPlayer();
   final List<RadioStation> radioStations = AudioData.radioStations;
-  int currentRadioIndex = 0;
+  int currentRadioIndex = 1;
   RadioStation get currentStation => radioStations[currentRadioIndex];
   late Sequence currentSequence =
       Sequence.buildCurrent(radioStation: currentStation);
   late Sequence nextSequence = currentSequence.getNextSequence();
+  final StreamController<Sequence> _sequenceStream =
+      StreamController<Sequence>();
 
-  static AudioHandler get instance => _audioHandler;
-
+  static MyAudioHandler get instance => _audioHandler;
+  Stream<Sequence> get sequenceStream => _sequenceStream.stream;
   static Future<void> initService() async {
-    _audioHandler = await AudioService.init(
-      builder: () => MyAudioHandler(),
+    await AudioService.init(
+      builder: () {
+        _audioHandler = MyAudioHandler();
+        return _audioHandler;
+      },
       config: const AudioServiceConfig(
         androidNotificationChannelId: 'com.mycompany.myapp.audio',
         androidNotificationChannelName: 'Audio Service Demo',
@@ -34,7 +40,6 @@ class MyAudioHandler extends BaseAudioHandler {
 
   MyAudioHandler() {
     _player.playbackEventStream.map(_transformEvent).pipe(playbackState);
-
     _player.playerStateStream.listen((state) {
       if (state.playing && state.processingState == ProcessingState.completed) {
         debugPrint("\n\n*\nPlalist finished\n*\n");
@@ -61,6 +66,7 @@ class MyAudioHandler extends BaseAudioHandler {
         currentSequence = Sequence.buildCurrent(radioStation: currentStation);
         nextSequence = currentSequence.getNextSequence();
       }
+      _sequenceStream.add(currentSequence);
     }
   }
 
@@ -90,11 +96,13 @@ class MyAudioHandler extends BaseAudioHandler {
     setRadioStationIndex(newIndex);
   }
 
-  void setRadioStationIndex(int newIndex) {
+  void setRadioStationIndex(int newIndex) async {
     print("\n*\n**\n***\n****new Index ========= $newIndex");
     currentRadioIndex = newIndex;
     currentSequence = Sequence.buildCurrent(radioStation: currentStation);
     nextSequence = currentSequence.getNextSequence();
+    _sequenceStream.add(currentSequence);
+    await pause();
     play();
     mediaItem.add(currentStation.getMediaItem());
   }

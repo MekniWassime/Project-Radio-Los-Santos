@@ -18,7 +18,7 @@ class PlayerScreen extends StatefulWidget {
 class _PlayerScreenState extends State<PlayerScreen> {
   //late AudioPlayer player;
   //bool loading = true;
-  late Sequence sequence;
+  Stream<Sequence> sequenceStream = MyAudioHandler.instance.sequenceStream;
 
   @override
   void initState() {
@@ -28,7 +28,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
 
   Future<void> init() async {
     MyAudioHandler.instance.play();
-    sequence = Sequence.buildCurrent(radioStation: AudioData.radioStations[0]);
+    //sequence = Sequence.buildCurrent(radioStation: AudioData.radioStations[0]);
     //AudioFileWithPointer current = sequence.currentFileWithPointer;
     //var audioSource = AudioSource.uri(
     //  Uri.parse("asset:///${current.path}"),
@@ -70,21 +70,27 @@ class _PlayerScreenState extends State<PlayerScreen> {
                         radioStation: AudioData.radioStations[0]);
                   },
                   child: const Text("print sequance stats")),
-              ListView.builder(
-                physics: const NeverScrollableScrollPhysics(),
-                shrinkWrap: true,
-                itemBuilder: (context, index) {
-                  return Container(
-                    height: sequence.sequence[index].duration / 500 + 0.0,
-                    color: Colors.red
-                        .withOpacity(0.25 + Random().nextDouble() * 0.75),
-                    child: FittedBox(
-                      child: Text(sequence.sequence[index].name),
-                    ),
-                  );
-                },
-                itemCount: sequence.sequence.length,
-              ),
+              StreamBuilder<Sequence>(
+                  stream: sequenceStream,
+                  builder: (context, snapshot) {
+                    var sequence = snapshot.data;
+                    if (sequence == null) return Container();
+                    return ListView.builder(
+                      physics: const NeverScrollableScrollPhysics(),
+                      shrinkWrap: true,
+                      itemBuilder: (context, index) {
+                        return Container(
+                          height: sequence.sequence[index].duration / 500 + 0.0,
+                          color: Colors.red
+                              .withOpacity(0.25 + Random().nextDouble() * 0.75),
+                          child: FittedBox(
+                            child: Text(sequence.sequence[index].name),
+                          ),
+                        );
+                      },
+                      itemCount: sequence.sequence.length,
+                    );
+                  }),
             ],
           ),
         ),

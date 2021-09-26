@@ -27,6 +27,8 @@ class AudioData {
     shortAdverts = adverts.sublist(0, medianOfAdverts);
     longAdverts = adverts.sublist(medianOfAdverts);
     debugPrint("*\n**\n***\nLoaded Radio Stations :");
+    debugPrint(
+        "json radio station list length = ${(jsonData['stations'] as List).length}");
     for (var item in radioStations) {
       debugPrint(item.toString());
     }
