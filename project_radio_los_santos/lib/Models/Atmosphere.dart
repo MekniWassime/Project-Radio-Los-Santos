@@ -46,51 +46,42 @@ class Atmosphere {
       timeOfDay = 1;
     else
       timeOfDay = 2;
-    if (isWeather) {
+    if (isWeather || TimeOfDay(timeOfDay).isEmpty) {
       Random randGen = Random(currentDate.day);
       int month = currentDate.month;
       double randomDouble = randGen.nextDouble();
+      if (randomDouble < 0.05 && smog.isNotEmpty) return smog;
       if (month >= 3 && month <= 5) {
         //spring
-        if (randomDouble < 0.1)
+        if (randomDouble < 0.1 && rain.isNotEmpty)
           return rain;
-        else if (timeOfDay == 0)
-          return sunny;
-        else
-          return TimeOfDay(timeOfDay);
+        else if (timeOfDay == 0 && sunny.isNotEmpty) return sunny;
       } else if (month >= 6 && month <= 8) {
         //summer
-        if (timeOfDay == 0)
-          return sunny;
-        else
-          return TimeOfDay(timeOfDay);
+        if (timeOfDay == 0 && sunny.isNotEmpty) return sunny;
       } else if (month >= 9 && month <= 11) {
         //fall
-        if (randomDouble < 0.4)
+        if (randomDouble < 0.4 && rain.isNotEmpty)
           return rain;
         else {
-          if (timeOfDay == 0)
+          if (timeOfDay == 0 && sunny.isNotEmpty)
             return sunny;
-          else if (randomDouble < 0.1)
-            return fog;
-          else
-            return TimeOfDay(timeOfDay);
+          else if (randomDouble < 0.1 && fog.isNotEmpty) return fog;
         }
       } else {
         //winter
-        if (randomDouble < 0.9)
+        if (randomDouble < 0.9 && rain.isNotEmpty)
           return rain;
+        else if (randomDouble < 0.5 && storm.isNotEmpty)
+          return storm;
         else {
-          if (timeOfDay == 0)
+          if (timeOfDay == 0 && sunny.isNotEmpty)
             return sunny;
-          else if (randomDouble < 0.7)
-            return fog;
-          else
-            return TimeOfDay(timeOfDay);
+          else if (randomDouble < 0.7 && fog.isNotEmpty) return fog;
         }
       }
-    } else
-      return TimeOfDay(timeOfDay);
+    }
+    return TimeOfDay(timeOfDay);
   }
 
   // ignore: non_constant_identifier_names
