@@ -49,69 +49,86 @@ class Sequence {
       randomGenerator: randomGenerator,
     );
     int numberOfSongs = songsList.listLength;
-    int thirdOfSongs = numberOfSongs ~/ 3;
     var longAdvertsList = LimitedFileList(
-        list: AudioData.longAdverts,
-        emptyProbablity: 1 / 3,
-        randomGenerator: randomGenerator,
-        effectiveLength: numberOfSongs - thirdOfSongs);
+      list: AudioData.longAdverts,
+      emptyProbablity: 1 - radioStation.longAdRatio,
+      randomGenerator: randomGenerator,
+      effectiveLength: (numberOfSongs * radioStation.longAdRatio).round(),
+    );
     var shortAdvertsList = LimitedFileList(
-        list: AudioData.shortAdverts,
-        emptyProbablity: 1 / 3,
-        randomGenerator: randomGenerator,
-        effectiveLength: numberOfSongs - thirdOfSongs);
+      list: AudioData.shortAdverts,
+      emptyProbablity: 1 - radioStation.shortAdRatio,
+      randomGenerator: randomGenerator,
+      effectiveLength: (numberOfSongs * radioStation.shortAdRatio).round(),
+    );
     var idList = LimitedFileList(
-        list: radioStation.id, infinit: true, randomGenerator: randomGenerator);
+      list: radioStation.id,
+      randomGenerator: randomGenerator,
+      emptyProbablity: 1 - radioStation.idRatio,
+      effectiveLength: (numberOfSongs * radioStation.idRatio).round(),
+    );
     var djList = LimitedFileList(
-        list: radioStation.dj,
-        randomGenerator: randomGenerator,
-        emptyProbablity:
-            1 - max<double>(1, radioStation.dj.length / numberOfSongs));
+      list: radioStation.dj,
+      randomGenerator: randomGenerator,
+      emptyProbablity: 1 - radioStation.djRatio,
+      effectiveLength: (numberOfSongs * radioStation.djRatio).round(),
+    );
     var atmosphereList = LimitedFileList(
-        list: radioStation.atmosphere.selectAppropriateAtmosphere(
-            DateTime.fromMillisecondsSinceEpoch(startTime),
-            randomGenerator.nextBool()),
-        randomGenerator: randomGenerator,
-        effectiveLength: 1,
-        emptyProbablity: 1 - 0.4 * (1 / numberOfSongs));
-    List<AudioFile>.from(radioStation.atmosphere.selectAppropriateAtmosphere(
-        DateTime.fromMillisecondsSinceEpoch(startTime),
-        randomGenerator.nextBool()));
+      list: radioStation.atmosphere.selectAppropriateAtmosphere(
+          DateTime.fromMillisecondsSinceEpoch(startTime),
+          randomGenerator.nextBool()),
+      randomGenerator: randomGenerator,
+      effectiveLength: 1,
+      emptyProbablity: 1 - radioStation.atmoRatio,
+    );
     var specialList = LimitedFileList(
-        list: radioStation.special,
-        randomGenerator: randomGenerator,
-        effectiveLength: 1,
-        emptyProbablity: 1 - 0.4 * (1 / numberOfSongs));
+      list: radioStation.special,
+      randomGenerator: randomGenerator,
+      effectiveLength: 1,
+      emptyProbablity: 1 - radioStation.specialRatio,
+    );
     //silent audioFile used to add short seperation between audio files
     SilentAudioFile silentFile = SilentAudioFile();
     silentFile.setDuration(radioStation.silenceDuration);
     //debugPrint("3");
     while (!songsList.isEmpty) {
+      bool addedId = false;
+      bool isIdEmpty = idList.list.isEmpty;
       //debugPrint("4");
       //add song audio files
       if (sequence.addNotNull(songsList.getAudioFile()))
         sequence.add(silentFile);
       //add an id
-      if (sequence.addNotNull(idList.getAudioFile())) sequence.add(silentFile);
+      if (sequence.addNotNull(idList.getAudioFile())) {
+        sequence.add(silentFile);
+        addedId = true;
+      }
       //weather and time of day updates
-      if (sequence.addNotNull(atmosphereList.getAudioFile()))
+      if ((isIdEmpty || !addedId) &&
+          sequence.addNotNull(atmosphereList.getAudioFile()))
         sequence.add(silentFile);
       //add a caller or dj commentary or nothing
-      if (sequence.addNotNull(djList.getAudioFile())) sequence.add(silentFile);
+      if ((isIdEmpty || addedId) && sequence.addNotNull(djList.getAudioFile()))
+        sequence.add(silentFile);
       //add a short ad and long ad in a random order
       if (randomGenerator.nextDouble() < 0.5) {
-        if (sequence.addNotNull(shortAdvertsList.getAudioFile()))
+        if ((isIdEmpty || addedId) &&
+            sequence.addNotNull(shortAdvertsList.getAudioFile()))
           sequence.add(silentFile);
-        if (sequence.addNotNull(longAdvertsList.getAudioFile()))
+        if ((isIdEmpty || addedId) &&
+            sequence.addNotNull(longAdvertsList.getAudioFile()))
           sequence.add(silentFile);
       } else {
-        if (sequence.addNotNull(longAdvertsList.getAudioFile()))
+        if ((isIdEmpty || addedId) &&
+            sequence.addNotNull(longAdvertsList.getAudioFile()))
           sequence.add(silentFile);
-        if (sequence.addNotNull(shortAdvertsList.getAudioFile()))
+        if ((isIdEmpty || addedId) &&
+            sequence.addNotNull(shortAdvertsList.getAudioFile()))
           sequence.add(silentFile);
       }
       //add special events commentary
-      if (sequence.addNotNull(specialList.getAudioFile()))
+      if ((isIdEmpty || !addedId) &&
+          sequence.addNotNull(specialList.getAudioFile()))
         sequence.add(silentFile);
     }
     //debugPrint("5");
@@ -133,6 +150,7 @@ class Sequence {
       effectiveLength: 10,
       emptyProbablity: 0,
     );
+    idList.reset(infinit: true, effectiveLength: 10, emptyProbablity: 0);
     int shortestDuration = min<int>(
       shortAdvertsList.shortestDuration(),
       idList.shortestDuration(),
@@ -294,10 +312,14 @@ class Sequence {
 
   @override
   String toString() {
-    String result = "Sequence: ";
+    String result = "Sequence: \n";
     for (var item in sequence) {
-      result += item.toString();
+      result += item.toString() + "\n";
     }
+    result +=
+        "    max end time = ${DateTime.fromMillisecondsSinceEpoch(startTime + radioStation.maxDuration)}" +
+            "\n    end time = ${DateTime.fromMillisecondsSinceEpoch(endTime)}" +
+            "\n    max length: ${radioStation.maxDuration}, seq length: $duration, difference: ${radioStation.maxDuration - duration}";
     return result;
   }
 

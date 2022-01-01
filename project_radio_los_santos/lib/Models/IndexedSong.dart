@@ -18,11 +18,20 @@ class IndexedSong implements IAudioFile {
       required this.outroIndex});
 
   factory IndexedSong.random({required Song song, required Random randomGen}) {
+    int introIdex = 0;
+    int midIndex = 0;
+    int outroIndex = 0;
+    if (randomGen.nextDouble() < 0.6)
+      introIdex = randomGen.nextInt(song.intro.length);
+    if (randomGen.nextDouble() < 0.6)
+      midIndex = randomGen.nextInt(song.mid.length);
+    if (randomGen.nextDouble() < 0.6)
+      outroIndex = randomGen.nextInt(song.outro.length);
     return IndexedSong(
         song: song,
-        introIndex: randomGen.nextInt(song.intro.length),
-        midIndex: randomGen.nextInt(song.mid.length),
-        outroIndex: randomGen.nextInt(song.outro.length));
+        introIndex: introIdex,
+        midIndex: midIndex,
+        outroIndex: outroIndex);
   }
 
   @override
@@ -61,5 +70,10 @@ class IndexedSong implements IAudioFile {
         milliseconds: currentPosition,
       ),
     );
+  }
+
+  @override
+  String toString() {
+    return song.name;
   }
 }

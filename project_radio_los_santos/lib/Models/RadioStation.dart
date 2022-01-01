@@ -17,14 +17,27 @@ class RadioStation {
   final List<Song> songs;
   int? _maxDurationCache;
   int silenceDuration = 250;
+  final double idRatio;
+  final double djRatio;
+  final double atmoRatio;
+  final double specialRatio;
+  final double shortAdRatio;
+  final double longAdRatio;
 
-  RadioStation(
-      {required this.name,
-      required this.atmosphere,
-      required this.dj,
-      required this.id,
-      required this.songs,
-      required this.special});
+  RadioStation({
+    required this.name,
+    required this.atmosphere,
+    required this.dj,
+    required this.id,
+    required this.songs,
+    required this.special,
+    this.idRatio = 0.4,
+    this.djRatio = 0.3,
+    this.atmoRatio = 0.1,
+    this.specialRatio = 0.1,
+    this.shortAdRatio = 0.15,
+    this.longAdRatio = 0.08,
+  });
 
   int get maxDuration {
     int? currentCache = _maxDurationCache;
@@ -41,14 +54,17 @@ class RadioStation {
     int maxDuration = _sumDurationOfSongs();
     int numberOfSongs = songs.length; //length is supposed to be >2
 
-    int thirdOfSongs = numberOfSongs ~/ 3;
-    //adverts and ids are played after each song, the worst case is the same ad with the longest duration playing each time
     numberOfSongs = songs.length;
-    maxDuration += id.longestDuration() * numberOfSongs;
-    maxDuration += AudioData.longAdverts.longestDuration() *
-        (numberOfSongs - thirdOfSongs);
-    maxDuration += AudioData.shortAdverts.longestDuration() *
-        (numberOfSongs - thirdOfSongs);
+
+    maxDuration += (id.longestDuration() * numberOfSongs * idRatio).round();
+
+    maxDuration +=
+        (AudioData.longAdverts.longestDuration() * numberOfSongs * longAdRatio)
+            .round();
+    maxDuration += (AudioData.shortAdverts.longestDuration() *
+            numberOfSongs *
+            shortAdRatio)
+        .toInt();
     //one atmoshpere info are played
     maxDuration += atmosphere.maxDuration;
     //one special is played
@@ -57,9 +73,12 @@ class RadioStation {
     int minUnique = min<int>(dj.length, numberOfSongs);
     maxDuration += dj.maxDurationForNumberOfElements(minUnique);
     //silence of 500 ms added after each file (except the end)
-    maxDuration +=
-        (numberOfSongs + (numberOfSongs - thirdOfSongs) * 2 + minUnique + 1) *
-            silenceDuration;
+    maxDuration += (numberOfSongs +
+            (numberOfSongs * shortAdRatio).round() +
+            (numberOfSongs * longAdRatio).round() +
+            minUnique +
+            1) *
+        silenceDuration;
     return maxDuration;
   }
 
@@ -82,7 +101,13 @@ class RadioStation {
         atmosphere: atmosphere,
         dj: dj,
         id: id,
-        songs: songs);
+        songs: songs,
+        idRatio: json['idRatio'] ?? 0.4,
+        atmoRatio: json['atmoRatio'] ?? 0.1,
+        djRatio: json['djRatio'] ?? 0.3,
+        longAdRatio: json['longAdRatio'] ?? 0.08,
+        shortAdRatio: json['shortAdRatio'] ?? 0.15,
+        specialRatio: json['specialRatio'] ?? 0.08);
   }
 
   MediaItem getMediaItem() {

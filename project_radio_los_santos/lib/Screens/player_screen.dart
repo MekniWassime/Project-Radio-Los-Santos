@@ -1,3 +1,5 @@
+import 'dart:math';
+
 import 'package:audio_service/audio_service.dart';
 import 'package:flutter/material.dart';
 
@@ -94,30 +96,30 @@ class _PlayerScreenState extends State<PlayerScreen> {
                   stream: sequenceStream,
                   builder: (context, snapshot) {
                     var sequence = snapshot.data;
+                    debugPrint(sequence.toString());
                     if (sequence == null) return Container();
-                    return Text(sequence.radioStation.name);
-                  })
-              /*StreamBuilder<Sequence>(
-                  stream: sequenceStream,
-                  builder: (context, snapshot) {
-                    var sequence = snapshot.data;
-                    if (sequence == null) return Container();
-                    return ListView.builder(
-                      physics: const NeverScrollableScrollPhysics(),
-                      shrinkWrap: true,
-                      itemBuilder: (context, index) {
-                        return Container(
-                          height: sequence.sequence[index].duration / 500 + 0.0,
-                          color: Colors.red
-                              .withOpacity(0.25 + Random().nextDouble() * 0.75),
-                          child: FittedBox(
-                            child: Text(sequence.sequence[index].name),
-                          ),
-                        );
-                      },
-                      itemCount: sequence.sequence.length,
+                    return Column(
+                      children: [
+                        Text(sequence.radioStation.name),
+                        ListView.builder(
+                          physics: const NeverScrollableScrollPhysics(),
+                          shrinkWrap: true,
+                          itemBuilder: (context, index) {
+                            return Container(
+                              height:
+                                  sequence.sequence[index].duration / 500 + 0.0,
+                              color: Colors.red.withOpacity(
+                                  0.25 + Random().nextDouble() * 0.75),
+                              child: FittedBox(
+                                child: Text(sequence.sequence[index].name),
+                              ),
+                            );
+                          },
+                          itemCount: sequence.sequence.length,
+                        )
+                      ],
                     );
-                  }),*/
+                  }),
             ],
           ),
         ),
