@@ -35,7 +35,6 @@ class Atmosphere {
               storm.longestDuration()
             ]) ??
             0;
-  //TODO; use smog and storm also treat the case where one of the lists or more are empty
   List<AudioFile> selectAppropriateAtmosphere(
       DateTime currentDate, bool isWeather) {
     int timeOfDay; //0: morning 1: evening 2:night
