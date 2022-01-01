@@ -101,7 +101,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                     return Column(
                       children: [
                         Text(sequence.radioStation.name),
-                        ListView.builder(
+                        /*ListView.builder(
                           physics: const NeverScrollableScrollPhysics(),
                           shrinkWrap: true,
                           itemBuilder: (context, index) {
@@ -116,7 +116,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                             );
                           },
                           itemCount: sequence.sequence.length,
-                        )
+                        )*/
                       ],
                     );
                   }),

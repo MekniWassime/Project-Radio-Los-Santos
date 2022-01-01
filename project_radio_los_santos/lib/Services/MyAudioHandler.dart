@@ -13,7 +13,7 @@ class MyAudioHandler extends BaseAudioHandler {
   static late MyAudioHandler _audioHandler;
   final _player = AudioPlayer();
   final List<RadioStation> radioStations = AudioData.radioStations;
-  int currentRadioIndex = 2;
+  int currentRadioIndex;
   RadioStation get currentStation => radioStations[currentRadioIndex];
   late Sequence currentSequence =
       Sequence.buildCurrent(radioStation: currentStation);
@@ -38,7 +38,8 @@ class MyAudioHandler extends BaseAudioHandler {
     );
   }
 
-  MyAudioHandler() {
+  MyAudioHandler() : currentRadioIndex = 0 {
+    currentRadioIndex = Random().nextInt(radioStations.length);
     _player.playbackEventStream.map(_transformEvent).pipe(playbackState);
     _player.playerStateStream.listen((state) {
       if (state.playing && state.processingState == ProcessingState.completed) {
