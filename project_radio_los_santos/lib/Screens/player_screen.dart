@@ -1,11 +1,7 @@
-import 'dart:math';
-
 import 'package:audio_service/audio_service.dart';
 import 'package:flutter/material.dart';
-import 'package:just_audio/just_audio.dart';
 
 import 'package:project_radio_los_santos/Models/Sequence.dart';
-import 'package:project_radio_los_santos/Services/AudioData.dart';
 import 'package:project_radio_los_santos/Services/MyAudioHandler.dart';
 
 class PlayerScreen extends StatefulWidget {
@@ -53,24 +49,55 @@ class _PlayerScreenState extends State<PlayerScreen> {
           child: Column(
             //mainAxisSize: MainAxisSize.min,
             children: [
-              ElevatedButton(
-                  onPressed: () {
-                    //player.play();
-                    MyAudioHandler.instance.play();
-                    //var file = sequence.currentFileWithPointer;
-                    //debugPrint(
-                    //    "${file.path} pointer=${Duration(milliseconds: file.pointer)} duration=${Duration(milliseconds: file.duration)}");
-                  },
-                  child: const Text("generate sequencen")),
-              ElevatedButton(
-                  onPressed: () {
-                    //player.play();
-                    //MyAudioHandler.instance.play();
-                    Sequence.buildCurrent(
-                        radioStation: AudioData.radioStations[0]);
-                  },
-                  child: const Text("print sequance stats")),
+              const SizedBox(height: 25),
+              Row(
+                mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                  IconButton(
+                      onPressed: () {
+                        MyAudioHandler.instance.skipToPrevious();
+                      },
+                      icon: const Icon(
+                        Icons.skip_previous,
+                        size: 40,
+                      )),
+                  StreamBuilder<PlaybackState>(
+                      stream: MyAudioHandler.instance.playbackState.stream,
+                      builder: (context, snapshot) {
+                        return IconButton(
+                            onPressed: () {
+                              if (snapshot.data?.playing ?? true)
+                                MyAudioHandler.instance.pause();
+                              else
+                                MyAudioHandler.instance.play();
+                            },
+                            icon: Icon(
+                              snapshot.data?.playing ?? true
+                                  ? Icons.pause
+                                  : Icons.play_arrow,
+                              size: 40,
+                            ));
+                      }),
+                  IconButton(
+                      onPressed: () {
+                        MyAudioHandler.instance.skipToNext();
+                      },
+                      icon: const Icon(
+                        Icons.skip_next,
+                        size: 40,
+                      )),
+                ],
+              ),
+              const SizedBox(height: 50),
               StreamBuilder<Sequence>(
+                  initialData: MyAudioHandler.instance.currentSequence,
+                  stream: sequenceStream,
+                  builder: (context, snapshot) {
+                    var sequence = snapshot.data;
+                    if (sequence == null) return Container();
+                    return Text(sequence.radioStation.name);
+                  })
+              /*StreamBuilder<Sequence>(
                   stream: sequenceStream,
                   builder: (context, snapshot) {
                     var sequence = snapshot.data;
@@ -90,7 +117,7 @@ class _PlayerScreenState extends State<PlayerScreen> {
                       },
                       itemCount: sequence.sequence.length,
                     );
-                  }),
+                  }),*/
             ],
           ),
         ),

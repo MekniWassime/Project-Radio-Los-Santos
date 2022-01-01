@@ -33,12 +33,14 @@ class Sequence {
     seed =
         setSeed ?? currentTimeInMilliseconds ~/ stationMaxDuration + seedOffset;
     startTime = seed * stationMaxDuration;
-    debugPrint(
+    //debugPrint("1");
+    /*debugPrint(
       "    seed = $seed" +
           "\n    current time = ${DateTime.now()}" +
           "\n    start time = ${DateTime.fromMillisecondsSinceEpoch(startTime)}",
-    );
+    );*/
     var randomGenerator = Random(seed);
+    //debugPrint("2");
     var songsList = LimitedFileList(
       list: radioStation.songs
           .map((song) =>
@@ -83,7 +85,9 @@ class Sequence {
     //silent audioFile used to add short seperation between audio files
     SilentAudioFile silentFile = SilentAudioFile();
     silentFile.setDuration(radioStation.silenceDuration);
+    //debugPrint("3");
     while (!songsList.isEmpty) {
+      //debugPrint("4");
       //add song audio files
       if (sequence.addNotNull(songsList.getAudioFile()))
         sequence.add(silentFile);
@@ -110,6 +114,7 @@ class Sequence {
       if (sequence.addNotNull(specialList.getAudioFile()))
         sequence.add(silentFile);
     }
+    //debugPrint("5");
     //need to fill the difference between the sequence current length and the max length of the radio station
     duration = sequence.totalDuration;
     int difference = radioStation.maxDuration - duration;
@@ -132,20 +137,27 @@ class Sequence {
       shortAdvertsList.shortestDuration(),
       idList.shortestDuration(),
     );
-    while (difference >= shortestDuration) {
+    int maxIter = 10;
+    debugPrint("6");
+    while (difference >= shortestDuration && maxIter > 0) {
+      maxIter--;
+      debugPrint("7");
       //add song audio files
       if (sequence.addNotNull(songsList.getAudioFile(
         filter: (file) => file.duration + silentFile.duration <= difference,
       ))) {
         difference -= sequence.last.duration + silentFile.duration;
         sequence.add(silentFile);
+        //print("added song");
       }
       //add an id
+      idList.reset();
       if (sequence.addNotNull(idList.getAudioFile(
         filter: (file) => file.duration + silentFile.duration <= difference,
       ))) {
         difference -= sequence.last.duration + silentFile.duration;
         sequence.add(silentFile);
+        //print("added id");
       }
       //weather and time of day updates
       if (sequence.addNotNull(atmosphereList.getAudioFile(
@@ -153,6 +165,7 @@ class Sequence {
       ))) {
         difference -= sequence.last.duration + silentFile.duration;
         sequence.add(silentFile);
+        //print("added atmoshpere");
       }
       //add a caller or dj commentary or nothing
       if (sequence.addNotNull(djList.getAudioFile(
@@ -160,19 +173,24 @@ class Sequence {
       ))) {
         difference -= sequence.last.duration + silentFile.duration;
         sequence.add(silentFile);
+        //print("added dj");
       }
       //add a short ad and long ad in a random order
+      longAdvertsList.reset();
       if (sequence.addNotNull(longAdvertsList.getAudioFile(
         filter: (file) => file.duration + silentFile.duration <= difference,
       ))) {
         difference -= sequence.last.duration + silentFile.duration;
         sequence.add(silentFile);
+        //print("added long ad");
       }
+      shortAdvertsList.reset();
       if (sequence.addNotNull(shortAdvertsList.getAudioFile(
         filter: (file) => file.duration + silentFile.duration <= difference,
       ))) {
         difference -= sequence.last.duration + silentFile.duration;
         sequence.add(silentFile);
+        //print("added short ad");
       }
       //add special events commentary
       if (sequence.addNotNull(specialList.getAudioFile(
@@ -180,6 +198,7 @@ class Sequence {
       ))) {
         difference -= sequence.last.duration + silentFile.duration;
         sequence.add(silentFile);
+        //print("added special");
       }
     }
     //remove the last silent file
@@ -189,20 +208,27 @@ class Sequence {
     duration = sequence.totalDuration;
     difference = radioStation.maxDuration - duration;
     //expand silence period to fill the remaining difference
-    silentFile.setDuration(radioStation.silenceDuration +
-        max(radioStation.silenceDuration, difference ~/ numberOfSilentFiles));
+    //print("nb silent = $numberOfSilentFiles, difference = $difference, new padding = ${radioStation.silenceDuration + min<int>(difference ~/ numberOfSilentFiles, radioStation.silenceDuration ~/ 2)}");
+    silentFile.setDuration(
+      radioStation.silenceDuration +
+          min<int>(
+            difference ~/ numberOfSilentFiles,
+            radioStation.silenceDuration ~/ 2,
+          ),
+    );
     //calculate duration and difference
     duration = sequence.totalDuration;
     difference = radioStation.maxDuration - duration;
     //final radio stats
     endTime = startTime + duration;
     maxEndTime = startTime + radioStation.maxDuration;
-    debugPrint(
+    //debugPrint("9");
+    /*debugPrint(
       "    max end time = ${DateTime.fromMillisecondsSinceEpoch(startTime + radioStation.maxDuration)}" +
           "\n    end time = ${DateTime.fromMillisecondsSinceEpoch(endTime)}" +
           "\n    max length: ${radioStation.maxDuration}, seq length: $duration, difference: ${radioStation.maxDuration - duration}" +
           "\nfirst file = ${sequence[0]}",
-    );
+    );*/
   }
 
   int get pointerPosition => DateTime.now().millisecondsSinceEpoch - startTime;

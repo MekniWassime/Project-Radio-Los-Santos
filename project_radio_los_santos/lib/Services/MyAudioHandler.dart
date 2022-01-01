@@ -13,7 +13,7 @@ class MyAudioHandler extends BaseAudioHandler {
   static late MyAudioHandler _audioHandler;
   final _player = AudioPlayer();
   final List<RadioStation> radioStations = AudioData.radioStations;
-  int currentRadioIndex = 1;
+  int currentRadioIndex = 2;
   RadioStation get currentStation => radioStations[currentRadioIndex];
   late Sequence currentSequence =
       Sequence.buildCurrent(radioStation: currentStation);
@@ -92,12 +92,14 @@ class MyAudioHandler extends BaseAudioHandler {
 
   @override
   Future<void> skipToPrevious() async {
-    int newIndex = (currentRadioIndex + 1) % radioStations.length;
-    setRadioStationIndex(newIndex);
+    setRadioStationIndex(currentRadioIndex - 1);
   }
 
   void setRadioStationIndex(int newIndex) async {
-    print("\n*\n**\n***\n****new Index ========= $newIndex");
+    print("newIndex=$newIndex nbStations=${radioStations.length}");
+    while (newIndex < 0) newIndex += radioStations.length;
+    newIndex = newIndex % radioStations.length;
+    print("finalIndex=$newIndex nbStations=${radioStations.length}");
     assert(newIndex >= 0 && newIndex < radioStations.length, "invalid range");
     currentRadioIndex = newIndex;
     currentSequence = Sequence.buildCurrent(radioStation: currentStation);
@@ -110,9 +112,7 @@ class MyAudioHandler extends BaseAudioHandler {
 
   @override
   Future<void> skipToNext() async {
-    int newIndex = currentRadioIndex - 1;
-    if (newIndex == -1) newIndex = radioStations.length - 1;
-    setRadioStationIndex(newIndex);
+    setRadioStationIndex(currentRadioIndex + 1);
   }
 
   PlaybackState _transformEvent(PlaybackEvent event) {
