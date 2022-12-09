@@ -280,30 +280,50 @@
     "stations": [
         {
             "name": "K-DST",
-            "special": [
-                {
-                    "file": "K-DST/(Bridge Announce 1) Can access LS only.ogg",
-                    "duration": 8698
-                },
-                {
-                    "file": "K-DST/(Bridge Announce 2) Can access LS and SF.ogg",
-                    "duration": 13398
-                },
-                {
-                    "file": "K-DST/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
-                    "duration": 8534
-                },
+            "special-daily": [
+                [
+                    {
+                        "file": "K-DST/(Bridge Announce 1) Can access LS only.ogg",
+                        "duration": 8698
+                    }
+                ],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "file": "K-DST/(Story) Weed Farm Burned Down.ogg",
+                        "duration": 6714
+                    }
+                ],
+                [
+                    {
+                        "file": "K-DST/(Bridge Announce 2) Can access LS and SF.ogg",
+                        "duration": 13398
+                    }
+                ],
+                [
+                    {
+                        "file": "K-DST/(Story) Prosecutor Busted for Weed.ogg",
+                        "duration": 9038
+                    }
+                ],
+                [
+                    {
+                        "file": "K-DST/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                        "duration": 8534
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                []
+            ],
+            "special-random": [
                 {
                     "file": "K-DST/(Story) Lights in Desert.ogg",
                     "duration": 11602
-                },
-                {
-                    "file": "K-DST/(Story) Prosecutor Busted for Weed.ogg",
-                    "duration": 9038
-                },
-                {
-                    "file": "K-DST/(Story) Weed Farm Burned Down.ogg",
-                    "duration": 6714
                 }
             ],
             "atmosphere": {
@@ -1084,36 +1104,56 @@
         },
         {
             "name": "Radio Los Santos",
-            "special": [
-                {
-                    "file": "Radio Los Santos/(Bridge Announce 1) Can access LS only.ogg",
-                    "duration": 14178
-                },
-                {
-                    "file": "Radio Los Santos/(Bridge Announce 2) Can access LS and SF.ogg",
-                    "duration": 19058
-                },
-                {
-                    "file": "Radio Los Santos/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
-                    "duration": 16714
-                },
-                {
-                    "file": "Radio Los Santos/(Story) Gang Warfare -- Ballas and Vagos taking over.ogg",
-                    "duration": 26306
-                },
-                {
-                    "file": "Radio Los Santos/(Story) Gang Warfare -- Grove Street getting stronger.ogg",
-                    "duration": 23858
-                },
-                {
-                    "file": "Radio Los Santos/(Story) Gang Warfare.ogg",
-                    "duration": 21376
-                },
-                {
-                    "file": "Radio Los Santos/(Story) Riot.ogg",
-                    "duration": 15290
-                }
+            "special-daily": [
+                [
+                    {
+                        "file": "Radio Los Santos/(Bridge Announce 1) Can access LS only.ogg",
+                        "duration": 14178
+                    }
+                ],
+                [
+                    {
+                        "file": "Radio Los Santos/(Story) Gang Warfare -- Ballas and Vagos taking over.ogg",
+                        "duration": 26306
+                    }
+                ],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "file": "Radio Los Santos/(Bridge Announce 2) Can access LS and SF.ogg",
+                        "duration": 19058
+                    }
+                ],
+                [],
+                [
+                    {
+                        "file": "Radio Los Santos/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                        "duration": 16714
+                    }
+                ],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "file": "Radio Los Santos/(Story) Gang Warfare -- Grove Street getting stronger.ogg",
+                        "duration": 23858
+                    },
+                    {
+                        "file": "Radio Los Santos/(Story) Gang Warfare.ogg",
+                        "duration": 21376
+                    }
+                ],
+                [
+                    {
+                        "file": "Radio Los Santos/(Story) Riot.ogg",
+                        "duration": 15290
+                    }
+                ]
             ],
+            "special-random": [],
             "atmosphere": {
                 "evening": [
                     {
@@ -1865,20 +1905,37 @@
         },
         {
             "name": "SFUR",
-            "special": [
-                {
-                    "file": "SFUR/(Bridge Announce 1) Can access LS only.ogg",
-                    "duration": 11970
-                },
-                {
-                    "file": "SFUR/(Bridge Announce 2) Can access LS and SF.ogg",
-                    "duration": 7770
-                },
-                {
-                    "file": "SFUR/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
-                    "duration": 13998
-                }
+            "special-daily": [
+                [
+                    {
+                        "file": "SFUR/(Bridge Announce 1) Can access LS only.ogg",
+                        "duration": 11970
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "file": "SFUR/(Bridge Announce 2) Can access LS and SF.ogg",
+                        "duration": 7770
+                    }
+                ],
+                [],
+                [
+                    {
+                        "file": "SFUR/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                        "duration": 13998
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                []
             ],
+            "special-random": [],
             "atmosphere": {
                 "evening": [
                     {
@@ -2492,34 +2549,55 @@
         },
         {
             "name": "Radio X",
-            "special": [
-                {
-                    "file": "Radio X/(Bridge Announce 1) Can access LS only.ogg",
-                    "duration": 19948
-                },
-                {
-                    "file": "Radio X/(Bridge Announce 2) Can access LS and SF.ogg",
-                    "duration": 13228
-                },
-                {
-                    "file": "Radio X/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
-                    "duration": 24122
-                },
-                {
-                    "file": "Radio X/(Story) Casino Opening.ogg",
-                    "duration": 19098
-                },
+            "special-daily": [
+                [
+                    {
+                        "file": "Radio X/(Bridge Announce 1) Can access LS only.ogg",
+                        "duration": 19948
+                    }
+                ],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "file": "Radio X/(Story) Weed Farm Burned Down.ogg",
+                        "duration": 7846
+                    }
+                ],
+                [
+                    {
+                        "file": "Radio X/(Bridge Announce 2) Can access LS and SF.ogg",
+                        "duration": 13228
+                    }
+                ],
+                [],
+                [
+                    {
+                        "file": "Radio X/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                        "duration": 24122
+                    }
+                ],
+                [
+                    {
+                        "file": "Radio X/(Story) Casino Opening.ogg",
+                        "duration": 19098
+                    }
+                ],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "file": "Radio X/(Story) Riot.ogg",
+                        "duration": 14898
+                    }
+                ]
+            ],
+            "special-random": [
                 {
                     "file": "Radio X/(Story) Rap Crisis.ogg",
                     "duration": 25990
-                },
-                {
-                    "file": "Radio X/(Story) Riot.ogg",
-                    "duration": 14898
-                },
-                {
-                    "file": "Radio X/(Story) Weed Farm Burned Down.ogg",
-                    "duration": 7846
                 }
             ],
             "atmosphere": {
@@ -3243,20 +3321,37 @@
         },
         {
             "name": "Playback FM",
-            "special": [
-                {
-                    "file": "Playback FM/(Bridge Announce 1) Can access LS only.ogg",
-                    "duration": 6834
-                },
-                {
-                    "file": "Playback FM/(Bridge Announce 2) Can access LS and SF.ogg",
-                    "duration": 6098
-                },
-                {
-                    "file": "Playback FM/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
-                    "duration": 12506
-                }
+            "special-daily": [
+                [
+                    {
+                        "file": "Playback FM/(Bridge Announce 1) Can access LS only.ogg",
+                        "duration": 6834
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "file": "Playback FM/(Bridge Announce 2) Can access LS and SF.ogg",
+                        "duration": 6098
+                    }
+                ],
+                [],
+                [
+                    {
+                        "file": "Playback FM/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                        "duration": 12506
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                []
             ],
+            "special-random": [],
             "atmosphere": {
                 "evening": [
                     {
@@ -3899,34 +3994,55 @@
         },
         {
             "name": "Master Sounds",
-            "special": [
-                {
-                    "file": "Master Sounds/(Bridge Announce 1) Can access LS only.ogg",
-                    "duration": 10062
-                },
-                {
-                    "file": "Master Sounds/(Bridge Announce 2) Can access LS and SF.ogg",
-                    "duration": 9234
-                },
-                {
-                    "file": "Master Sounds/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
-                    "duration": 14154
-                },
-                {
-                    "file": "Master Sounds/(Story) Countryside Racing.ogg",
-                    "duration": 9858
-                },
+            "special-daily": [
+                [
+                    {
+                        "file": "Master Sounds/(Bridge Announce 1) Can access LS only.ogg",
+                        "duration": 10062
+                    }
+                ],
+                [],
+                [],
+                [
+                    {
+                        "file": "Master Sounds/(Story) Countryside Racing.ogg",
+                        "duration": 9858
+                    }
+                ],
+                [],
+                [
+                    {
+                        "file": "Master Sounds/(Bridge Announce 2) Can access LS and SF.ogg",
+                        "duration": 9234
+                    }
+                ],
+                [],
+                [
+                    {
+                        "file": "Master Sounds/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                        "duration": 14154
+                    }
+                ],
+                [],
+                [
+                    {
+                        "file": "Master Sounds/(Story) Mafia Family Killed.ogg",
+                        "duration": 10018
+                    }
+                ],
+                [],
+                [],
+                [
+                    {
+                        "file": "Master Sounds/(Story) Police Trial.ogg",
+                        "duration": 11666
+                    }
+                ]
+            ],
+            "special-random": [
                 {
                     "file": "Master Sounds/(Story) Lights in Desert.ogg",
                     "duration": 12298
-                },
-                {
-                    "file": "Master Sounds/(Story) Mafia Family Killed.ogg",
-                    "duration": 10018
-                },
-                {
-                    "file": "Master Sounds/(Story) Police Trial.ogg",
-                    "duration": 11666
                 }
             ],
             "atmosphere": {
@@ -4764,38 +4880,60 @@
         },
         {
             "name": "KROSE",
-            "special": [
-                {
-                    "file": "KROSE/(Bridge Announce 1) Can access LS only.ogg",
-                    "duration": 13184
-                },
-                {
-                    "file": "KROSE/(Bridge Announce 2) Can access LS and SF.ogg",
-                    "duration": 13734
-                },
-                {
-                    "file": "KROSE/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
-                    "duration": 13322
-                },
-                {
-                    "file": "KROSE/(Story) Badlands Robberies.ogg",
-                    "duration": 12106
-                },
-                {
-                    "file": "KROSE/(Story) Gang Warfare.ogg",
-                    "duration": 14086
-                },
+            "special-daily": [
+                [
+                    {
+                        "file": "KROSE/(Bridge Announce 1) Can access LS only.ogg",
+                        "duration": 13184
+                    }
+                ],
+                [],
+                [
+                    {
+                        "file": "KROSE/(Story) Badlands Robberies.ogg",
+                        "duration": 12106
+                    }
+                ],
+                [],
+                [
+                    {
+                        "file": "KROSE/(Story) Weed Farm Burned Down.ogg",
+                        "duration": 12478
+                    }
+                ],
+                [
+                    {
+                        "file": "KROSE/(Bridge Announce 2) Can access LS and SF.ogg",
+                        "duration": 13734
+                    }
+                ],
+                [],
+                [
+                    {
+                        "file": "KROSE/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                        "duration": 13322
+                    }
+                ],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "file": "KROSE/(Story) Gang Warfare.ogg",
+                        "duration": 14086
+                    }
+                ],
+                [
+                    {
+                        "file": "KROSE/(Story) Police Trial.ogg",
+                        "duration": 9322
+                    }
+                ]
+            ],
+            "special-random": [
                 {
                     "file": "KROSE/(Story) Lights in Desert.ogg",
                     "duration": 13062
-                },
-                {
-                    "file": "KROSE/(Story) Police Trial.ogg",
-                    "duration": 9322
-                },
-                {
-                    "file": "KROSE/(Story) Weed Farm Burned Down.ogg",
-                    "duration": 12478
                 }
             ],
             "atmosphere": {
@@ -5546,27 +5684,42 @@
         },
         {
             "name": "Bounce FM",
-            "special": [
-                {
+            "special-daily": [
+                [{
                     "file": "Bounce FM/(Bridge Announce 1) Can access LS only.ogg",
                     "duration": 9262
-                },
-                {
+                }],
+                [],
+                [],
+                [],
+                [],
+                [{
                     "file": "Bounce FM/(Bridge Announce 2) Can access LS and SF.ogg",
                     "duration": 6718
-                },
-                {
+                }],
+                [],
+                [{
                     "file": "Bounce FM/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
                     "duration": 18956
-                },
+                }],
+                [],
+                [],
+                [{
+                    "file": "Bounce FM/(Story) Lost Jumpjet.ogg",
+                    "duration": 9926
+                }],
+                [],
+                []
+            ],
+            "special-random": [
+                
+                
+                
                 {
                     "file": "Bounce FM/(Story) Lights in Desert.ogg",
                     "duration": 6498
-                },
-                {
-                    "file": "Bounce FM/(Story) Lost Jumpjet.ogg",
-                    "duration": 9926
                 }
+                
             ],
             "atmosphere": {
                 "evening": [
@@ -6443,30 +6596,50 @@
         },
         {
             "name": "CSR",
-            "special": [
-                {
-                    "file": "CSR/(Bridge Announce 1) Can access LS only.ogg",
-                    "duration": 11702
-                },
-                {
-                    "file": "CSR/(Bridge Announce 2) Can access LS and SF.ogg",
-                    "duration": 6574
-                },
-                {
-                    "file": "CSR/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
-                    "duration": 14138
-                },
-                {
-                    "file": "CSR/(Story) Casino Opening.ogg",
-                    "duration": 10582
-                },
+            "special-daily": [
+                [
+                    {
+                        "file": "CSR/(Bridge Announce 1) Can access LS only.ogg",
+                        "duration": 11702
+                    }
+                ],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "file": "CSR/(Story) Weed Farm Burned Down.ogg",
+                        "duration": 9498
+                    }
+                ],
+                [
+                    {
+                        "file": "CSR/(Bridge Announce 2) Can access LS and SF.ogg",
+                        "duration": 6574
+                    }
+                ],
+                [],
+                [
+                    {
+                        "file": "CSR/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                        "duration": 14138
+                    }
+                ],
+                [
+                    {
+                        "file": "CSR/(Story) Casino Opening.ogg",
+                        "duration": 10582
+                    }
+                ],
+                [],
+                [],
+                [],
+                []
+            ],
+            "special-random": [
                 {
                     "file": "CSR/(Story) Lights in Desert.ogg",
                     "duration": 8458
-                },
-                {
-                    "file": "CSR/(Story) Weed Farm Burned Down.ogg",
-                    "duration": 9498
                 }
             ],
             "atmosphere": {
@@ -7099,34 +7272,54 @@
         },
         {
             "name": "K-JAH",
-            "special": [
-                {
-                    "file": "K-JAH/(Bridge Announce 1) Can access LS only.ogg",
-                    "duration": 17714
-                },
-                {
-                    "file": "K-JAH/(Bridge Announce 2) Can access LS and SF.ogg",
-                    "duration": 9150
-                },
-                {
-                    "file": "K-JAH/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
-                    "duration": 23594
-                },
+            "special-daily": [
+                [
+                    {
+                        "file": "K-JAH/(Bridge Announce 1) Can access LS only.ogg",
+                        "duration": 17714
+                    }
+                ],
+                [],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "file": "K-JAH/(Bridge Announce 2) Can access LS and SF.ogg",
+                        "duration": 9150
+                    }
+                ],
+                [],
+                [
+                    {
+                        "file": "K-JAH/(Bridge Announce 3) Can access LS, SF, and LV.ogg",
+                        "duration": 23594
+                    }
+                ],
+                [],
+                [],
+                [],
+                [
+                    {
+                        "file": "K-JAH/(Story) Gang Warfare.ogg",
+                        "duration": 8010
+                    }
+                ],
+                [
+                    {
+                        "file": "K-JAH/(Story) Riot.ogg",
+                        "duration": 6034
+                    }
+                ]
+            ],
+            "special-random": [
                 {
                     "file": "K-JAH/(Story) Foolishness of Babylon.ogg",
                     "duration": 5538
                 },
                 {
-                    "file": "K-JAH/(Story) Gang Warfare.ogg",
-                    "duration": 8010
-                },
-                {
                     "file": "K-JAH/(Story) Lights in Desert.ogg",
                     "duration": 18486
-                },
-                {
-                    "file": "K-JAH/(Story) Riot.ogg",
-                    "duration": 6034
                 }
             ],
             "atmosphere": {
@@ -7915,7 +8108,22 @@
         },
         {
             "name": "WCTR",
-            "special": [],
+            "special-daily": [
+                [],
+                [], 
+                [], 
+                [], 
+                [], 
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                [],
+                []
+            ],
+            "special-random": [],
             "atmosphere": {
                 "evening": [],
                 "fog": [],
